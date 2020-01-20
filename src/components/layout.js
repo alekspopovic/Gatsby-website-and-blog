@@ -19,9 +19,8 @@ class Layout extends React.Component {
   render() {
     const { isLogoTextVisible } = this.state;
     const { children } = this.props;
-    let header;
 
-    header = (
+    let header = (
       <div className={ layoutStyles.header }>
         <Link to="/">
           <div className={ layoutStyles.headerText }>Aleksandar Popović</div>
@@ -43,7 +42,7 @@ class Layout extends React.Component {
       <div>
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <footer className={ layoutStyles.copyright }>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popović

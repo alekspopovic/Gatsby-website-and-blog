@@ -81,6 +81,24 @@ body {
     box-shadow: 0 -3px 0 white inset;
 }
 
+.copyright {
+    background: linear-gradient(90deg, rgb(27, 155, 139), rgb(124, 82, 162));
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+}
+
+.copyright a {
+    color: white;
+    padding: 0 3px;
+    transition: all 0.4s;
+}
+
+.copyright a:hover {
+    background: white;
+    color: black;
+}
+
 #menu div:hover {
     /* color: white; */
 }
@@ -107,86 +125,11 @@ body {
         font-weight: 400;
     }
 
-    #menu a {
-        /* margin: 0 30px; */
-    }
-
     .logoText {
         display: none;
     }
 
-    .section-content {
-        width: 90%;
-    }
-
-    .section {
-        font-size: 3.5em;
-        padding: 5px 0 100px 0;
-    }
-
-    .about p {
-        margin: 20px 0;
-    }
-
-    .card {
-        height: 455px;
-        margin: 50px 0;
-    }
-
-    .card .overlay {
-        opacity: 1;
-    }
-
-    .card .card-title {
-        opacity: 1;
-    }
-
-    h1 {
-        margin: 100px 0;
-        font-size: 1.7em;
-    }
-
-    .skills span {
-        margin: 5px;
-    }
-
-    .job {
-        margin: 50px 0;
-    }
-
-    a.contact-button {
-        text-decoration: none;
-        color: white;
-        display: block;
-        position: relative;
-    }
-
-    .button {
-        width: 100%;
-        padding: 45px 80px;
-    }
-
-    .social {
-        margin-top: 50px;
-        transform: none;
-    }
-
-    .social a {
-        font-size: 3em;
-        margin: 0 40px;
-    }
-
     .copyright {
-        padding: 0;
-        margin-top: 40px;
-        font-size: 1em;
-    }
-
-    .footer {
-        padding-bottom: 30px;
-    }
-
-    .visible-card-title {
-        display: none;
+        font-size: 0.7em;
     }
 }
