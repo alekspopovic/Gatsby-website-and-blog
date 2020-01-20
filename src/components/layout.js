@@ -1,22 +1,41 @@
 import React from "react"
 import { Link } from "gatsby"
+import layoutStyles from "../styles/layout.module.css"
+import Sticky from 'react-stickynode';
 
 class Layout extends React.Component {
+  state = {
+    isLogoTextVisible:false
+  };
+
+  toggleLogoText = () => {
+    this.setState(state => (
+      { 
+        isLogoTextVisible: !state.isLogoTextVisible 
+      }
+    ));
+  };
+
   render() {
+    const { isLogoTextVisible } = this.state;
     const { children } = this.props;
     let header;
 
     header = (
-      <div className="header">
-        <Link to="/" className="header-text">Aleksandar Popović</Link>
-        <div id="menu">
-          <Link className="small-header-text" to="/">Aleksandar Popović</Link>
-          <Link to="/about"><div>about me</div></Link>
-          <Link to="/projects"><div>projects</div></Link>
-          <Link to="/skills"><div>skills</div></Link>
-          <Link to="/experience"><div>experience</div></Link>
-          <Link to="/contact"><div>contact</div></Link>
-        </div>
+      <div className={ layoutStyles.header }>
+        <Link to="/">
+          <div className={ layoutStyles.headerText }>Aleksandar Popović</div>
+        </Link>
+        <Sticky enabled={true} onStateChange={this.toggleLogoText}>
+          <div id={ layoutStyles.menu }>
+            <Link className={ `${isLogoTextVisible ? layoutStyles.logoText : layoutStyles.hiddenLogoText}` } to="/">Aleksandar Popović</Link>
+            <Link to="/about"><div>about me</div></Link>
+            <Link to="/projects"><div>projects</div></Link>
+            <Link to="/skills"><div>skills</div></Link>
+            <Link to="/experience"><div>experience</div></Link>
+            <Link to="/contact"><div>contact</div></Link>
+          </div>
+        </Sticky>
       </div>	
     )
 

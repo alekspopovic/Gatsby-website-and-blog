@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(90deg, rgb(27, 155, 139), rgb(124, 82, 162));
+    padding-top: 30px;
+    position: relative;
+}
+
+.header a {
+    color: white;
+    box-shadow: none;
+}
+
+.headerText {
+    font-size: 5.5em;
+    line-height: 1.6;
+    font-family: 'Amatic SC';
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.headerText a {
+    /* color: black;
+    text-decoration: none; */
+}
+
+.hiddenLogoText {
+    position: absolute;
+    left: -75px;
+    color: white;
+    font-family: 'Amatic SC';
+    font-size: 1.7em;
+    opacity: 0;
+    transition: all 0.4s;
+    line-height: 1.5em;
+}
+
+.logoText {
+    position: absolute;
+    left: 20px;
+    color: white;
+    font-family: 'Amatic SC';
+    font-size: 1.7em;
+    opacity: 1;
+    transition: all 0.4s;
+    line-height: 1.5em;
+}
+
+.smallHeaderText:hover {
+    /* color: white; */
+}
+
+#menu {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(27, 155, 139), rgb(124, 82, 162));
+}
+
+#menu div {
+    flex-basis: auto;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 5px 10px 2px 10px;
+    cursor: pointer;
+    /* color: white; */
+    text-transform: uppercase;
+    height: 100%;
+    line-height: 2.6em;
+    margin: 0 15px;
+}
+
+#menu div:hover {
+    box-shadow: 0 -3px 0 white inset;
+}
+
+#menu div:hover {
+    /* color: white; */
+}
+
+
+
+
+
+@media only screen and (max-device-width: 426px) {
+    .headerText {
+        font-size: 2.8em;
+    }
+
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+	#menu div {
+        font-size: 0.7em;
+        display: inline-block;
+        padding: 0;
+        font-weight: 400;
+    }
+
+    #menu a {
+        /* margin: 0 30px; */
+    }
+
+    .logoText {
+        display: none;
+    }
+
+    .section-content {
+        width: 90%;
+    }
+
+    .section {
+        font-size: 3.5em;
+        padding: 5px 0 100px 0;
+    }
+
+    .about p {
+        margin: 20px 0;
+    }
+
+    .card {
+        height: 455px;
+        margin: 50px 0;
+    }
+
+    .card .overlay {
+        opacity: 1;
+    }
+
+    .card .card-title {
+        opacity: 1;
+    }
+
+    h1 {
+        margin: 100px 0;
+        font-size: 1.7em;
+    }
+
+    .skills span {
+        margin: 5px;
+    }
+
+    .job {
+        margin: 50px 0;
+    }
+
+    a.contact-button {
+        text-decoration: none;
+        color: white;
+        display: block;
+        position: relative;
+    }
+
+    .button {
+        width: 100%;
+        padding: 45px 80px;
+    }
+
+    .social {
+        margin-top: 50px;
+        transform: none;
+    }
+
+    .social a {
+        font-size: 3em;
+        margin: 0 40px;
+    }
+
+    .copyright {
+        padding: 0;
+        margin-top: 40px;
+        font-size: 1em;
+    }
+
+    .footer {
+        padding-bottom: 30px;
+    }
+
+    .visible-card-title {
+        display: none;
+    }
+}
