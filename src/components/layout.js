@@ -30,7 +30,7 @@ class Layout extends React.Component {
             <Link className={ `${isLogoTextVisible ? layoutStyles.logoText : layoutStyles.hiddenLogoText}` } to="/">Aleksandar Popović</Link>
             <Link to="/about"><div>about me</div></Link>
             <Link to="/projects"><div>projects</div></Link>
-            <Link to="/skills"><div>skills</div></Link>
+            <Link to="/blog"><div>blog</div></Link>
             <Link to="/experience"><div>experience</div></Link>
             <Link to="/contact"><div>contact</div></Link>
           </div>

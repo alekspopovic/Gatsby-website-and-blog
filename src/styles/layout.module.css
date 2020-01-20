@@ -1,5 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-    margin: 0;
+    /* margin-bottom = .copyright height */
+    margin: 0 0 55px; 
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     background-color: white;
@@ -26,11 +32,6 @@ body {
     margin-bottom: 20px;
 }
 
-.headerText a {
-    /* color: black;
-    text-decoration: none; */
-}
-
 .hiddenLogoText {
     position: absolute;
     left: -75px;
@@ -44,17 +45,14 @@ body {
 
 .logoText {
     position: absolute;
-    left: 20px;
+    left: 0px;
     color: white;
     font-family: 'Amatic SC';
     font-size: 1.7em;
     opacity: 1;
     transition: all 0.4s;
     line-height: 1.5em;
-}
-
-.smallHeaderText:hover {
-    /* color: white; */
+    padding: 0 15px;
 }
 
 #menu {
@@ -68,17 +66,22 @@ body {
     flex-basis: auto;
     font-weight: bold;
     font-size: 0.8em;
-    padding: 5px 10px 2px 10px;
     cursor: pointer;
-    /* color: white; */
     text-transform: uppercase;
     height: 100%;
     line-height: 2.6em;
     margin: 0 15px;
+    padding: 5px 10px 2px 10px;
 }
 
-#menu div:hover {
-    box-shadow: 0 -3px 0 white inset;
+#menu a {
+    box-shadow: 0 0 0 white inset;
+    transition: all 0.4s;
+}
+
+#menu a:hover {
+    box-shadow: 0 -50px 0 white inset;
+    color: rgb(27, 155, 139);
 }
 
 .copyright {
@@ -86,21 +89,26 @@ body {
     text-align: center;
     font-size: 0.8em;
     color: white;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0;
 }
 
 .copyright a {
     color: white;
     padding: 0 3px;
+    box-shadow: 0 -1px 0 white inset;
     transition: all 0.4s;
 }
 
 .copyright a:hover {
-    background: white;
-    color: black;
-}
-
-#menu div:hover {
-    /* color: white; */
+    box-shadow: 0 -50px 0 white inset;
+    color: rgb(27, 155, 139);
 }
 
 
