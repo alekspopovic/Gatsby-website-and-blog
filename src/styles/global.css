@@ -1,1 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat&display=swap&subset=latin-ext');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* margin-bottom = .copyright height */
+    margin: 0 0 55px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    background-color: white;
+    overflow-x: hidden;
+    color: rgb(50, 50, 50);
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 400;
+}
+
+a {
+    color: rgb(27, 155, 139);
+    font-weight: 600;
+    box-shadow: 0 -1px 0 rgb(27, 155, 139) inset;
+    padding: 0 3px;
+    transition: all 0.4s;
+}
+
+a:hover {
+    box-shadow: 0 -50px 0 rgb(27, 155, 139) inset;
+    color: white;
+}
