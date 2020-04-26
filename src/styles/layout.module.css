@@ -3,6 +3,7 @@
   background: linear-gradient(90deg, rgb(27, 155, 139), rgb(124, 82, 162));
   padding-top: 30px;
   position: relative;
+  z-index: 1;
 }
 
 .header a {

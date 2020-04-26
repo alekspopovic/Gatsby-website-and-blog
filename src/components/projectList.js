@@ -13,7 +13,7 @@ class ProjectList extends React.Component {
   
         {
           projectData.map(project => (
-            <ProjectCard project={project} />
+            <ProjectCard key={project.name} project={project} />
           ))
         }
         

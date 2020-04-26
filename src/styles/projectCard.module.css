@@ -1,0 +1,89 @@
+.card {
+    border: 3px solid rgb(27, 155, 139);
+    height: 255px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.7s;
+}
+
+.card img {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.card a {
+    border: none;
+}
+
+.card a:hover {
+    background: transparent;
+    color: rgb(51, 51, 51);
+}
+
+.card .overlay {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.01);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(27, 155, 139, 0.7), rgba(124, 82, 162, 0.7));
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.card .cardTitle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.4s;
+    font-size: 1.2em;
+}
+.card .tags {
+    margin-top: 15px;
+}
+
+.cardTitle span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.6em;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover .overlay .cardTitle {
+    opacity: 1;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 426px) {
+    .card {
+        height: 455px;
+        margin: 50px 0;
+    }
+
+    .card .overlay {
+        opacity: 1;
+    }
+
+    .card .cardTitle {
+        opacity: 1;
+    }
+}
