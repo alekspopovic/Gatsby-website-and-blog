@@ -1,5 +1,5 @@
 .card {
-    border: 3px solid rgb(27, 155, 139);
+    border: 3px solid var(--text);
     height: 255px;
     position: relative;
     overflow: hidden;

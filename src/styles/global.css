@@ -1,18 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat&display=swap&subset=latin-ext");
 
+:root {
+  --dark-bg: #222831; 
+  --light-bg: #393e46;;
+  --highlight: #fd7014;
+  --text: #eeeeee;
+  --text-dark: #a0a0a0;
+}
+
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  /* margin-bottom = .copyright height */
   margin: 0 0 55px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
-  background-color: white;
+  font-size: 1em;
+  background-color: var(--dark-bg);
   overflow-x: hidden;
-  color: rgb(80, 80, 80);
+  color: var(--text);
 }
 
 h1 {
@@ -23,14 +30,13 @@ h1 {
 }
 
 a {
-  color: rgb(27, 155, 139);
+  color: var(--highlight);
   font-weight: 600;
-  box-shadow: 0 -1px 0 rgb(27, 155, 139) inset;
+  box-shadow: 0 0 0 var(--highlight) inset;
   padding: 0 3px;
-  transition: all 0.4s;
+  /* transition: all 0.2s; */
 }
 
 a:hover {
-  box-shadow: 0 -50px 0 rgb(27, 155, 139) inset;
-  color: white;
+  box-shadow: 0 -1px 0 var(--highlight) inset;
 }
