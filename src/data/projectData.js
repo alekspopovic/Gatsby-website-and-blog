@@ -7,7 +7,6 @@ const data = [
         "tags": [
             "backend", "frontend", "Sitefinity", "C#", "SQL", "HTML", "CSS", "JavaScript", "AngularJS"
         ],
-        "githubUrl": ""
     },
     {
         "name": "Omaha Performing Arts",
@@ -17,7 +16,6 @@ const data = [
         "tags": [
             "frontend", "Sitefinity", "HTML", "CSS", "JavaScript", "AngularJS"
         ],
-        "githubUrl": ""
     },
     {
         "name": "Thanksgiving Point",
@@ -27,7 +25,6 @@ const data = [
         "tags": [
             "backend", "frontend", "Umbraco", "C#", "SQL", "HTML", "CSS", "JavaScript", "AngularJS"
         ],
-        "githubUrl": ""
     },
     {
         "name": "Laguna Playhouse",
@@ -37,7 +34,6 @@ const data = [
         "tags": [
             "backend", "frontend", "Umbraco", "C#", "SQL", "HTML", "CSS", "JavaScript", "AngularJS"
         ],
-        "githubUrl": ""
     },
     {
         "name": "Graceland",
@@ -47,7 +43,6 @@ const data = [
         "tags": [
             "frontend", "HTML", "CSS", "JavaScript"
         ],
-        "githubUrl": ""
     },
     {
         "name": "Milos Popovic",
@@ -57,7 +52,15 @@ const data = [
         "tags": [
             "frontend","HTML", "CSS", "JavaScript", "jQuery", "GreenSock"
         ],
-        "githubUrl": ""
+    },
+    {
+        "name": "Covid19 Historical Data",
+        "url": "test url two",
+        "imageUrl": "https://i.imgur.com/jlVsPCf.png",
+        "description": "test description two",
+        "tags": [
+            "frontend","HTML", "CSS", "JavaScript"
+        ],
     },
     {
         "name": "Terry's Breakout",
@@ -67,7 +70,7 @@ const data = [
         "tags": [
             "C#", "Unity3D"
         ],
-        "githubUrl": ""
+        "itchIoUrl": "",
     },
     {
         "name": "Fructose Intolerant",
@@ -77,7 +80,7 @@ const data = [
         "tags": [
             "C#", "Unity3D", "Aseprite", "Hexels 3"
         ],
-        "githubUrl": ""
+        "playStoreUrl": ""
     },
 ];
 
