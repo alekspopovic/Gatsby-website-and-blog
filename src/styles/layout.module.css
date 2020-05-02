@@ -89,6 +89,7 @@ video {
   overflow: hidden;
   border-bottom: 1px solid var(--text-dark);
   box-shadow: 0 0 10px var(--shadow);
+  background-color: var(--shadow);
 }
 
 @media only screen and (max-device-width: 426px) {
