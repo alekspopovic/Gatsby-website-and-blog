@@ -1,16 +1,14 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ContactList from "../components/contactList"
 import SEO from "../components/seo"
 
 class Contact extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const headerText = "Contact";
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout headerText={headerText}>
         <SEO title="Contact" />
         <ContactList />
       </Layout>
@@ -19,13 +17,3 @@ class Contact extends React.Component {
 }
 
 export default Contact
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

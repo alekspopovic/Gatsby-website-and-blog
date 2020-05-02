@@ -11,8 +11,6 @@ class ProjectList extends React.Component {
 
     return (
       <div className={`${projectListStyles.sectionContent}`}>
-        <h1>- Projects -</h1>
-  
         {
           projectData.map(function(project) {
             let floatRight = false;

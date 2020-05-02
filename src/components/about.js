@@ -5,7 +5,6 @@ import aboutStyles from "../styles/about.module.css"
 const About = () => {
   return (
     <div className={`${aboutStyles.sectionContent} ${aboutStyles.about}`}>
-      <h1> - Hello and Welcome! -</h1>
       <p>
         My name is Aleksandar Popović. Creating something from nothing has
         always been my passion, and that is why I love coding, web development

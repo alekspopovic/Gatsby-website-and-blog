@@ -7,7 +7,6 @@ const ContactList = () => {
     <div
       className={`${contactListStyles.sectionContent} ${contactListStyles.contact}`}
     >
-      <h1>- Let's Get in Touch -</h1>
       <a
         target="_blank"
         className={`${contactListStyles.contactButton}`}

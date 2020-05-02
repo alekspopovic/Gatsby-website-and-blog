@@ -5,8 +5,10 @@ import ProjectList from "../components/projectList"
 
 class Projects extends React.Component {
   render() {
+    const headerText = "Projects";
+
     return (
-      <Layout>
+      <Layout headerText={headerText}>
         <SEO title="Projects" />
         <ProjectList />
       </Layout>
