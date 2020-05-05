@@ -1,6 +1,7 @@
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
+description: "Quisque erat sapien, vulputate id faucibus ut, auctor at lorem. In vestibulum lectus tortor, id tristique orci euismod vitae. Nulla vel dui placerat, congue dolor sed, dapibus lacus. Maecenas purus magna, rhoncus eget libero sed, porta auctor ex. Nunc iaculis pellentesque libero. Fusce eget pretium est. Aenean vel lectus scelerisque, sagittis odio eget, congue orci."
 ---
 
 Wow! I love blogging so much already.

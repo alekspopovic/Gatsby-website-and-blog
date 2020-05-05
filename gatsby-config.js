@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Aleksandar Popović`,
-    author: `Aleksandar Popovic`,
-    description: `Aleks Popovic's personal website`,
+    title: `Aleks Popovic - personal website and blog`,
+    author: `Aleks Popovic`,
+    description: `Aleks Popovic's personal website and blog about web, tech and video games`,
     siteUrl: `https://aleksandarpopovic.com/`,
     social: {
       twitter: `alekswritescode`,

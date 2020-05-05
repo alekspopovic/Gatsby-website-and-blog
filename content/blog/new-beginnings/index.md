@@ -1,7 +1,7 @@
 ---
 title: New Beginnings
 date: "2015-05-28T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+description: Nulla ac scelerisque libero, nec euismod est. Nullam auctor vitae turpis ut posuere. Proin metus lorem, vestibulum id egestas tincidunt, varius sodales dolor. Aenean at porttitor ipsum. Aliquam euismod sem sed ligula viverra, ac iaculis felis dapibus. Donec sollicitudin dui blandit diam accumsan maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Maecenas pulvinar turpis at congue tempor. Ut at varius ligula, nec rhoncus leo. Pellentesque at sodales sem. Vestibulum consectetur posuere aliquam. Pellentesque eu ornare ligula, vehicula faucibus ligula. Ut iaculis at risus vel hendrerit. Pellentesque leo nibh, hendrerit a nisi at, interdum pretium ex. Morbi volutpat orci mauris, non aliquam metus aliquet eget.
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
