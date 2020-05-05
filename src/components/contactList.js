@@ -34,6 +34,13 @@ const ContactList = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
+          href="https://www.instagram.com/aleks.popovic/"
+        >
+          <i className="fa fa-instagram"></i>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://codepen.io/aleksandarp/"
         >
           <i className="fa fa-codepen"></i>

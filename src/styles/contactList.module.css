@@ -17,7 +17,7 @@
 
 .contact a {
   color: var(--text);
-  transition: color 0.4s;
+  font-size: 0.8em;
 }
 
 .contact a:hover {
@@ -35,7 +35,7 @@
 }
 
 .social a {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .formControl {
