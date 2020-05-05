@@ -4,17 +4,18 @@ import "font-awesome/css/font-awesome.min.css"
 
 const ContactList = () => {
   return (
-    <div
-      className={`${contactListStyles.sectionContent} ${contactListStyles.contact}`}
-    >
-      <a
-        target="_blank"
-        className={`${contactListStyles.contactButton}`}
-        href="mailto:aleksandar88popovic@gmail.com"
-        rel="noopener noreferrer"
-      >
-        <i className="fa fa-envelope"></i> Send me an email
-      </a>
+    <div className={`${contactListStyles.sectionContent} ${contactListStyles.contact}`}>
+      <h3>You have a question, suggestion or a business offer? Maybe you simply wanna say 'hi'? Send me a message here!</h3>
+      <form target="_blank" action="https://formsubmit.co/8283715e05ca45c0023e1973e99ab73e" method="POST">
+        <input type="text" name="name" className={contactListStyles.formControl} placeholder="What's your name?" required />
+        <input type="email" name="email" className={contactListStyles.formControl} placeholder="What's your email address?" required />
+        <textarea placeholder="What's your message?" className={contactListStyles.formControl} name="message" rows="5" required></textarea>
+        <input type="hidden" name="_next" value="http://localhost:8000/blog"></input>
+        <input type="hidden" name="_subject" value="New message submitted on /contact page"></input>
+        <input type="hidden" name="_replyto"></input>
+        <button type="submit" className={contactListStyles.formControl}>Send Message</button>
+      </form>
+
       <div className={`${contactListStyles.social}`}>
         <a
           target="_blank"

@@ -16,11 +16,13 @@
 }
 
 .contact a {
-  box-shadow: 0 0 0 rgb(27, 155, 139) inset;
+  color: var(--text);
+  transition: color 0.4s;
 }
 
 .contact a:hover {
-  box-shadow: 0 -90px 0 rgb(27, 155, 139) inset;
+  color: var(--highlight);
+  box-shadow: none;
 }
 
 .contact h1 {
@@ -34,4 +36,44 @@
 
 .social a {
   padding: 0 20px;
+}
+
+.formControl {
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  margin: 5px 0;
+  line-height: 3em;
+}
+
+textarea {
+  width: 100%;
+  line-height: 2em;
+}
+
+button {
+  color: var(--text);
+  border: 2px solid var(--highlight);
+  padding: 15px 50px;
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: 600;
+  line-height: 1em;
+  margin-top: 2em;
+}
+
+button:hover {
+  background: var(--highlight);
+  cursor: pointer;
+}
+
+button:focus {
+  background: var(--highlight);
+}
+
+h3 {
+  margin-bottom: 2em;
+  line-height: 1.5em;
 }
