@@ -5,7 +5,7 @@ import "font-awesome/css/font-awesome.min.css"
 const ContactList = () => {
   return (
     <div className={`${contactListStyles.sectionContent} ${contactListStyles.contact}`}>
-      <h3>You have a question, suggestion or a business offer? Maybe you simply wanna say 'hi'? Send me a message here!</h3>
+      <h3>You have a question, suggestion or a business offer? Maybe you simply want to say 'hi'? Send me a message here!</h3>
       <form target="_blank" action="https://formsubmit.co/8283715e05ca45c0023e1973e99ab73e" method="POST">
         <input type="text" name="name" className={contactListStyles.formControl} placeholder="What's your name?" required />
         <input type="email" name="email" className={contactListStyles.formControl} placeholder="What's your email address?" required />

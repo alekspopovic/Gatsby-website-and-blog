@@ -31,8 +31,7 @@ const About = () => {
 
       <p>
         If you want us to work together or you just want to say hi - all of my
-        contact details can be found on the <Link to="/contact">CONTACT</Link>{" "}
-        page
+         contact details can be found on the <Link to="/contact">CONTACT</Link> page.
       </p>
     </div>
   )

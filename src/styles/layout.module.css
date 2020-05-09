@@ -16,18 +16,22 @@ header a {
   margin-bottom: 20px;
   position: absolute;
   top: 220px;
-  font-family: "Amatic SC";
+  font-family: "Source Code Pro";
+  font-weight: 300;
+}
+
+h1, h2, h3, small {
+  font-family: "Source Code Pro";
 }
 
 .headerTitle {
-  font-size: 7.5em;
+  font-size: 5.5em;
   line-height: 1.6;  
-  font-weight: 400;
   line-height: 120px;
 }
 
 .headerSubTitle {
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.6;  
   font-weight: 400;
   line-height: 120px;
@@ -36,12 +40,12 @@ header a {
 .logoText {
   position: absolute;
   left: 0px;
-  font-family: "Amatic SC";
-  font-size: 1.7em;
-  opacity: 1;
+  font-family: "Source Code Pro";
+  font-size: 1.3em;
   transition: all 0.4s;
-  line-height: 2.2em;
+  line-height: 2.8em;
   padding: 0 15px;
+  font-weight: 300;
 }
 
 #menu {
@@ -99,6 +103,10 @@ video {
   border-bottom: 1px solid var(--text-dark);
   box-shadow: 0 0 10px var(--shadow);
   background-color: var(--shadow);
+}
+
+#menu .active {
+  box-shadow: 0 -3px 0 var(--highlight) inset;
 }
 
 @media only screen and (max-device-width: 426px) {

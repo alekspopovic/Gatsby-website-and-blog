@@ -9,23 +9,24 @@ class Layout extends React.Component {
     const { children } = this.props;
     const headerText = this.props.headerText;
     const subHeaderText = this.props.subHeaderText;
+    const logoText = "Aleks Popovic";
 
     let stickyMenu = (
       <Sticky innerZ={100} enabled={true}>
         <div id={layoutStyles.menu}>
           <Link className={layoutStyles.logoText} to="/">
-            Aleksandar Popović
+            {logoText}
           </Link>
-          <Link to="/blog">
+          <Link activeClassName={layoutStyles.active} to="/">
             <div>blog</div>
           </Link>
-          <Link to="/projects">
+          <Link activeClassName={layoutStyles.active} to="/projects">
             <div>projects</div>
           </Link>
-          <Link to="/">
+          <Link activeClassName={layoutStyles.active} to="/aboutMe">
             <div>about me</div>
             </Link>
-          <Link to="/contact">
+          <Link activeClassName={layoutStyles.active} to="/contact">
             <div>contact</div>
           </Link>
         </div>
@@ -56,7 +57,7 @@ class Layout extends React.Component {
         </header>
         <main>{children}</main>
         <footer className={layoutStyles.copyright}>
-          © {new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popović
+          © {new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popovic
         </footer>
       </div>
     )

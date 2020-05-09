@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:wght@300;400|Montserrat&display=swap&subset=latin-ext");
 
 :root {
   --dark-bg: #222831; 
@@ -35,7 +35,6 @@ a {
   font-weight: 600;
   box-shadow: 0 0 0 var(--highlight) inset;
   padding: 0 3px;
-  /* transition: all 0.2s; */
 }
 
 a:hover {
