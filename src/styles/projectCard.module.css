@@ -48,6 +48,9 @@
 
 .card .tags {
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card .name {
@@ -56,7 +59,6 @@
 }
 
 .card span {
-    display: inline-block;
     padding: 5px 15px;
     margin: 5px;
     font-size: 0.8em;
