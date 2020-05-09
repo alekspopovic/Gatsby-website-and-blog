@@ -1,0 +1,45 @@
+.tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.tags a {
+    text-align: center;
+    color: var(--text);
+    border: 2px solid var(--highlight);
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 1em;
+    font-size: 1em;
+    width: 250px;
+    position: relative;
+  }
+
+  .tags a:hover {
+    box-sizing: none;
+    background: var(--highlight);
+  }
+
+  .tags a span {
+    border: 2px solid var(--highlight);
+    background: var(--highlight);
+    position: absolute;
+    right: -15px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 0.8em;
+    padding-top: 2px;
+  }
+
+  .tags a:hover span {
+    background: var(--dark-bg);
+  }
