@@ -2,7 +2,7 @@
   width: 90%;
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 2em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -15,7 +15,6 @@ article {
   margin-top: 2em;
   padding: 2em;
   border: 1px solid var(--text-dark);
-
   box-shadow: 4px 4px 5px 0 var(--shadow);
 }
 
@@ -44,14 +43,14 @@ section {
   text-align: center;
 }
 
-.readMore a {
+.readMore a, .allTags a {
   color: var(--text);
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
 }
 
-.readMore a:hover {
+.readMore a:hover, .allTags a:hover {
   color: var(--text);
   box-shadow: none;
   background: var(--highlight);
@@ -64,4 +63,14 @@ small {
 blockquote {
   color: var(--text);
   border-left-color: var(--highlight);
+}
+
+.allTags {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 2em;
+  border: 1px solid var(--text-dark);
+  box-shadow: 4px 4px 5px 0 var(--shadow);
 }
