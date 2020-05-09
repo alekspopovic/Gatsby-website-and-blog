@@ -15,7 +15,7 @@ class Index extends React.Component {
 
     return (
       <Layout headerText={headerText} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Blog: all posts" />
         <div className={blogStyles.blogContent}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
