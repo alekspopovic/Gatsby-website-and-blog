@@ -8,9 +8,10 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props;
     const headerText = this.props.headerText;
+    const subHeaderText = this.props.subHeaderText;
 
     let stickyMenu = (
-      <Sticky innerZ={1} enabled={true}>
+      <Sticky innerZ={100} enabled={true}>
         <div id={layoutStyles.menu}>
           <Link className={layoutStyles.logoText} to="/">
             Aleksandar Popović
@@ -40,7 +41,10 @@ class Layout extends React.Component {
     );
 
     let header = (
-      <div className={layoutStyles.headerText}>{headerText}</div>
+      <div className={layoutStyles.headerText}>
+        <div className={layoutStyles.headerTitle}>{headerText}</div>
+        <div className={layoutStyles.headerSubTitle}>{subHeaderText}</div>
+      </div>
     )
     
     return (

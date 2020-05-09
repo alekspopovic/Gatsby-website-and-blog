@@ -11,17 +11,26 @@ header a {
 }
 
 .headerText {
-  font-size: 7.5em;
-  line-height: 1.6;
-  font-family: "Amatic SC";
-  font-weight: 400;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
-  line-height: 120px;
-  width: 100%;
-
   position: absolute;
   top: 220px;
+  font-family: "Amatic SC";
+}
+
+.headerTitle {
+  font-size: 7.5em;
+  line-height: 1.6;  
+  font-weight: 400;
+  line-height: 120px;
+}
+
+.headerSubTitle {
+  font-size: 3em;
+  line-height: 1.6;  
+  font-weight: 400;
+  line-height: 120px;
 }
 
 .logoText {

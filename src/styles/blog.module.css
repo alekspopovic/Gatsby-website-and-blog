@@ -3,15 +3,65 @@
   margin: auto;
   margin-top: 40px;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 article {
-  width: 50%;
+  width: 49%;
   display: inline-block;
-  height: 300px;
   overflow: hidden;
+  margin-top: 2em;
+  padding: 2em;
+  border: 1px solid var(--text-dark);
+
+  box-shadow: 4px 4px 5px 0 var(--shadow);
+}
+
+article header {
+  z-index: 0;
 }
 
 article:first-child{
-  width: 100%;
+  flex: 0 0 100%;
+}
+
+article header h1 {
+  margin: 0 0 1em 0;
+}
+
+header h1 a:hover {
+  color: var(--highlight);
+  box-shadow: none;
+}
+
+section {
+  margin-top: 1em;
+}
+
+.readMore {
+  text-align: center;
+}
+
+.readMore a {
+  color: var(--text);
+  border: 2px solid var(--highlight);
+  padding: 15px 50px;
+  text-transform: uppercase;
+}
+
+.readMore a:hover {
+  color: var(--text);
+  box-shadow: none;
+  background: var(--highlight);
+}
+
+small {
+  color: var(--text-dark);
+}
+
+blockquote {
+  color: var(--text);
+  border-left-color: var(--highlight);
 }

@@ -1,0 +1,32 @@
+.blogPost {
+  width: 70%;
+  margin-left: 5%;
+  padding: 2em 5em;
+}
+
+nav {
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 2em;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul a {
+  color: var(--text);
+  border: 2px solid var(--highlight);
+  padding: 15px 50px;
+  text-transform: uppercase;
+}
+
+nav ul a:hover {
+  color: var(--text);
+  box-shadow: none;
+  background: var(--highlight);
+}

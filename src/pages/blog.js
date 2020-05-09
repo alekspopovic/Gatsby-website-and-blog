@@ -22,11 +22,11 @@ class BlogIndex extends React.Component {
             return (
               <article key={node.fields.slug}>
                 <header>
-                  <h3>
+                  <h1>
                     <Link to={node.fields.slug}>
                       {title}
                     </Link>
-                  </h3>
+                  </h1>
                   <small>{node.frontmatter.date}</small>
                 </header>
                 <section>
@@ -35,6 +35,11 @@ class BlogIndex extends React.Component {
                       __html: node.frontmatter.description || node.excerpt,
                     }}
                   />
+                  <div className={blogStyles.readMore}>
+                    <Link to={node.fields.slug}>
+                        Read more
+                    </Link>
+                  </div>
                 </section>
               </article>
             )
