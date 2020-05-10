@@ -8,10 +8,12 @@ import Link from 'gatsby-link'
 class Index extends React.Component {
   render() {
     const headerText = "Aleks Popovic";
-    const { group, index, first, last } = this.props.pageContext;
+    const { group, index, first, last, postHistory } = this.props.pageContext;
     const previousUrl = index - 1 === 1 ? '/' : (index - 1).toString()
     const nextUrl = (index + 1).toString()
     const seoTitle = `Blog posts: page ${index}`;
+
+    console.log(postHistory);
 
     return (
       <Layout headerText={headerText}>

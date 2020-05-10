@@ -40,6 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
   let tags = [];
+  let postHistory = {};
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -60,6 +61,14 @@ exports.createPages = async ({ graphql, actions }) => {
     if (post.node.frontmatter.tags) {
       tags = tags.concat(post.node.frontmatter.tags)
     }
+
+    // Get post history
+
+    let title = post.node.frontmatter.title;
+    let slug = post.node.fields.slug;
+    let date = post.node.frontmatter.date;
+
+    addPostHistoryEntry(title, slug, date, postHistory);
   })
 
   createPaginatedPages({
@@ -68,7 +77,7 @@ exports.createPages = async ({ graphql, actions }) => {
     pageTemplate: 'src/templates/index.js',
     pageLength: 5,
     pathPrefix: '',
-    context: {},
+    context: {postHistory},
   })
 
   tags = removeDuplicateTags(tags);
@@ -90,6 +99,37 @@ var removeDuplicateTags = array => {
   return array.filter((elem, pos, arr) => {
     return arr.indexOf(elem) == pos
   })
+}
+
+var addPostHistoryEntry = (title, slug, postDate, postHistory) => {
+  let date = new Date(postDate);
+
+  let year = date.getFullYear();
+  let month = date.toLocaleString('default', { month: 'long' });
+  let day = date.getDate();
+
+  let postHistoryData = {
+    title: title,
+    slug: slug,
+  }
+
+  if (!postHistory[year]) {
+    postHistory[year] = {};
+  }
+
+  if (!postHistory[year][month]) {
+    postHistory[year][month] = {
+      postsOnDay: {},
+      postCount: 0,
+    };
+  }
+
+  if (!postHistory[year][month].postsOnDay[day]) {
+    postHistory[year][month].postsOnDay[day] = [];
+  }
+
+  postHistory[year][month].postsOnDay[day].push(postHistoryData);
+  postHistory[year][month].postCount++;
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
