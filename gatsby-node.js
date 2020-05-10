@@ -1,6 +1,7 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const kebabCase = require("lodash.kebabcase")
+const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -15,11 +16,14 @@ exports.createPages = async ({ graphql, actions }) => {
         ) {
           edges {
             node {
+              excerpt
               fields {
                 slug
               }
               frontmatter {
+                date(formatString: "MMMM DD, YYYY")
                 title
+                description
                 tags
               }
             }
@@ -56,6 +60,15 @@ exports.createPages = async ({ graphql, actions }) => {
     if (post.node.frontmatter.tags) {
       tags = tags.concat(post.node.frontmatter.tags)
     }
+  })
+
+  createPaginatedPages({
+    edges: posts,
+    createPage: createPage,
+    pageTemplate: 'src/templates/index.js',
+    pageLength: 5,
+    pathPrefix: '',
+    context: {},
   })
 
   tags = removeDuplicateTags(tags);

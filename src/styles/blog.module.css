@@ -43,14 +43,14 @@ section {
   text-align: center;
 }
 
-.readMore a, .allTags a {
+.readMore a, .allTags a, .paginationUrls a {
   color: var(--text);
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
 }
 
-.readMore a:hover, .allTags a:hover {
+.readMore a:hover, .allTags a:hover, .paginationUrls a:hover {
   color: var(--text);
   box-shadow: none;
   background: var(--highlight);
@@ -73,4 +73,21 @@ blockquote {
   padding: 2em;
   border: 1px solid var(--text-dark);
   box-shadow: 4px 4px 5px 0 var(--shadow);
+}
+
+.paginationUrls {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginationUrls div {
+  color: var(--text-dark);
+  border: 2px solid var(--text-dark);
+  padding: 15px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
 }
