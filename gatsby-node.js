@@ -119,16 +119,12 @@ var addPostHistoryEntry = (title, slug, postDate, postHistory) => {
 
   if (!postHistory[year][month]) {
     postHistory[year][month] = {
-      postsOnDay: {},
+      posts: [],
       postCount: 0,
     };
   }
 
-  if (!postHistory[year][month].postsOnDay[day]) {
-    postHistory[year][month].postsOnDay[day] = [];
-  }
-
-  postHistory[year][month].postsOnDay[day].push(postHistoryData);
+  postHistory[year][month].posts.push(postHistoryData);
   postHistory[year][month].postCount++;
 }
 

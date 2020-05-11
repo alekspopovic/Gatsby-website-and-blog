@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PaginationUrl from "../components/paginationUrl"
+import PostArchive from "../components/postArchive"
 import blogStyles from "../styles/blog.module.css"
 import Link from 'gatsby-link'
 
@@ -12,8 +13,6 @@ class Index extends React.Component {
     const previousUrl = index - 1 === 1 ? '/' : (index - 1).toString()
     const nextUrl = (index + 1).toString()
     const seoTitle = `Blog posts: page ${index}`;
-
-    console.log(postHistory);
 
     return (
       <Layout headerText={headerText}>
@@ -48,6 +47,7 @@ class Index extends React.Component {
           <PaginationUrl className={blogStyles.newerPosts} contentSection={blogStyles.blogContent} test={first} url={previousUrl} text="<< Newer" />
           <PaginationUrl className={blogStyles.olderPosts} contentSection={blogStyles.blogContent} test={last} url={nextUrl} text="Older >>" />
         </div>
+        <PostArchive history={postHistory} />
       </Layout> 
     )
   }

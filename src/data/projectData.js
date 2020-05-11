@@ -45,21 +45,21 @@ const data = [
         ],
     },
     {
+        "name": "Covid19 Historical Data",
+        "url": "https://aleksandarpopovic.com/covid19",
+        "imageUrl": "https://i.imgur.com/jlVsPCf.png",
+        "description": "Covid-19 Historical Data is a simple dashboard for tracking and comparing historical data for Covid-19 virus. All country data is being fetched via NovelCOVID API. All news, emergencies and outbreaks data is being fetched via World Health Organization's official website and WHO's rss feed.",
+        "tags": [
+            "frontend","HTML", "CSS", "JavaScript", "Chartist.js"
+        ],
+    },
+    {
         "name": "Milos Popovic",
         "url": "https://milosp.info/",
         "imageUrl": "https://i.imgur.com/eItxFpg.jpg",
         "description": "Milos Popovic works as a Marie Curie Post-Doctoral Fellow at the Institute of Security and Global Affairs (ISGA) at Leiden University on post-war pathways of foreign fighters. His research interests are at the intersection of civil war dynamics and postwar politics in the Balkans.",
         "tags": [
             "frontend","HTML", "CSS", "JavaScript", "jQuery", "GreenSock"
-        ],
-    },
-    {
-        "name": "Covid19 Historical Data",
-        "url": "https://aleksandarpopovic.com/covid19",
-        "imageUrl": "https://i.imgur.com/jlVsPCf.png",
-        "description": "Covid-19 Historical Data is a simple dashboard for tracking and comparing historical data for Covid-19 virus. All country data is being fetched via NovelCOVID API. All news, emergencies and outbreaks data is being fetched via World Health Organization's official website and WHO's rss feed.",
-        "tags": [
-            "frontend","HTML", "CSS", "JavaScript"
         ],
     },
     {
