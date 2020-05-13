@@ -106,7 +106,6 @@ var addPostHistoryEntry = (title, slug, postDate, postHistory) => {
 
   let year = date.getFullYear();
   let month = date.toLocaleString('default', { month: 'long' });
-  let day = date.getDate();
 
   let postHistoryData = {
     title: title,

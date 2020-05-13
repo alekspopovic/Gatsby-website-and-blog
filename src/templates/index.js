@@ -47,6 +47,7 @@ class Index extends React.Component {
           <PaginationUrl className={blogStyles.newerPosts} contentSection={blogStyles.blogContent} test={first} url={previousUrl} text="<< Newer" />
           <PaginationUrl className={blogStyles.olderPosts} contentSection={blogStyles.blogContent} test={last} url={nextUrl} text="Older >>" />
         </div>
+        
         <PostArchive history={postHistory} />
       </Layout> 
     )
