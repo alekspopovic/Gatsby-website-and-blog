@@ -2,14 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PaginationUrl from "../components/paginationUrl"
-import PostArchive from "../components/postArchive"
 import blogStyles from "../styles/blog.module.css"
 import Link from 'gatsby-link'
 
 class Index extends React.Component {
   render() {
     const headerText = "Aleks Popovic";
-    const { group, index, first, last, postHistory } = this.props.pageContext;
+    const { group, index, first, last } = this.props.pageContext;
     const previousUrl = index - 1 === 1 ? '/' : (index - 1).toString()
     const nextUrl = (index + 1).toString()
     const seoTitle = `Blog posts: page ${index}`;
