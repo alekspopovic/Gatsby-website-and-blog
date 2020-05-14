@@ -1,9 +1,9 @@
 .card {
-    height: 450px;
+    height: 500px;
     position: relative;
     width: 100%;
-    padding: 0 20px;
-    margin-bottom: 4em;
+    padding: 40px 20px 20px 20px;
+    margin-bottom: 2em;
 }
 
 .card img {
@@ -20,6 +20,11 @@
     display: inline-block;
 }
 
+.card.floatRight {
+    background: var(--shadow);
+    padding-top: 60px;
+}
+
 .floatRight .imageContainer {
     float: right;
 }
@@ -33,7 +38,7 @@
     width: 35%;
     height: 100%;
     display: inline-block;
-    margin: 0 0 0 50px;
+    margin: 40px 0 0 50px;
     position: absolute;
     top: 0;
     text-align: left;
@@ -43,7 +48,7 @@
 
 .floatRight .content {
     width: 40%;
-    margin: 0 0 0 30px;
+    margin: 60px 0 0 30px;
 }
 
 .card .tags {

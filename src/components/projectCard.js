@@ -15,13 +15,13 @@ class ProjectCard extends React.Component {
         let buttonUrl = "";
         let buttonText = "";
 
-        if (url != null) {
+        if (url) {
             buttonUrl = url;
             buttonText = "Visit Website";
-        } else if (itchIoUrl != null) {
+        } else if (itchIoUrl) {
             buttonUrl = itchIoUrl;
             buttonText = "View on Itch.io";
-        } else if (playStoreUrl != null) {
+        } else if (playStoreUrl) {
             buttonUrl = playStoreUrl;
             buttonText = "View on Android Playstore";
         }
