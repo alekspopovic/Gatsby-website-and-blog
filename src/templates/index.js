@@ -3,15 +3,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PaginationUrl from "../components/paginationUrl"
 import blogStyles from "../styles/blog.module.css"
-import Link from 'gatsby-link'
+import Link from "gatsby-link"
 
 class Index extends React.Component {
   render() {
-    const headerText = "Aleks Popovic";
-    const { group, index, first, last } = this.props.pageContext;
-    const previousUrl = index - 1 === 1 ? '/' : (index - 1).toString()
-    const nextUrl = (index + 1).toString()
-    const seoTitle = `Blog posts: page ${index}`;
+    const headerText = "Aleks Popovic"
+    const { group, index, first, last } = this.props.pageContext
+    const previousUrl =
+      index - 1 === 1 ? "/blog/" : "/blog/" + (index - 1).toString()
+    const nextUrl = "/blog/" + (index + 1).toString()
+    const seoTitle = `Blog posts: page ${index}`
 
     return (
       <Layout headerText={headerText}>
@@ -34,21 +35,31 @@ class Index extends React.Component {
                   }}
                 />
                 <div className={blogStyles.readMore}>
-                  <Link to={node.fields.slug}>
-                      Read more
-                  </Link>
+                  <Link to={node.fields.slug}>Read more</Link>
                 </div>
               </section>
             </article>
           ))}
         </div>
         <div className={blogStyles.paginationUrls}>
-          <PaginationUrl className={blogStyles.newerPosts} contentSection={blogStyles.blogContent} test={first} url={previousUrl} text="<< Newer" />
-          <PaginationUrl className={blogStyles.olderPosts} contentSection={blogStyles.blogContent} test={last} url={nextUrl} text="Older >>" />
+          <PaginationUrl
+            className={blogStyles.newerPosts}
+            contentSection={blogStyles.blogContent}
+            test={first}
+            url={previousUrl}
+            text="<< Newer"
+          />
+          <PaginationUrl
+            className={blogStyles.olderPosts}
+            contentSection={blogStyles.blogContent}
+            test={last}
+            url={nextUrl}
+            text="Older >>"
+          />
         </div>
-        
+
         {/* <PostArchive history={postHistory} /> */}
-      </Layout> 
+      </Layout>
     )
   }
 }

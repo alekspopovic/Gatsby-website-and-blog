@@ -1,7 +1,7 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const kebabCase = require("lodash.kebabcase")
-const createPaginatedPages = require('gatsby-paginate')
+const createPaginatedPages = require("gatsby-paginate")
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -39,8 +39,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
-  let tags = [];
-  let postHistory = {};
+  let tags = []
+  let postHistory = {}
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -64,23 +64,23 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Get post history
 
-    let title = post.node.frontmatter.title;
-    let slug = post.node.fields.slug;
-    let date = post.node.frontmatter.date;
+    let title = post.node.frontmatter.title
+    let slug = post.node.fields.slug
+    let date = post.node.frontmatter.date
 
-    addPostHistoryEntry(title, slug, date, postHistory);
+    addPostHistoryEntry(title, slug, date, postHistory)
   })
 
   createPaginatedPages({
     edges: posts,
     createPage: createPage,
-    pageTemplate: 'src/templates/index.js',
+    pageTemplate: "src/templates/index.js",
     pageLength: 5,
-    pathPrefix: '',
-    context: {postHistory},
+    pathPrefix: "/blog",
+    context: { postHistory },
   })
 
-  tags = removeDuplicateTags(tags);
+  tags = removeDuplicateTags(tags)
 
   const tagTemplate = path.resolve("src/templates/tags.js")
   // Make tag pages
@@ -102,10 +102,10 @@ var removeDuplicateTags = array => {
 }
 
 var addPostHistoryEntry = (title, slug, postDate, postHistory) => {
-  let date = new Date(postDate);
+  let date = new Date(postDate)
 
-  let year = date.getFullYear();
-  let month = date.toLocaleString('default', { month: 'long' });
+  let year = date.getFullYear()
+  let month = date.toLocaleString("default", { month: "long" })
 
   let postHistoryData = {
     title: title,
@@ -113,18 +113,18 @@ var addPostHistoryEntry = (title, slug, postDate, postHistory) => {
   }
 
   if (!postHistory[year]) {
-    postHistory[year] = {};
+    postHistory[year] = {}
   }
 
   if (!postHistory[year][month]) {
     postHistory[year][month] = {
       posts: [],
       postCount: 0,
-    };
+    }
   }
 
-  postHistory[year][month].posts.push(postHistoryData);
-  postHistory[year][month].postCount++;
+  postHistory[year][month].posts.push(postHistoryData)
+  postHistory[year][month].postCount++
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

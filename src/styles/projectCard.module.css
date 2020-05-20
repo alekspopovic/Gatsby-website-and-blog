@@ -1,104 +1,114 @@
 .card {
-    height: 500px;
-    position: relative;
-    width: 100%;
-    padding: 40px 20px 20px 20px;
-    margin-bottom: 2em;
+  height: 540px;
+  position: relative;
+  width: 100%;
+  padding: 40px 20px 20px 20px;
+  margin-bottom: 2em;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    filter: opacity(85%);
-    border-right: 7px solid var(--highlight);
+  width: 100%;
+  height: auto;
+  filter: opacity(85%);
+  border-right: 7px solid var(--highlight);
 }
 
 .imageContainer {
-    width:50%;
-    height: 100%;
-    overflow: hidden;
-    display: inline-block;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .card.floatRight {
-    background: var(--shadow);
-    padding-top: 60px;
+  background: var(--shadow);
+  padding-top: 60px;
 }
 
 .floatRight .imageContainer {
-    float: right;
+  float: right;
 }
 
 .floatRight img {
-    border-left: 7px solid var(--highlight);
-    border-right: none;
+  border-left: 7px solid var(--highlight);
+  border-right: none;
 }
 
 .card .content {
-    width: 35%;
-    height: 100%;
-    display: inline-block;
-    margin: 40px 0 0 50px;
-    position: absolute;
-    top: 0;
-    text-align: left;
-    color: var(--text);
-    text-align: center;
+  width: 35%;
+  height: 100%;
+  display: inline-block;
+  margin: 40px 0 0 50px;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  color: var(--text);
+  text-align: center;
 }
 
 .floatRight .content {
-    width: 40%;
-    margin: 60px 0 0 30px;
+  width: 40%;
+  margin: 60px 0 0 30px;
 }
 
 .card .tags {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card .name {
-    font-size: 2em;
-    margin-bottom: 1em;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .card span {
-    padding: 5px 15px;
-    margin: 5px;
-    font-size: 0.8em;
-    border-radius: 30px;
-    text-align: center;
-    border: 1px solid var(--highlight);
+  padding: 5px 15px;
+  margin: 5px;
+  font-size: 0.8em;
+  border-radius: 30px;
+  text-align: center;
+  border: 1px solid var(--highlight);
 }
 
 .cardButton {
-    padding-left: 40px;
-    margin-top: 60px;
+  padding-left: 40px;
+  margin-top: 60px;
 }
 
 .cardButton a {
-    color: var(--text);
-    border: 2px solid var(--highlight);
-    padding: 15px 50px;
-    text-transform: uppercase;
+  color: var(--text);
+  border: 2px solid var(--highlight);
+  padding: 15px 50px;
+  text-transform: uppercase;
 }
 
 .cardButton a:hover {
-    background-color: var(--highlight);
+  background-color: var(--highlight);
+}
+
+.googlePlayStore img {
+  border: none;
+  width: 45%;
+}
+
+.googlePlayStore:hover {
+  box-shadow: none;
 }
 
 @media only screen and (max-device-width: 426px) {
-    .card {
-        height: 455px;
-        margin: 50px 0;
-    }
+  .card {
+    height: 455px;
+    margin: 50px 0;
+  }
 
-    .card .overlay {
-        opacity: 1;
-    }
+  .card .overlay {
+    opacity: 1;
+  }
 
-    .card .cardTitle {
-        opacity: 1;
-    }
+  .card .cardTitle {
+    opacity: 1;
+  }
 }

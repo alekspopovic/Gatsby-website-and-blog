@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:wght@300;400|Montserrat&display=swap&subset=latin-ext");
 
 :root {
-  --dark-bg: #222831; 
-  --light-bg: #393e46;;
+  --dark-bg: #222831;
+  --light-bg: #393e46;
   --highlight: #fd7014;
   --text: #eeeeee;
   --text-dark: #a0a0a0;
