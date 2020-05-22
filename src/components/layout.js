@@ -5,11 +5,36 @@ import Sticky from "react-stickynode"
 import videoClip from "../assets/blue.mp4"
 
 class Layout extends React.Component {
+  switchTheme = e => {
+    const body = document.body
+    const lightThemeClass = "light"
+    const clickedClassName = layoutStyles.clicked
+
+    if (body.classList.contains(lightThemeClass)) {
+      body.classList.remove(lightThemeClass)
+      e.target.classList.remove(clickedClassName)
+      localStorage.setItem("theme", "dark")
+    } else {
+      body.classList.add(lightThemeClass)
+      e.target.classList.add(clickedClassName)
+      localStorage.setItem("theme", "light")
+    }
+  }
+
   render() {
     const { children } = this.props
     const headerText = this.props.headerText
     const subHeaderText = this.props.subHeaderText
     const logoText = "Aleks Popovic"
+
+    const theme = localStorage.getItem("theme")
+
+    let clicked = ""
+
+    if (theme === "light") {
+      document.body.classList.add(theme)
+      clicked = layoutStyles.clicked
+    }
 
     let stickyMenu = (
       <Sticky innerZ={100} enabled={true}>
@@ -29,6 +54,11 @@ class Layout extends React.Component {
           <Link activeClassName={layoutStyles.active} to="/contact">
             <div>contact</div>
           </Link>
+          <button
+            id={layoutStyles.lightMode}
+            onClick={e => this.switchTheme(e)}
+            className={clicked}
+          ></button>
         </div>
       </Sticky>
     )

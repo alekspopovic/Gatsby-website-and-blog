@@ -9,7 +9,6 @@
 .card img {
   width: 100%;
   height: auto;
-  filter: opacity(85%);
   border-right: 7px solid var(--highlight);
 }
 
@@ -21,7 +20,7 @@
 }
 
 .card.floatRight {
-  background: var(--shadow);
+  background: var(--rightCard);
   padding-top: 60px;
 }
 

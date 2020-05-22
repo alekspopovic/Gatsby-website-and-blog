@@ -7,6 +7,8 @@
   --text: #eeeeee;
   --text-dark: #a0a0a0;
   --shadow: #13171c;
+  --header: #eeeeee;
+  --rightCard: #13171c;
 }
 
 html {
@@ -17,10 +19,24 @@ html {
 body {
   margin: 0 0 55px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 1.06em;
   background-color: var(--dark-bg);
   overflow-x: hidden;
   color: var(--text);
+  font-weight: 500;
+
+  transition: background 300ms ease-in-out, color 600ms ease-in-out;
+}
+
+body.light {
+  --dark-bg: #f9f9f9;
+  --light-bg: #070606;
+  --highlight: #00909e;
+  --text: #222831;
+  --text-dark: #393e46;
+  --shadow: #cfcece;
+  --header: #eeeeee;
+  --rightCard: #00919e25;
 }
 
 h1 {
