@@ -46,7 +46,6 @@ small {
   left: 0px;
   font-family: "Source Code Pro";
   font-size: 1.3em;
-  transition: all 0.4s;
   line-height: 2.7em;
   padding: 0 15px;
   font-weight: 300;
@@ -75,11 +74,11 @@ small {
 
 #menu a {
   box-shadow: 0 0 0 var(--highlight) inset;
-  transition: all 0.4s;
+  /* transition: all 0.4s; */
 }
 
 #menu a:hover {
-  box-shadow: 0 -5px 0 var(--highlight) inset;
+  box-shadow: 0 -3px 0 0px var(--highlight) inset;
 }
 
 header #menu a {
@@ -94,7 +93,7 @@ header #menu a {
   width: 30px;
   height: 30px;
   filter: grayscale(100%);
-  margin: 0;
+  margin: 0 0 0 20px;
   padding: 0;
   border: none;
 }
@@ -163,7 +162,7 @@ video {
 }
 
 #menu .active {
-  box-shadow: 0 -5px 0 var(--highlight) inset;
+  box-shadow: 0 -3px 0 var(--highlight) inset;
 }
 
 @media only screen and (max-device-width: 426px) {
