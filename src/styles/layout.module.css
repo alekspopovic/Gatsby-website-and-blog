@@ -57,8 +57,8 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--dark-bg);
-  box-shadow: 0 0 5px var(--shadow);
+  background: var(--menu-bg);
+  box-shadow: 0 0 5px var(--menu-shadow);
 }
 
 #menu div {
@@ -80,7 +80,10 @@ small {
 
 #menu a:hover {
   box-shadow: 0 -5px 0 var(--highlight) inset;
-  color: var(--text);
+}
+
+header #menu a {
+  color: var(--text-menu);
 }
 
 #lightMode {
@@ -134,7 +137,8 @@ small {
 }
 
 .copyright {
-  background: var(--dark-bg);
+  background: var(--menu-bg);
+  color: var(--text-menu);
   text-align: center;
   font-size: 0.8em;
   position: absolute;

@@ -2,11 +2,14 @@
 
 :root {
   --dark-bg: #222831;
+  --menu-bg: #222831;
   --light-bg: #393e46;
   --highlight: #fd7014;
   --text: #eeeeee;
+  --text-menu: #eeeeee;
   --text-dark: #a0a0a0;
   --shadow: #13171c;
+  --menu-shadow: #13171c;
   --header: #eeeeee;
   --rightCard: #13171c;
 }
@@ -29,14 +32,13 @@ body {
 }
 
 body.light {
-  --dark-bg: #f9f9f9;
+  --dark-bg: #ffffff;
   --light-bg: #070606;
-  --highlight: #00909e;
-  --text: #222831;
+  --text: #000000;
   --text-dark: #393e46;
   --shadow: #cfcece;
   --header: #eeeeee;
-  --rightCard: #00919e25;
+  --rightCard: #fd711428;
 }
 
 h1 {
