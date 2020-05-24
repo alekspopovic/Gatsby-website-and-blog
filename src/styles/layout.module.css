@@ -14,7 +14,7 @@ header a {
   margin: auto;
   margin-bottom: 20px;
   position: absolute;
-  top: 220px;
+  top: 40%;
   font-family: "Source Code Pro";
   font-weight: 300;
 
@@ -30,15 +30,12 @@ small {
 
 .headerTitle {
   font-size: 5.5em;
-  line-height: 1.6;
-  line-height: 120px;
 }
 
 .headerSubTitle {
   font-size: 2em;
   line-height: 1.6;
   font-weight: 400;
-  line-height: 120px;
 }
 
 .logoText {
@@ -52,7 +49,6 @@ small {
 }
 
 #menu {
-  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,10 +139,6 @@ header #menu a {
   overflow: hidden;
   padding: 15px 0;
 }
-/* 
-video {
-  width: 100vw;
-} */
 
 video {
   min-width: 100%;
@@ -168,28 +160,48 @@ video {
   border-bottom: 3px solid var(--highlight);
 }
 
+/* small monitor */
 @media only screen and (max-device-width: 1024px) {
   video {
     height: auto;
   }
+
+  .logoText {
+    display: none;
+  }
 }
 
+/* tablet */
+@media only screen and (max-device-width: 768px) {
+}
+
+/* mobile */
 @media only screen and (max-device-width: 426px) {
-  .headerText {
-    font-size: 2.8em;
+  .headerTitle {
+    font-size: 2.2em;
+  }
+
+  .headerSubTitle {
+    font-size: 1em;
+  }
+
+  #videoContainer {
+    height: 300px;
   }
 
   #menu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    font-size: 0.7em;
+    font-weight: 400;
   }
 
   #menu div {
-    font-size: 0.7em;
-    display: inline-block;
     padding: 0;
-    font-weight: 400;
+  }
+
+  #lightMode {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
   }
 
   .logoText {

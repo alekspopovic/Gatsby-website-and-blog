@@ -49,7 +49,7 @@ class Layout extends React.Component {
             <div>projects</div>
           </Link>
           <Link activeClassName={layoutStyles.active} to="/aboutMe">
-            <div>about me</div>
+            <div>about</div>
           </Link>
           <Link activeClassName={layoutStyles.active} to="/contact">
             <div>contact</div>
