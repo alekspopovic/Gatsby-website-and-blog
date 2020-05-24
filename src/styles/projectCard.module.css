@@ -97,17 +97,41 @@
   box-shadow: none;
 }
 
+@media only screen and (max-device-width: 1024px) {
+  .card {
+    font-size: 0.7em;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .card {
+    font-size: 0.6em;
+    height: 410px;
+  }
+
+  .card .content {
+    margin: 40px 0 0 20px;
+    width: 40%;
+  }
+
+  .cardButton {
+    padding-left: 0;
+  }
+}
+
 @media only screen and (max-device-width: 426px) {
   .card {
-    height: 455px;
-    margin: 50px 0;
+    height: 400px;
   }
 
-  .card .overlay {
-    opacity: 1;
+  .imageContainer {
+    display: none;
   }
 
-  .card .cardTitle {
-    opacity: 1;
+  .card .content {
+    width: 90%;
+    margin: 0;
+    padding: 2em 0 0 0;
   }
 }

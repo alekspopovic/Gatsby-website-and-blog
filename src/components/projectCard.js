@@ -28,10 +28,10 @@ class ProjectCard extends React.Component {
       buttonText = "Visit Website"
     } else if (itchIoUrl) {
       buttonUrl = itchIoUrl
-      buttonText = "Download from Itch.io"
+      buttonText = "View on Itch.io"
     } else if (playStoreUrl) {
       buttonUrl = playStoreUrl
-      buttonText = "Download from Android Playstore"
+      buttonText = "View on Android Playstore"
     }
 
     return (

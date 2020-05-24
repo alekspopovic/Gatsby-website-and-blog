@@ -74,6 +74,7 @@ small {
 
 header #menu a {
   color: var(--text-menu);
+  border-bottom: 3px solid transparent;
 }
 
 #lightMode {
