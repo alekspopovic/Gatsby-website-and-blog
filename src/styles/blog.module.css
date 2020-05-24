@@ -15,14 +15,13 @@ article {
   margin-top: 2em;
   padding: 2em;
   border: 1px solid var(--text-dark);
-  box-shadow: 4px 4px 5px 0 var(--shadow);
 }
 
 article header {
   z-index: 0;
 }
 
-article:first-child{
+article:first-child {
   flex: 0 0 100%;
 }
 
@@ -43,14 +42,18 @@ section {
   text-align: center;
 }
 
-.readMore a, .allTags a, .paginationUrls a {
+.readMore a,
+.allTags a,
+.paginationUrls a {
   color: var(--text);
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
 }
 
-.readMore a:hover, .allTags a:hover, .paginationUrls a:hover {
+.readMore a:hover,
+.allTags a:hover,
+.paginationUrls a:hover {
   color: var(--text);
   box-shadow: none;
   background: var(--highlight);

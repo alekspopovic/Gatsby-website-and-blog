@@ -72,13 +72,8 @@ small {
   padding: 5px 10px 2px 10px;
 }
 
-#menu a {
-  box-shadow: 0 0 0 var(--highlight) inset;
-  /* transition: all 0.4s; */
-}
-
 #menu a:hover {
-  box-shadow: 0 -3px 0 0px var(--highlight) inset;
+  border-bottom: 3px solid var(--highlight);
 }
 
 header #menu a {
@@ -86,7 +81,7 @@ header #menu a {
 }
 
 #lightMode {
-  background-image: url("../assets/sun.png");
+  background-image: url("../assets/sun.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -148,21 +143,35 @@ header #menu a {
   overflow: hidden;
   padding: 15px 0;
 }
-
+/* 
 video {
   width: 100vw;
+} */
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }
 
 #videoContainer {
   height: 500px;
   overflow: hidden;
-  border-bottom: 1px solid var(--text-dark);
   box-shadow: 0 0 10px var(--shadow);
   background-color: var(--shadow);
 }
 
 #menu .active {
-  box-shadow: 0 -3px 0 var(--highlight) inset;
+  border-bottom: 3px solid var(--highlight);
+}
+
+@media only screen and (max-device-width: 1024px) {
+  video {
+    height: auto;
+  }
 }
 
 @media only screen and (max-device-width: 426px) {
