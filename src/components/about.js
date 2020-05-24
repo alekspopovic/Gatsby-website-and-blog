@@ -4,22 +4,14 @@ import aboutStyles from "../styles/about.module.css"
 
 const About = () => {
   return (
-    <div className={`${aboutStyles.sectionContent} ${aboutStyles.about}`}>
+    <div className={aboutStyles.about}>
       <p>
-        My name is Aleksandar Popović. Creating something from nothing has
-        always been my passion, and that is why I love coding, web development
-        and game design. I am currently working a full-time job as a full-stack
-        web developer, but I am also open to doing freelance work.
+        Hello! My name is Aleksandar Popović. I am a programmer, web designer
+        and indie game developer, and this is my personal website. Welcome!
       </p>
 
       <p>
-        These pages are intended as a personal website where I will showcase my
-        previous (and occasionally current) work and which I will use as a sort
-        of a public reminder on anything and everything.
-      </p>
-
-      <p>
-        If you like reading about programming, web development, and game design
+        If you like reading about programming, web design, or game development
         then check out my <Link to="/blog">BLOG</Link>, where I write about
         those and other tech-related topics.
       </p>
@@ -31,7 +23,8 @@ const About = () => {
 
       <p>
         If you want us to work together or you just want to say hi - all of my
-         contact details can be found on the <Link to="/contact">CONTACT</Link> page.
+        contact details can be found on the <Link to="/contact">CONTACT</Link>{" "}
+        page.
       </p>
     </div>
   )

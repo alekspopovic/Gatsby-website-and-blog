@@ -1,9 +1,13 @@
-.sectionContent {
+.about {
   width: 50%;
   margin: auto;
+  margin-top: 4em;
+  margin-bottom: 100px;
 }
 
-.about {
-  margin-top: 80px;
-  margin-bottom: 100px;
+@media only screen and (max-device-width: 426px) {
+  .about {
+    width: 80%;
+    margin-top: 2em;
+  }
 }
