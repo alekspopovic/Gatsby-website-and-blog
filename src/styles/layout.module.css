@@ -169,10 +169,18 @@ video {
   .logoText {
     display: none;
   }
-}
 
-/* tablet */
-@media only screen and (max-device-width: 768px) {
+  #videoContainer {
+    height: 300px;
+  }
+
+  .headerTitle {
+    font-size: 3.5em;
+  }
+
+  /* tablet */
+  @media only screen and (max-device-width: 768px) {
+  }
 }
 
 /* mobile */

@@ -1,12 +1,12 @@
 .blogPost {
-  width: 70%;
-  margin-left: 5%;
+  width: 60%;
+  margin-left: 20%;
   padding: 2em 5em;
 }
 
 nav {
-  width: 70%;
-  margin-left: 5%;
+  width: 60%;
+  margin-left: 20%;
   margin-top: 2em;
 }
 
@@ -60,4 +60,71 @@ nav ul a:hover {
 
 section {
   padding-bottom: 1em;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .blogPost {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+  }
+
+  article header h1 {
+    font-size: 2em;
+  }
+
+  .paginationUrls {
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 2em;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-device-width: 426px) {
+  article {
+    width: 100%;
+  }
+
+  .blogPost {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0.5em 1em;
+    border: none;
+  }
+
+  article header h1 {
+    font-size: 2em;
+  }
+
+  .paginationUrls {
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 2em;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+  }
 }

@@ -94,3 +94,21 @@ blockquote {
   font-weight: bold;
   opacity: 0;
 }
+
+@media only screen and (max-device-width: 426px) {
+  .blogContent {
+    margin-top: 0;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  article header h1 {
+    font-size: 2em;
+  }
+
+  .paginationUrls {
+    width: 100%;
+  }
+}

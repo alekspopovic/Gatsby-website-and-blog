@@ -47,14 +47,14 @@ class Index extends React.Component {
             contentSection={blogStyles.blogContent}
             test={first}
             url={previousUrl}
-            text="<< Newer"
+            text="Newer"
           />
           <PaginationUrl
             className={blogStyles.olderPosts}
             contentSection={blogStyles.blogContent}
             test={last}
             url={nextUrl}
-            text="Older >>"
+            text="Older"
           />
         </div>
 
