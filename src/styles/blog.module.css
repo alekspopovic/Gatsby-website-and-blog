@@ -31,7 +31,7 @@ article header h1 {
 
 header h1 a:hover {
   color: var(--highlight);
-  box-shadow: none;
+  border: none;
 }
 
 section {

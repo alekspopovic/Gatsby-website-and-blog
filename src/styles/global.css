@@ -56,5 +56,5 @@ a {
 }
 
 a:hover {
-  box-shadow: 0 -1px 0 var(--highlight) inset;
+  border-bottom: 1px solid var(--highlight);
 }
