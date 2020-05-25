@@ -23,6 +23,7 @@ nav ul a {
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 nav ul a:hover {
@@ -62,7 +63,7 @@ section {
   padding-bottom: 1em;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .blogPost {
     width: 90%;
     margin-left: 5%;
@@ -93,7 +94,7 @@ section {
   }
 }
 
-@media only screen and (max-device-width: 426px) {
+@media only screen and (max-width: 426px) {
   article {
     width: 100%;
   }

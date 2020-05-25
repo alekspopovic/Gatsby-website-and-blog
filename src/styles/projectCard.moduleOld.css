@@ -1,0 +1,149 @@
+.card {
+  /* height: 540px; */
+  position: relative;
+  width: 100%;
+  padding: 40px 20px 20px 20px;
+  margin-bottom: 2em;
+}
+
+.card img {
+  width: 100%;
+  /* height: auto; */
+  border-right: 7px solid var(--highlight);
+}
+
+.imageContainer {
+  width: 50%;
+  /* height: 100%; */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.card.floatRight {
+  background: var(--rightCard);
+  padding-top: 60px;
+}
+
+.floatRight .imageContainer {
+  /* float: right; */
+}
+
+.floatRight img {
+  border-left: 7px solid var(--highlight);
+  border-right: none;
+}
+
+.card .content {
+  width: 35%;
+  /* height: 100%; */
+  display: inline-block;
+  margin: 40px 0 0 50px;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  color: var(--text);
+  text-align: center;
+}
+
+.floatRight .content {
+  width: 40%;
+  margin: 60px 0 0 30px;
+}
+
+.card .tags {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card .name {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.card span {
+  padding: 5px 15px;
+  margin: 5px;
+  font-size: 0.8em;
+  border-radius: 30px;
+  text-align: center;
+  border: 1px solid var(--highlight);
+}
+
+.cardButton {
+  padding-left: 40px;
+  margin-top: 60px;
+}
+
+.cardButton a {
+  color: var(--text);
+  border: 2px solid var(--highlight);
+  padding: 15px 50px;
+  text-transform: uppercase;
+}
+
+.cardButton a:hover {
+  background-color: var(--highlight);
+}
+
+.googlePlayStore img {
+  border: none;
+  width: 45%;
+}
+
+.googlePlayStore:hover {
+  box-shadow: none;
+}
+
+.mobileImageContainer {
+  display: none;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .card {
+    font-size: 0.7em;
+    /* height: 450px; */
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .card {
+    font-size: 0.6em;
+    /* height: 410px; */
+  }
+
+  .card .content {
+    margin: 40px 0 0 20px;
+    width: 40%;
+  }
+
+  .cardButton {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-device-width: 426px) {
+  .card {
+    /* height: 600px; */
+  }
+
+  .imageContainer {
+    display: none;
+  }
+
+  .card .content {
+    width: 90%;
+    margin: 0;
+    padding: 2em 0 0 0;
+  }
+
+  .mobileImageContainer {
+    display: inline-block;
+  }
+
+  .mobileImageContainer img {
+    border: 3px solid var(--highlight);
+  }
+}

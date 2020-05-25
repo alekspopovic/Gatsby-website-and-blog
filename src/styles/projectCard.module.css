@@ -1,69 +1,44 @@
 .card {
-  height: 540px;
-  position: relative;
-  width: 100%;
-  padding: 40px 20px 20px 20px;
-  margin-bottom: 2em;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-right: 7px solid var(--highlight);
-}
-
-.imageContainer {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  display: inline-block;
+  display: block;
+  overflow: auto;
+  padding: 0 20%;
+  margin: auto;
+  padding-bottom: 3em;
 }
 
 .card.floatRight {
   background: var(--rightCard);
-  padding-top: 60px;
 }
 
-.floatRight .imageContainer {
-  float: right;
-}
-
-.floatRight img {
-  border-left: 7px solid var(--highlight);
-  border-right: none;
-}
-
-.card .content {
-  width: 35%;
-  height: 100%;
-  display: inline-block;
-  margin: 40px 0 0 50px;
-  position: absolute;
-  top: 0;
-  text-align: left;
-  color: var(--text);
+.name {
+  font-size: 2em;
+  margin: 1em 0;
   text-align: center;
+  font-family: "Source Code Pro";
 }
 
-.floatRight .content {
-  width: 40%;
-  margin: 60px 0 0 30px;
+.description {
+  font-size: 1.05em;
+  padding: 0 0 0 3em;
 }
 
-.card .tags {
-  margin-top: 25px;
-  margin-bottom: 25px;
+.floatRight .description {
+  padding: 0 3em 0 0;
+}
+
+.tags {
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 0 0 3em;
 }
 
-.card .name {
-  font-size: 2em;
-  margin-bottom: 1em;
+.floatRight .tags {
+  padding: 0 3em 0 0;
 }
 
-.card span {
+.tags span {
   padding: 5px 15px;
   margin: 5px;
   font-size: 0.8em;
@@ -73,8 +48,8 @@
 }
 
 .cardButton {
-  padding-left: 40px;
-  margin-top: 60px;
+  text-align: center;
+  margin-top: 1em;
 }
 
 .cardButton a {
@@ -88,50 +63,112 @@
   background-color: var(--highlight);
 }
 
-.googlePlayStore img {
-  border: none;
-  width: 45%;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.googlePlayStore:hover {
-  box-shadow: none;
+img {
+  width: 50%;
+  border: 2px solid var(--highlight);
 }
 
-@media only screen and (max-device-width: 1024px) {
+.text {
+  width: 50%;
+}
+
+.floatRight img {
+  order: 2;
+}
+
+@media only screen and (max-width: 1024px) {
   .card {
+    padding: 0 10%;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .tags {
+    margin-top: 1em;
+  }
+
+  .tags span {
     font-size: 0.7em;
-    height: 450px;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .card {
-    font-size: 0.6em;
-    height: 410px;
-  }
-
-  .card .content {
-    margin: 40px 0 0 20px;
-    width: 40%;
   }
 
   .cardButton {
-    padding-left: 0;
+    margin: 2em 0;
   }
 }
 
-@media only screen and (max-device-width: 426px) {
+@media only screen and (max-width: 768px) {
+  .text {
+    width: 100%;
+    order: 2;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .floatRight img {
+    order: 1;
+  }
+
+  .description {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .floatRight .description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .tags {
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  .floatRight .tags {
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  .cardButton {
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (max-width: 426px) {
   .card {
-    height: 400px;
+    padding: 0;
   }
 
-  .imageContainer {
-    display: none;
+  .name {
+    font-size: 1.5em;
+    padding: 0 5px;
   }
 
-  .card .content {
-    width: 90%;
-    margin: 0;
-    padding: 2em 0 0 0;
+  .description {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+
+  .floatRight .description {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+
+  .tags span {
+    font-size: 0.6em;
+  }
+
+  .cardButton a {
+    display: block;
   }
 }

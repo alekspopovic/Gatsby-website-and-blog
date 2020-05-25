@@ -36,22 +36,24 @@ class ProjectCard extends React.Component {
 
     return (
       <div className={`${projectCardStyles.card} ${floatRightClass}`}>
-        <div className={projectCardStyles.imageContainer}>
-          <img src={imageUrl} alt="" />
-        </div>
+        <div className={projectCardStyles.name}>{name}</div>
+
         <div className={projectCardStyles.content}>
-          <div className={projectCardStyles.name}>{name}</div>
-          <div className={projectCardStyles.description}>{description}</div>
-          <div className={projectCardStyles.tags}>
-            {tags.map(tag => (
-              <span key={tag}>{tag}</span>
-            ))}
+          <img src={imageUrl} alt={name} />
+          <div className={projectCardStyles.text}>
+            <div className={projectCardStyles.description}>{description}</div>
+            <div className={projectCardStyles.tags}>
+              {tags.map(tag => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
           </div>
-          <div className={projectCardStyles.cardButton}>
-            <a target="_blank" rel="noopener noreferrer" href={buttonUrl}>
-              {buttonText}
-            </a>
-          </div>
+        </div>
+
+        <div className={projectCardStyles.cardButton}>
+          <a target="_blank" rel="noopener noreferrer" href={buttonUrl}>
+            {buttonText}
+          </a>
         </div>
       </div>
     )
