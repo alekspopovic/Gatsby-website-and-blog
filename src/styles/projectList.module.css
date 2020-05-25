@@ -3,13 +3,13 @@
   /* margin: 40px 0; */
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .sectionContent {
     margin: 0 0 40px 0;
   }
 }
 
-@media only screen and (max-device-width: 426px) {
+@media only screen and (max-width: 426px) {
   .sectionContent {
     margin: 0;
   }

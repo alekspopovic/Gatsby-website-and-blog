@@ -162,7 +162,7 @@ video {
 }
 
 /* small monitor */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   video {
     height: auto;
   }
@@ -181,7 +181,7 @@ video {
 }
 
 /* mobile */
-@media only screen and (max-device-width: 426px) {
+@media only screen and (max-width: 426px) {
   .headerTitle {
     font-size: 2.2em;
   }

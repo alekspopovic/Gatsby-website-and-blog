@@ -90,14 +90,14 @@ form div {
   margin-top: 1em;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .contact {
     width: 80%;
     margin-top: 2em;
   }
 }
 
-@media only screen and (max-device-width: 426px) {
+@media only screen and (max-width: 426px) {
   .contact {
     width: 90%;
     margin: 0 0 0 5%;
