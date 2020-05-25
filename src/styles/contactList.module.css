@@ -43,7 +43,7 @@
 }
 
 input {
-  width: 50%;
+  width: 49.5%;
   margin: 5px 0;
   line-height: 3em;
 }
@@ -51,17 +51,17 @@ input {
 textarea {
   width: 100%;
   line-height: 2em;
+  margin-top: 1px;
 }
 
 button {
   color: var(--text);
   border: 2px solid var(--highlight);
-  padding: 15px 50px;
+  padding: 15px 90px;
   text-transform: uppercase;
   background: transparent;
   font-weight: 600;
   line-height: 1em;
-  margin-top: 2em;
 }
 
 button:hover {
@@ -76,4 +76,55 @@ button:focus {
 h3 {
   margin-bottom: 2em;
   line-height: 1.5em;
+}
+
+form {
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form div {
+  width: 100%;
+  margin-top: 1em;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .contact {
+    width: 80%;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-device-width: 426px) {
+  .contact {
+    width: 90%;
+    margin: 0 0 0 5%;
+  }
+
+  .contact h3 {
+    font-size: 1em;
+    margin-top: 2em;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    margin-top: 5px;
+  }
+
+  form {
+    font-size: 0.9em;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .social {
+    margin-bottom: 10px;
+  }
 }

@@ -178,10 +178,6 @@ video {
   .headerTitle {
     font-size: 3.5em;
   }
-
-  /* tablet */
-  @media only screen and (max-device-width: 768px) {
-  }
 }
 
 /* mobile */
@@ -195,7 +191,7 @@ video {
   }
 
   #videoContainer {
-    height: 300px;
+    height: 250px;
   }
 
   #menu {
