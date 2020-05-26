@@ -144,7 +144,7 @@ header #menu a {
 video {
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  max-width: 100%;
   z-index: -100;
   background-size: cover;
   overflow: hidden;
@@ -177,6 +177,13 @@ video {
 
   .headerTitle {
     font-size: 3.5em;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  video {
+    max-width: 140%;
   }
 }
 

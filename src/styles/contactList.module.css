@@ -73,9 +73,10 @@ button:focus {
   background: var(--highlight);
 }
 
-h3 {
+.contact h3 {
   margin-bottom: 2em;
   line-height: 1.5em;
+  font-weight: 400;
 }
 
 form {
