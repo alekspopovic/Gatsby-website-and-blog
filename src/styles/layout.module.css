@@ -10,14 +10,13 @@ header a {
 }
 
 .headerText {
-  width: 100%;
+  width: 80%;
   margin: auto;
-  margin-bottom: 20px;
   position: absolute;
-  top: 40%;
+  top: 60%;
+  left: 50%;
   font-family: "Source Code Pro";
-  font-weight: 300;
-
+  transform: translate(-50%, -50%);
   color: var(--header);
 }
 
@@ -29,7 +28,7 @@ small {
 }
 
 .headerTitle {
-  font-size: 5.5em;
+  font-size: 4em;
 }
 
 .headerSubTitle {
@@ -148,13 +147,15 @@ video {
   z-index: -100;
   background-size: cover;
   overflow: hidden;
+
+  opacity: 0.55;
 }
 
 #videoContainer {
   height: 500px;
   overflow: hidden;
   box-shadow: 0 0 10px var(--shadow);
-  background-color: var(--shadow);
+  background-color: var(--menu-shadow);
 }
 
 #menu .active {
