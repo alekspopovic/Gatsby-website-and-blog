@@ -10,10 +10,13 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const { previous, next } = this.props.pageContext
-    const tags = post.frontmatter.tags || [];
+    const tags = post.frontmatter.tags || []
 
     return (
-      <Layout headerText={post.frontmatter.title} subHeaderText={post.frontmatter.date}>
+      <Layout
+        headerText={post.frontmatter.title}
+        subHeaderText={post.frontmatter.date}
+      >
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -25,9 +28,7 @@ class BlogPostTemplate extends React.Component {
             <ul>
               {tags.map(tag => (
                 <Link key={kebabCase(tag)} to={`/tags/${kebabCase(tag)}`}>
-                  <li>
-                    {tag}
-                  </li>
+                  <li>{tag}</li>
                 </Link>
               ))}
             </ul>

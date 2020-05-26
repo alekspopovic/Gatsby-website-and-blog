@@ -68,7 +68,7 @@ exports.createPages = async ({ graphql, actions }) => {
     let slug = post.node.fields.slug
     let date = post.node.frontmatter.date
 
-    addPostHistoryEntry(title, slug, date, postHistory)
+    // addPostHistoryEntry(title, slug, date, postHistory)
   })
 
   createPaginatedPages({
@@ -101,31 +101,31 @@ var removeDuplicateTags = array => {
   })
 }
 
-var addPostHistoryEntry = (title, slug, postDate, postHistory) => {
-  let date = new Date(postDate)
+// var addPostHistoryEntry = (title, slug, postDate, postHistory) => {
+//   let date = new Date(postDate)
 
-  let year = date.getFullYear()
-  let month = date.toLocaleString("default", { month: "long" })
+//   let year = date.getFullYear()
+//   let month = date.toLocaleString("default", { month: "long" })
 
-  let postHistoryData = {
-    title: title,
-    slug: slug,
-  }
+//   let postHistoryData = {
+//     title: title,
+//     slug: slug,
+//   }
 
-  if (!postHistory[year]) {
-    postHistory[year] = {}
-  }
+//   if (!postHistory[year]) {
+//     postHistory[year] = {}
+//   }
 
-  if (!postHistory[year][month]) {
-    postHistory[year][month] = {
-      posts: [],
-      postCount: 0,
-    }
-  }
+//   if (!postHistory[year][month]) {
+//     postHistory[year][month] = {
+//       posts: [],
+//       postCount: 0,
+//     }
+//   }
 
-  postHistory[year][month].posts.push(postHistoryData)
-  postHistory[year][month].postCount++
-}
+//   postHistory[year][month].posts.push(postHistoryData)
+//   postHistory[year][month].postCount++
+// }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
