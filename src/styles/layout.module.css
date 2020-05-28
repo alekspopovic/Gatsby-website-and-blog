@@ -15,16 +15,18 @@ header a {
   position: absolute;
   top: 60%;
   left: 50%;
-  font-family: "Source Code Pro";
+  font-family: "Oswald";
   transform: translate(-50%, -50%);
   color: var(--header);
+  font-weight: 300;
+  letter-spacing: 8px;
 }
 
 h1,
 h2,
 h3,
 small {
-  font-family: "Source Code Pro";
+  font-family: "Oswald";
 }
 
 .headerTitle {
@@ -40,11 +42,22 @@ small {
 .logoText {
   position: absolute;
   left: 0px;
-  font-family: "Source Code Pro";
+  top: 2px;
+  font-family: "Oswald";
   font-size: 1.3em;
   line-height: 2.7em;
   padding: 0 15px;
   font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.logoText img {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  margin-right: 2px;
+  position: relative;
+  top: 8px;
 }
 
 #menu {
@@ -56,8 +69,9 @@ small {
 }
 
 #menu div {
+  font-family: "Oswald", sans-serif;
   flex-basis: auto;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 0.8em;
   cursor: pointer;
   text-transform: uppercase;

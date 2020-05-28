@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import Sticky from "react-stickynode"
 import videoClip from "../assets/blue.mp4"
+import icon from "../assets/icon.svg"
 
 class Layout extends React.Component {
   switchTheme = e => {
@@ -25,7 +26,6 @@ class Layout extends React.Component {
     const { children } = this.props
     const headerText = this.props.headerText
     const subHeaderText = this.props.subHeaderText
-    const logoText = "Aleks Popovic"
 
     const theme = localStorage.getItem("theme")
 
@@ -40,7 +40,7 @@ class Layout extends React.Component {
       <Sticky innerZ={100} enabled={true}>
         <div id={layoutStyles.menu}>
           <Link className={layoutStyles.logoText} to="/blog">
-            {logoText}
+            <img src={icon} alt="icon"></img>leks Popovic
           </Link>
           <Link activeClassName={layoutStyles.active} to="/blog">
             <div>blog</div>

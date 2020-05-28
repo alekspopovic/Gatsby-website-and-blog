@@ -7,7 +7,7 @@ tags:
   - gatsby
 ---
 
-```javascript
+```jsx
 class ProjectCard extends React.Component {
   render() {
     const {

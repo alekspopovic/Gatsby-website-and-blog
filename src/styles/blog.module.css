@@ -1,5 +1,5 @@
 .blogContent {
-  width: 90%;
+  width: 75%;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 2em;
@@ -93,6 +93,12 @@ blockquote {
   text-transform: uppercase;
   font-weight: bold;
   opacity: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .blogContent {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 768px) {

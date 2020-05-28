@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:wght@300;400|Montserrat&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap");
 
 :root {
   --dark-bg: #222831;
@@ -21,12 +21,12 @@ html {
 
 body {
   margin: 0 0 55px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.06em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
   background-color: var(--dark-bg);
   overflow-x: hidden;
   color: var(--text);
-  font-weight: 500;
+  font-weight: 400;
 
   transition: background 300ms ease-in-out, color 600ms ease-in-out;
 }
@@ -39,6 +39,7 @@ body.light {
   --shadow: #cfcece;
   --header: #eeeeee;
   --rightCard: #fd711428;
+  --lighImageBorder: #fd711428;
 }
 
 h1 {
@@ -50,7 +51,7 @@ h1 {
 
 a {
   color: var(--highlight);
-  font-weight: 600;
+  font-weight: 400;
   box-shadow: 0 0 0 var(--highlight) inset;
   padding: 0 3px;
 }

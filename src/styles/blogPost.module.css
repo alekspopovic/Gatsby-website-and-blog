@@ -4,6 +4,10 @@
   padding: 2em 5em;
 }
 
+blockquote {
+  font-size: 1em;
+}
+
 nav {
   width: 60%;
   margin-left: 20%;
@@ -43,7 +47,8 @@ nav ul a:hover {
 .tags ul a {
   padding: 5px 15px;
   margin: 5px;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 400;
   border-radius: 30px;
   text-align: center;
   border: 1px solid var(--highlight);
