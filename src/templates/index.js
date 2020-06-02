@@ -15,7 +15,7 @@ class Index extends React.Component {
     const seoTitle = `Blog posts: page ${index}`
 
     return (
-      <Layout headerText={headerText}>
+      <Layout headerText={headerText} background={true}>
         <SEO title={seoTitle} />
         <div id="content" className={blogStyles.blogContent}>
           {group.map(({ node }) => (

@@ -56,6 +56,8 @@
 .cardButton {
   text-align: center;
   margin-top: 1em;
+  font-family: "Oswald";
+  letter-spacing: 2px;
 }
 
 .cardButton a {
@@ -63,6 +65,7 @@
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
+  background: var(--dark-bg);
 }
 
 .cardButton a:hover {

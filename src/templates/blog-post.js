@@ -12,10 +12,30 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const tags = post.frontmatter.tags || []
 
+    let postNavigation
+
+    if (previous || next) {
+      postNavigation = (
+        <div className={blogPostStyles.postNavigation}>
+          {previous && (
+            <Link to={previous.fields.slug} rel="prev">
+              ← {previous.frontmatter.title}
+            </Link>
+          )}
+          {next && (
+            <Link to={next.fields.slug} rel="next">
+              {next.frontmatter.title} →
+            </Link>
+          )}
+        </div>
+      )
+    }
+
     return (
       <Layout
         headerText={post.frontmatter.title}
         subHeaderText={post.frontmatter.date}
+        background={true}
       >
         <SEO
           title={post.frontmatter.title}
@@ -34,25 +54,7 @@ class BlogPostTemplate extends React.Component {
             </ul>
           </div>
         </article>
-
-        <nav>
-          <ul>
-            <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
+        {postNavigation}
       </Layout>
     )
   }

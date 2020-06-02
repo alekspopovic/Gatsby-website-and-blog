@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap");
 
 :root {
-  --dark-bg: #222831;
-  --menu-bg: #222831;
+  --dark-bg: #0c2233;
+  --menu-bg: var(--dark-bg);
   --light-bg: #393e46;
   --highlight: #fd7014;
   --text: #eeeeee;
@@ -11,7 +11,8 @@
   --shadow: #13171c;
   --menu-shadow: #13171c;
   --header: #eeeeee;
-  --rightCard: #13171c;
+  --rightCard: #061724;
+  --blogPostBackground: var(--rightCard);
 }
 
 html {
@@ -31,6 +32,10 @@ body {
   transition: background 300ms ease-in-out, color 600ms ease-in-out;
 }
 
+main {
+  padding-bottom: 10px;
+}
+
 body.light {
   --dark-bg: #ffffff;
   --light-bg: #070606;
@@ -38,15 +43,16 @@ body.light {
   --text-dark: #393e46;
   --shadow: #cfcece;
   --header: #eeeeee;
-  --rightCard: #fd711428;
-  --lighImageBorder: #fd711428;
+  --rightCard: #c2f0fc;
+  --blogPostBackground: var(--rightCard);
+  --lighImageBorder: var(--blogPostBackground);
 }
 
 h1 {
   font-size: 2em;
   text-align: center;
   margin: 50px 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 a {

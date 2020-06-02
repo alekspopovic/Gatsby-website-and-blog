@@ -15,7 +15,6 @@
   border: 2px solid var(--text-dark);
   padding: 15px 50px;
   text-transform: uppercase;
-  font-weight: 600;
   margin: auto;
   margin-top: 1em;
   font-size: 1em;
@@ -38,7 +37,6 @@
   height: 30px;
   width: 30px;
   font-size: 0.8em;
-  padding-top: 2px;
 }
 
 .tags a:hover span {

@@ -8,13 +8,9 @@ blockquote {
   font-size: 1em;
 }
 
-nav {
+.postNavigation {
   width: 60%;
-  margin-left: 20%;
-  margin-top: 2em;
-}
-
-nav ul {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -22,15 +18,18 @@ nav ul {
   padding: 0;
 }
 
-nav ul a {
+.postNavigation a {
   color: var(--text);
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
   display: inline-block;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  background-color: var(--dark-bg);
 }
 
-nav ul a:hover {
+.postNavigation a:hover {
   color: var(--text);
   box-shadow: none;
   background: var(--highlight);
@@ -68,7 +67,23 @@ section {
   padding-bottom: 1em;
 }
 
-@media only screen and (max-width: 768px) {
+article section ol,
+article section ul {
+  padding-left: 35px;
+}
+
+article section h1,
+article section h2,
+article section h3 {
+  margin: 1.75em 0 1em 0;
+}
+
+article section h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
   .blogPost {
     width: 90%;
     margin-left: 5%;
@@ -96,6 +111,10 @@ section {
     width: 100%;
     margin: 0;
     margin-top: 2em;
+  }
+
+  .postNavigation {
+    width: 90%;
   }
 }
 
@@ -125,7 +144,12 @@ section {
   }
 
   li {
-    margin-bottom: 2em;
+    margin-bottom: 0;
+  }
+
+  article section ol,
+  article section ul {
+    padding-left: 5px;
   }
 
   nav {

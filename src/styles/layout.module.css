@@ -1,3 +1,12 @@
+.darkBackground {
+  background-color: var(--blogPostBackground);
+}
+
+.darkBackground article {
+  background-color: var(--dark-bg);
+  border: none;
+}
+
 header {
   text-align: center;
   position: relative;
@@ -9,7 +18,7 @@ header a {
   box-shadow: none;
 }
 
-.headerText {
+header .headerText {
   width: 80%;
   margin: auto;
   position: absolute;
@@ -31,12 +40,14 @@ small {
 
 .headerTitle {
   font-size: 4em;
+  margin: 0;
 }
 
 .headerSubTitle {
   font-size: 2em;
   line-height: 1.6;
   font-weight: 400;
+  margin-top: 1em;
 }
 
 .logoText {

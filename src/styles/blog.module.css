@@ -1,8 +1,6 @@
 .blogContent {
   width: 75%;
   margin: auto;
-  margin-top: 40px;
-  margin-bottom: 2em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -40,6 +38,8 @@ section {
 
 .readMore {
   text-align: center;
+  font-family: "Oswald";
+  letter-spacing: 2px;
 }
 
 .readMore a,
@@ -72,18 +72,17 @@ blockquote {
   text-align: center;
   width: 90%;
   margin: auto;
-  margin-bottom: 40px;
   padding: 2em;
-  border: 1px solid var(--text-dark);
-  box-shadow: 4px 4px 5px 0 var(--shadow);
 }
 
 .paginationUrls {
-  width: 90%;
+  width: 75%;
   margin: auto;
-  margin-bottom: 40px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  font-family: "Oswald";
+  letter-spacing: 2px;
 }
 
 .paginationUrls div {
@@ -93,6 +92,10 @@ blockquote {
   text-transform: uppercase;
   font-weight: bold;
   opacity: 0;
+}
+
+.paginationUrls a {
+  background: var(--dark-bg);
 }
 
 @media only screen and (max-width: 1024px) {

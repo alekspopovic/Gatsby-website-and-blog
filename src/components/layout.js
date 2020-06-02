@@ -24,8 +24,12 @@ class Layout extends React.Component {
 
   render() {
     const { children } = this.props
-    const headerText = this.props.headerText
-    const subHeaderText = this.props.subHeaderText
+    const { headerText, subHeaderText, background } = this.props
+    let mainClass
+
+    if (background) {
+      mainClass = layoutStyles.darkBackground
+    }
 
     const theme = localStorage.getItem("theme")
 
@@ -73,8 +77,8 @@ class Layout extends React.Component {
 
     let header = (
       <div className={layoutStyles.headerText}>
-        <div className={layoutStyles.headerTitle}>{headerText}</div>
-        <div className={layoutStyles.headerSubTitle}>{subHeaderText}</div>
+        <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
+        <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
       </div>
     )
 
@@ -85,7 +89,7 @@ class Layout extends React.Component {
           {video}
           {header}
         </header>
-        <main>{children}</main>
+        <main className={mainClass}>{children}</main>
         <footer className={layoutStyles.copyright}>
           © {new Date().getFullYear()}, Built with{" "}
           <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popovic
