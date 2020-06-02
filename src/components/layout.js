@@ -22,6 +22,8 @@ class Layout extends React.Component {
     }
   }
 
+  componentDidMount() {}
+
   render() {
     const { children } = this.props
     const { headerText, subHeaderText, background } = this.props
@@ -31,7 +33,9 @@ class Layout extends React.Component {
       mainClass = layoutStyles.darkBackground
     }
 
-    const theme = localStorage.getItem("theme")
+    const windowGlobal = typeof window !== "undefined" && window
+
+    const theme = windowGlobal.localStorage.getItem("theme")
 
     let clicked = ""
 
