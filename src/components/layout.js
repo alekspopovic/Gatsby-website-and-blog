@@ -27,7 +27,7 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props
     const { headerText, subHeaderText, background } = this.props
-    let mainClass
+    let mainClass, theme
 
     if (background) {
       mainClass = layoutStyles.darkBackground
@@ -35,7 +35,9 @@ class Layout extends React.Component {
 
     const windowGlobal = typeof window !== "undefined" && window
 
-    const theme = windowGlobal.localStorage.getItem("theme")
+    if (windowGlobal.localStorage) {
+      theme = windowGlobal.localStorage.getItem("theme")
+    }
 
     let clicked = ""
 
