@@ -114,5 +114,11 @@ module.exports = {
         display: `standalone`,
       },
     },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/blog/`, `/projects/`, `/aboutMe/`, `/contact/`],
+      },
+    },
   ],
 }
