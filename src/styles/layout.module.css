@@ -21,6 +21,7 @@ header a {
 header .headerText {
   width: 80%;
   margin: auto;
+  margin-top: 15px;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -39,8 +40,9 @@ small {
 }
 
 .headerTitle {
-  font-size: 4em;
+  font-size: 4.2em;
   margin: 0;
+  font-weight: 400;
 }
 
 .headerSubTitle {

@@ -86,13 +86,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Aleks Popovic - personal website and blog`,
+        short_name: `Aleks Popovic`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#0c2233`,
         theme_color: `#0c2233`,
         display: `minimal-ui`,
-        icon: `src/assets/icon.svg`,
+        icon: `public/icons/icon-512x512.png`,
+        // icon: `src/assets/icon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -102,8 +103,16 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Aleks Popovic - personal website and blog`,
+        short_name: `Aleks Popovic`,
+        start_url: `/`,
+        background_color: `#0c2233`,
+        theme_color: `#0c2233`,
+        display: `standalone`,
+      },
+    },
   ],
 }
