@@ -43,7 +43,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: metaImage,
+          content: { metaImage },
         },
         {
           property: `og:title`,
