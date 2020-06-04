@@ -12,7 +12,7 @@ class Index extends React.Component {
     const previousUrl =
       index - 1 === 1 ? "/blog/" : "/blog/" + (index - 1).toString()
     const nextUrl = "/blog/" + (index + 1).toString()
-    const seoTitle = `Blog posts: page ${index}`
+    const seoTitle = index === 1 ? `Blog` : `Blog: page ${index}`
 
     return (
       <Layout headerText={headerText} background={true}>

@@ -7,6 +7,7 @@ module.exports = {
     social: {
       twitter: `alekswritescode`,
     },
+    image: "/src/assets/header.png",
   },
   plugins: [
     {
@@ -92,8 +93,7 @@ module.exports = {
         background_color: `#0c2233`,
         theme_color: `#0c2233`,
         display: `minimal-ui`,
-        icon: `public/icons/icon-512x512.png`,
-        // icon: `src/assets/icon.svg`,
+        icon: `src/assets/icon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
