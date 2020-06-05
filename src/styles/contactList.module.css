@@ -28,24 +28,6 @@
   font-weight: 400;
 }
 
-.social {
-  margin-top: 50px;
-  font-size: 2.5em;
-}
-
-.social a {
-  padding: 0 15px;
-  transition: scale 0.3s;
-}
-
-.social a:hover {
-  border: none;
-}
-
-.social a:hover i {
-  transform: scale(1.2);
-}
-
 .formControl {
   text-align: center;
 }
@@ -132,9 +114,5 @@ form div {
 
   button {
     width: 100%;
-  }
-
-  .social {
-    margin-bottom: 10px;
   }
 }
