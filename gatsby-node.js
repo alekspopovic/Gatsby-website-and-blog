@@ -64,9 +64,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Get post history
 
-    let title = post.node.frontmatter.title
-    let slug = post.node.fields.slug
-    let date = post.node.frontmatter.date
+    // let title = post.node.frontmatter.title
+    // let slug = post.node.fields.slug
+    // let date = post.node.frontmatter.date
 
     // addPostHistoryEntry(title, slug, date, postHistory)
   })
@@ -76,7 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage: createPage,
     pageTemplate: "src/templates/index.js",
     pageLength: 5,
-    pathPrefix: "/blog",
+    pathPrefix: "/",
     context: { postHistory },
   })
 

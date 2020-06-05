@@ -50,10 +50,10 @@ class Layout extends React.Component {
     let stickyMenu = (
       <Sticky innerZ={100} enabled={true}>
         <div id={layoutStyles.menu}>
-          <Link className={layoutStyles.logoText} to="/blog">
+          <Link className={layoutStyles.logoText} to="/">
             <img src={icon} alt="icon"></img>leks Popovic
           </Link>
-          <Link activeClassName={layoutStyles.active} to="/blog">
+          <Link activeClassName={layoutStyles.active} to="/">
             <div>blog</div>
           </Link>
           <Link activeClassName={layoutStyles.active} to="/projects">
