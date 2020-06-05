@@ -1,0 +1,19 @@
+.footer {
+  background: var(--menu-bg);
+  color: var(--text-menu);
+  text-align: center;
+  font-size: 0.8em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+@media only screen and (max-width: 426px) {
+  .footer {
+    font-size: 0.7em;
+  }
+}

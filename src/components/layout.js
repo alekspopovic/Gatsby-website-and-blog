@@ -4,6 +4,7 @@ import layoutStyles from "../styles/layout.module.css"
 import Sticky from "react-stickynode"
 import videoClip from "../assets/blue.mp4"
 import icon from "../assets/icon.svg"
+import Footer from "./footer"
 
 class Layout extends React.Component {
   switchTheme = e => {
@@ -96,10 +97,7 @@ class Layout extends React.Component {
           {header}
         </header>
         <main className={mainClass}>{children}</main>
-        <footer className={layoutStyles.copyright}>
-          © {new Date().getFullYear()}, Built with{" "}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popovic
-        </footer>
+        <Footer />
       </div>
     )
   }

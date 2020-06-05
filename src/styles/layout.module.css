@@ -153,20 +153,6 @@ header #menu a {
   border: none;
 }
 
-.copyright {
-  background: var(--menu-bg);
-  color: var(--text-menu);
-  text-align: center;
-  font-size: 0.8em;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 55px;
-  width: 100%;
-  overflow: hidden;
-  padding: 15px 0;
-}
-
 video {
   min-width: 100%;
   min-height: 100%;
@@ -246,9 +232,5 @@ video {
 
   .logoText {
     display: none;
-  }
-
-  .copyright {
-    font-size: 0.7em;
   }
 }
