@@ -3,12 +3,10 @@
 :root {
   --dark-bg: #0c2233;
   --menu-bg: var(--dark-bg);
-  --light-bg: #393e46;
   --highlight: #fd7014;
+  --highlight-secondary: #96bd5b;
   --text: #eeeeee;
   --text-menu: #eeeeee;
-  --text-dark: #a0a0a0;
-  --shadow: #13171c;
   --menu-shadow: #13171c;
   --header: #eeeeee;
   --rightCard: #061724;
@@ -39,14 +37,12 @@ main {
 
 body.light {
   --dark-bg: #ffffff;
-  --light-bg: #070606;
   --text: #000000;
-  --text-dark: #393e46;
-  --shadow: #cfcece;
   --header: #eeeeee;
   --rightCard: #c2f0fc;
   --blogPostBackground: var(--rightCard);
   --lighImageBorder: var(--blogPostBackground);
+  --highlight-secondary: #c3e88d;
 }
 
 h1 {

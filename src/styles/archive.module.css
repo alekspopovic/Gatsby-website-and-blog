@@ -1,70 +1,70 @@
 .archive {
-    width: 90%;
-    margin: auto;
-    /* margin-left: 5%; */
-    margin-bottom: 40px;
+  width: 90%;
+  margin: auto;
+  /* margin-left: 5%; */
+  margin-bottom: 40px;
 }
 
 .archive h3 {
-    margin-bottom: 20px;
-    text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .accordion {
-    border: 1px solid var(--text-dark);
-    border-top: none;
-    box-shadow: 4px 4px 5px 0 var(--shadow);
+  border: 1px solid var(--text-dark);
+  border-top: none;
 }
 
 .accordionButton {
-    cursor: pointer;
-    padding: 18px;
-    text-align: left;
-    border-top: 1px solid var(--text-dark);
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border-top: 1px solid var(--text-dark);
 }
 
 .innerAccordionButton {
-    cursor: pointer;
-    padding: 18px;
-    text-align: left;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
 }
 
-.accordionButton:before, .innerAccordionButton:before {
-    display: inline-block;
-    content: '';
-    height: 10px;
-    width: 10px;
-    margin-right: 12px;
-    border-bottom: 2px solid var(--text-dark);
-    border-right: 2px solid var(--text-dark);
-    transform: rotate(-45deg);
+.accordionButton:before,
+.innerAccordionButton:before {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid var(--text-dark);
+  border-right: 2px solid var(--text-dark);
+  transform: rotate(-45deg);
 
-    transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.accordionButton[aria-expanded='true']::before, 
-.accordionButton[aria-selected='true']::before,
-.innerAccordionButton[aria-expanded='true']::before,
-.innerAccordionButton[aria-selected='true']::before {
-    transform: rotate(45deg);
+.accordionButton[aria-expanded="true"]::before,
+.accordionButton[aria-selected="true"]::before,
+.innerAccordionButton[aria-expanded="true"]::before,
+.innerAccordionButton[aria-selected="true"]::before {
+  transform: rotate(45deg);
 }
 
 .innerAccordionButton span {
-    border: 1px solid var(--text-dark);
-    border-radius: 50%;
-    font-size: 0.8em;
-    padding: 5px 10px;
-    margin-left: 8px;
+  border: 1px solid var(--text-dark);
+  border-radius: 50%;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  margin-left: 8px;
 }
 
 .accordionPanel {
-    padding: 20px;
+  padding: 20px;
 }
 
 .innerAccordionItem {
-    border: 1px solid var(--text-dark);
+  border: 1px solid var(--text-dark);
 }
 
 .innerAccordion {
-    border: none;
+  border: none;
 }

@@ -26,7 +26,7 @@ class Index extends React.Component {
                     {node.frontmatter.title || node.fields.slug}
                   </Link>
                 </h1>
-                <small>{node.frontmatter.date}</small>
+                <div className={blogStyles.date}>{node.frontmatter.date}</div>
               </header>
               <section>
                 <p

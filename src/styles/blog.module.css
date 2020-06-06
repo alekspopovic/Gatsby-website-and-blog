@@ -59,8 +59,12 @@ section {
   background: var(--highlight);
 }
 
-small {
-  color: var(--text-dark);
+.date {
+  color: var(--menu-bg);
+  background-color: var(--highlight-secondary);
+  font-family: "Oswald";
+  display: inline;
+  padding: 0 10px;
 }
 
 blockquote {

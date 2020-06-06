@@ -167,8 +167,7 @@ video {
 #videoContainer {
   height: 500px;
   overflow: hidden;
-  box-shadow: 0 0 10px var(--shadow);
-  background-color: var(--menu-shadow);
+  background-color: var(--menu-bg);
 }
 
 #menu .active {
