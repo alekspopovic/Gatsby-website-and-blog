@@ -10,7 +10,7 @@ article {
   width: 49%;
   display: inline-block;
   overflow: hidden;
-  margin-top: 2em;
+  margin-top: 1em;
   padding: 2em;
   border: 1px solid var(--text-dark);
 }

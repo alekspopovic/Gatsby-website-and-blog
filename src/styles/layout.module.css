@@ -18,8 +18,8 @@ header a {
   box-shadow: none;
 }
 
-header .headerText {
-  width: 80%;
+.headerTextForVideo {
+  width: 70%;
   margin: auto;
   margin-top: 15px;
   position: absolute;
@@ -32,6 +32,20 @@ header .headerText {
   letter-spacing: 8px;
 }
 
+.headerTextForImage {
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-family: "Oswald";
+  transform: translate(-50%, -50%);
+  color: var(--header);
+  font-weight: 300;
+  text-align: left;
+}
+
 h1,
 h2,
 h3,
@@ -39,17 +53,40 @@ small {
   font-family: "Oswald";
 }
 
-.headerTitle {
+.headerTextForVideo .headerTitle {
   font-size: 4.2em;
   margin: 0;
   font-weight: 400;
 }
 
-.headerSubTitle {
-  font-size: 2em;
+.headerTextForImage .headerTitle {
+  font-size: 4.2em;
+  margin: 0;
+  font-weight: 400;
+
+  background-color: var(--menu-bg);
+  display: inline;
+  text-align: left;
+  line-height: 1.3em;
+  letter-spacing: 8px;
+}
+
+.headerTextForVideo .headerSubTitle {
   line-height: 1.6;
   font-weight: 400;
   margin-top: 1em;
+}
+
+.headerTextForImage .headerSubTitle {
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: var(--highlight-secondary);
+  color: var(--menu-bg);
+  margin-top: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .logoText {
@@ -160,22 +197,42 @@ video {
   z-index: -100;
   background-size: cover;
   overflow: hidden;
-
-  opacity: 0.75;
 }
 
-#videoContainer {
+#headerBackgroundContainer {
   height: 500px;
   overflow: hidden;
-  background-color: var(--menu-bg);
+  background-color: var(--blogPostBackground);
+}
+
+#headerBackgroundContainer img {
+  max-width: 60%;
 }
 
 #menu .active {
   border-bottom: 3px solid var(--highlight);
 }
 
+@media only screen and (max-width: 1366px) {
+  #headerBackgroundContainer {
+    height: 380px;
+  }
+
+  .headerTextForImage .headerTitle {
+    font-size: 2.5em;
+  }
+
+  .headerTextForImage .headerSubTitle {
+    font-size: 0.8em;
+  }
+}
+
 /* small monitor */
 @media only screen and (max-width: 1024px) {
+  #headerBackgroundContainer img {
+    max-width: 90%;
+  }
+
   video {
     height: auto;
   }
@@ -183,18 +240,14 @@ video {
   .logoText {
     display: none;
   }
-
-  #videoContainer {
-    height: 300px;
-  }
-
-  .headerTitle {
-    font-size: 3.5em;
-  }
 }
 
 /* tablet */
 @media only screen and (max-width: 768px) {
+  .headerTextForImage {
+    width: 70%;
+  }
+
   video {
     max-width: 140%;
   }
@@ -202,16 +255,32 @@ video {
 
 /* mobile */
 @media only screen and (max-width: 426px) {
-  .headerTitle {
-    font-size: 2.2em;
+  article {
+    font-size: 0.8em;
   }
 
-  .headerSubTitle {
-    font-size: 1em;
+  .headerTextForImage .headerTitle {
+    font-size: 1.5em;
   }
 
-  #videoContainer {
-    height: 250px;
+  .headerTextForImage .headerSubTitle {
+    font-size: 0.6em;
+  }
+
+  .headerTextForVideo .headerTitle {
+    font-size: 2.5em;
+  }
+
+  .headerTextForVideo .headerSubTitle {
+    font-size: 0.6em;
+  }
+
+  #headerBackgroundContainer {
+    height: 200px;
+  }
+
+  #headerBackgroundContainer img {
+    max-width: 100%;
   }
 
   #menu {
@@ -231,5 +300,19 @@ video {
 
   .logoText {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #headerBackgroundContainer {
+    height: 180px;
+  }
+
+  .headerTextForImage .headerTitle {
+    font-size: 1.25em;
+  }
+
+  .headerTextForImage .headerSubTitle {
+    font-size: 0.6em;
   }
 }

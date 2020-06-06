@@ -27,7 +27,7 @@ class Layout extends React.Component {
 
   render() {
     const { children } = this.props
-    const { headerText, subHeaderText, background } = this.props
+    const { headerText, subHeaderText, background, imageHeader } = this.props
     let mainClass, theme
 
     if (background) {
@@ -74,18 +74,38 @@ class Layout extends React.Component {
       </Sticky>
     )
 
-    let video = (
-      <div id={layoutStyles.videoContainer}>
-        <video autoPlay muted loop src={videoClip}>
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
-    )
+    let headerBackground
+    let headerTextClass
+
+    if (imageHeader) {
+      headerBackground = (
+        <div id={layoutStyles.headerBackgroundContainer}>
+          <img
+            src="https://img4.goodfon.com/original/1920x1080/1/f9/batman-dc-comics-bruce-wayne-gotham-city-superhero-mask-cloa.jpg"
+            alt="batmanTest"
+          />
+        </div>
+      )
+
+      headerTextClass = layoutStyles.headerTextForImage
+    } else {
+      headerBackground = (
+        <div id={layoutStyles.headerBackgroundContainer}>
+          <video autoPlay muted loop src={videoClip}>
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      )
+
+      headerTextClass = layoutStyles.headerTextForVideo
+    }
 
     let header = (
-      <div className={layoutStyles.headerText}>
+      <div className={headerTextClass}>
         <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
-        <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
+        <div>
+          <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
+        </div>
       </div>
     )
 
@@ -93,7 +113,7 @@ class Layout extends React.Component {
       <div>
         <header>
           {stickyMenu}
-          {video}
+          {headerBackground}
           {header}
         </header>
         <main className={mainClass}>{children}</main>

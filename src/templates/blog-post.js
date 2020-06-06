@@ -36,6 +36,7 @@ class BlogPostTemplate extends React.Component {
         headerText={post.frontmatter.title}
         subHeaderText={post.frontmatter.date}
         background={true}
+        imageHeader={true}
       >
         <SEO
           title={post.frontmatter.title}
