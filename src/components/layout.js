@@ -81,7 +81,10 @@ class Layout extends React.Component {
 
     if (imageHeader) {
       headerBackground = (
-        <div id={layoutStyles.headerBackgroundContainer}>
+        <div
+          id={layoutStyles.headerBackgroundContainer}
+          className={layoutStyles.stretch}
+        >
           <img src={tempHeaderImage} alt="tepHeaderImage" />
         </div>
       )
