@@ -1,5 +1,7 @@
 .darkBackground {
-  background-color: var(--blogPostBackground);
+  /* background-color: var(--blogPostBackground); */
+  /* background-image: var(--backgroundImageTexture);
+  background-blend-mode: luminosity; */
 }
 
 .darkBackground article {
@@ -64,7 +66,8 @@ small {
   margin: 0;
   font-weight: 400;
 
-  background-color: var(--menu-bg);
+  background-color: var(--highlight-secondary);
+  color: var(--menu-bg);
   display: inline;
   text-align: left;
   line-height: 1.3em;
@@ -205,12 +208,14 @@ video {
   background-color: var(--blogPostBackground);
 }
 
-#headerBackgroundContainer.stretch {
-  height: 700px;
+#imageHeader {
+  /* background: var(--menu-bg); */
+  background: transparent;
 }
 
-#headerBackgroundContainer img {
+#imageHeader img {
   max-width: 60%;
+  margin-bottom: 0;
 }
 
 #menu .active {
@@ -234,6 +239,10 @@ video {
 /* small monitor */
 @media only screen and (max-width: 1024px) {
   #headerBackgroundContainer img {
+    max-width: 90%;
+  }
+
+  #imageHeader img {
     max-width: 90%;
   }
 

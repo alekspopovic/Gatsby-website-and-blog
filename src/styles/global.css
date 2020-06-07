@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap");
 
 :root {
   --dark-bg: #0c2233;
@@ -28,6 +28,10 @@ body {
   font-weight: 400;
 
   transition: background 300ms ease-in-out, color 600ms ease-in-out;
+
+  background-color: var(--blogPostBackground);
+  background-image: var(--backgroundImageTexture);
+  background-blend-mode: luminosity;
 }
 
 main {
@@ -43,6 +47,7 @@ body.light {
   --blogPostBackground: var(--rightCard);
   --lighImageBorder: var(--blogPostBackground);
   --highlight-secondary: #c3e88d;
+  --backgroundImageTexture: url("https://i.imgur.com/CsFwYRY.png");
 }
 
 h1 {
