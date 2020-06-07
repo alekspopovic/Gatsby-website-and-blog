@@ -6,6 +6,8 @@ import videoClip from "../assets/blue.mp4"
 import icon from "../assets/icon.svg"
 import Footer from "./footer"
 
+import tempHeaderImage from "../assets/tempHeaderImage2.jpg"
+
 class Layout extends React.Component {
   switchTheme = e => {
     const body = document.body
@@ -80,10 +82,7 @@ class Layout extends React.Component {
     if (imageHeader) {
       headerBackground = (
         <div id={layoutStyles.headerBackgroundContainer}>
-          <img
-            src="https://img4.goodfon.com/original/1920x1080/1/f9/batman-dc-comics-bruce-wayne-gotham-city-superhero-mask-cloa.jpg"
-            alt="batmanTest"
-          />
+          <img src={tempHeaderImage} alt="tepHeaderImage" />
         </div>
       )
 

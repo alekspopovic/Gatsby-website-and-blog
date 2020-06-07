@@ -200,7 +200,7 @@ video {
 }
 
 #headerBackgroundContainer {
-  height: 500px;
+  height: 700px;
   overflow: hidden;
   background-color: var(--blogPostBackground);
 }
