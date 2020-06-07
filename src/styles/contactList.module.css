@@ -1,10 +1,10 @@
-.sectionContent {
-  width: 50%;
-  margin: auto;
-}
-
 .contact {
   text-align: center;
+  width: 50%;
+  margin: auto;
+  background: var(--dark-bg);
+  padding: 2em 3em 1em 3em;
+  margin-top: 1em;
 }
 
 .contactButton {
@@ -24,7 +24,8 @@
 }
 
 .contact h2 {
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 2em;
   font-weight: 400;
 }
 
@@ -72,6 +73,7 @@ button:focus {
 
 form {
   padding: 0 5px;
+  margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

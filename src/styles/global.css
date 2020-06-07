@@ -35,7 +35,7 @@ body {
 }
 
 main {
-  padding-bottom: 10px;
+  /* padding-bottom: 20px; */
   margin-bottom: 60px;
 }
 
@@ -43,11 +43,11 @@ body.light {
   --dark-bg: #ffffff;
   --text: #000000;
   --header: #eeeeee;
-  --rightCard: #c2f0fc;
+  --rightCard: #b0efff;
   --blogPostBackground: var(--rightCard);
   --lighImageBorder: var(--blogPostBackground);
   --highlight-secondary: #c3e88d;
-  --backgroundImageTexture: url("https://i.imgur.com/CsFwYRY.png");
+  --backgroundImageTexture: url("https://i.imgur.com/BXJMi3i.png");
 }
 
 h1 {

@@ -4,10 +4,11 @@
   padding: 0 20%;
   margin: auto;
   padding-bottom: 3em;
+  background: var(--dark-bg);
 }
 
 .card.floatRight {
-  background: var(--rightCard);
+  background-color: transparent;
 }
 
 .name {
@@ -44,13 +45,14 @@
   font-size: 0.8em;
   border-radius: 30px;
   text-align: center;
-  border: 1px solid var(--rightCard);
+  border: 2px solid var(--rightCard);
   background: var(--rightCard);
 }
 
 .floatRight .tags span {
   border: 1px solid var(--dark-bg);
   background: var(--dark-bg);
+  border: 2px solid var(--rightCard);
 }
 
 .cardButton {

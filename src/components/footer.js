@@ -1,9 +1,16 @@
 import React from "react"
 import footerStyles from "../styles/footer.module.css"
 
-const Footer = () => {
+const Footer = props => {
+  const { footerNoOffset } = props
+  let offsetClass
+
+  if (footerNoOffset) {
+    offsetClass = footerStyles.noOffset
+  }
+
   return (
-    <footer className={footerStyles.footer}>
+    <footer className={`${footerStyles.footer} ${offsetClass}`}>
       <div className={footerStyles.socialIcons}>
         <a
           target="_blank"

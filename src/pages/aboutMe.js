@@ -5,10 +5,10 @@ import SEO from "../components/seo"
 
 class AboutMe extends React.Component {
   render() {
-    const headerText = "About me";
+    const headerText = "About me"
 
     return (
-      <Layout headerText={headerText} >
+      <Layout headerText={headerText}>
         <SEO title="About me" />
         <About />
       </Layout>

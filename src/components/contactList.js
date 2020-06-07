@@ -4,9 +4,7 @@ import "font-awesome/css/font-awesome.min.css"
 
 const ContactList = () => {
   return (
-    <div
-      className={`${contactListStyles.sectionContent} ${contactListStyles.contact}`}
-    >
+    <div className={contactListStyles.contact}>
       <h2>
         You have a question, suggestion or a business offer? Maybe you simply
         want to say 'hi'? Shoot me a message!

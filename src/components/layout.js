@@ -29,7 +29,13 @@ class Layout extends React.Component {
 
   render() {
     const { children } = this.props
-    const { headerText, subHeaderText, background, imageHeader } = this.props
+    const {
+      headerText,
+      subHeaderText,
+      background,
+      imageHeader,
+      footerNoOffset,
+    } = this.props
     let mainClass, theme
 
     if (background) {
@@ -116,7 +122,7 @@ class Layout extends React.Component {
           {header}
         </header>
         <main className={mainClass}>{children}</main>
-        <Footer />
+        <Footer footerNoOffset={footerNoOffset} />
       </div>
     )
   }

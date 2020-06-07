@@ -5,12 +5,16 @@
   font-size: 0.8em;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1em;
   height: 120px;
   width: 100%;
   overflow: hidden;
   padding: 15px 0;
   margin-top: 50px;
+}
+
+.footer.noOffset {
+  bottom: 0;
 }
 
 .socialIcons {
