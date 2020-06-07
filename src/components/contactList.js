@@ -40,7 +40,7 @@ const ContactList = () => {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:8000/blog"
+          value="https://aleksandarpopovic.com/"
         ></input>
         <input
           type="hidden"
