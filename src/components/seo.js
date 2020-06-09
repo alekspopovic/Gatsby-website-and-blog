@@ -35,6 +35,8 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
     pageUrl = `${site.siteMetadata.siteUrl}${pagePath}`
   }
 
+  console.log(pageUrl)
+
   return (
     <Helmet
       htmlAttributes={{

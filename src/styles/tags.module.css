@@ -3,36 +3,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 60%;
+  width: 30%;
   margin: auto;
   margin-top: 1em;
   margin-bottom: 2em;
+  padding: 1em 0 2em 0;
 }
 
 .tags a {
   text-align: center;
   color: var(--text);
-  border: 2px solid var(--text-dark);
-  padding: 15px 50px;
   text-transform: uppercase;
   margin: auto;
-  margin-top: 1em;
   font-size: 1em;
   width: 250px;
   position: relative;
+  background-color: var(--dark-bg);
+  border: 2px solid var(--rightCart);
+  padding: 1em;
 }
 
 .tags a:hover {
   box-sizing: none;
   box-shadow: none;
-  border: 2px solid var(--highlight);
+  border: none;
+  color: var(--highlight);
 }
 
 .tags a span {
-  border: 2px solid var(--highlight);
   background: var(--dark-bg);
   position: absolute;
-  right: -15px;
+  right: 10px;
+  margin-left: 10px;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -40,5 +42,5 @@
 }
 
 .tags a:hover span {
-  background: var(--dark-bg);
+  color: var(--highlight);
 }

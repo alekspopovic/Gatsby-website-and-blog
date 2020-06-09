@@ -15,11 +15,11 @@ const TagsPage = ({
   },
   location,
 }) => (
-  <Layout location={location} title={title} headerText="Tags">
+  <Layout title={title} headerText="Tags">
     <SEO
       title="all tags"
       keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      pagePath={this.props.location.pathname}
+      pagePath={location.pathname}
     />
     <div className={tagStyles.tags}>
       {group.map(tag => (
