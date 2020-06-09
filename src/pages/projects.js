@@ -9,7 +9,7 @@ class Projects extends React.Component {
 
     return (
       <Layout headerText={headerText} footerNoOffset={true}>
-        <SEO title="Projects" />
+        <SEO title="Projects" pagePath={this.props.location.pathname} />
         <ProjectList />
       </Layout>
     )

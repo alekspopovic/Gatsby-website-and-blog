@@ -5,11 +5,11 @@ import SEO from "../components/seo"
 
 class Contact extends React.Component {
   render() {
-    const headerText = "Contact";
+    const headerText = "Contact"
 
     return (
       <Layout headerText={headerText}>
-        <SEO title="Contact" />
+        <SEO title="Contact" pagePath={this.props.location.pathname} />
         <ContactList />
       </Layout>
     )

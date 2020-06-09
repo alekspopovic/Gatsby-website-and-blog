@@ -19,13 +19,14 @@ const TagsPage = ({
     <SEO
       title="all tags"
       keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+      pagePath={this.props.location.pathname}
     />
     <div className={tagStyles.tags}>
-        {group.map(tag => (
-            <Link key={tag.fieldValue} to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                {tag.fieldValue} <span>{tag.totalCount}</span>
-            </Link>
-        ))}
+      {group.map(tag => (
+        <Link key={tag.fieldValue} to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+          {tag.fieldValue} <span>{tag.totalCount}</span>
+        </Link>
+      ))}
     </div>
   </Layout>
 )

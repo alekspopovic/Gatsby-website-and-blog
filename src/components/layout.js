@@ -25,8 +25,6 @@ class Layout extends React.Component {
     }
   }
 
-  componentDidMount() {}
-
   render() {
     const { children } = this.props
     const {

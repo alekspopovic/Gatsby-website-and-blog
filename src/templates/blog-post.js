@@ -14,6 +14,8 @@ class BlogPostTemplate extends React.Component {
 
     let postNavigation
 
+    console.log(this.props.data)
+
     if (previous || next) {
       postNavigation = (
         <div className={blogPostStyles.postNavigation}>
@@ -41,6 +43,7 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          pagePath={this.props.location.pathname}
         />
         <article className={blogPostStyles.blogPost}>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />

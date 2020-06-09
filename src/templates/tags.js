@@ -22,7 +22,7 @@ const Tags = ({ pageContext, data, location }) => {
       subHeaderText={subHeaderText}
       background={true}
     >
-      <SEO title={tagHeader} />
+      <SEO title={tagHeader} pagePath={location.pathname} />
       <div className={blogStyles.blogContent}>
         {posts.map(({ node }) => {
           const { slug } = node.fields

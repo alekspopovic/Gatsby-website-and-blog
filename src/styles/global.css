@@ -22,7 +22,6 @@ body {
   margin: 0 0 55px;
   font-family: "Poppins", sans-serif;
   font-size: 1.3em;
-  background-color: var(--dark-bg);
   overflow-x: hidden;
   color: var(--text);
   font-weight: 400;
@@ -46,7 +45,7 @@ body.light {
   --rightCard: #b0efff;
   --blogPostBackground: var(--rightCard);
   --lighImageBorder: var(--blogPostBackground);
-  --highlight-secondary: #c3e88d;
+  --highlight-secondary: var(--rightCard);
   --backgroundImageTexture: url("https://i.imgur.com/BXJMi3i.png");
 }
 

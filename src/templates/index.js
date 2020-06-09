@@ -16,7 +16,7 @@ class Index extends React.Component {
 
     return (
       <Layout headerText={headerText} background={true}>
-        <SEO title={seoTitle} />
+        <SEO title={seoTitle} pagePath={this.props.location.pathname} />
         <div id="content" className={blogStyles.blogContent}>
           {group.map(({ node }) => (
             <article key={node.fields.slug}>
