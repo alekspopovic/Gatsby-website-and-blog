@@ -80,13 +80,14 @@
   align-items: flex-start;
 }
 
-.card img {
+.fluidImageContainer {
   width: 50%;
   padding: 1px;
   border: 4px solid var(--lighImageBorder);
+  margin-bottom: 3em;
 }
 
-.floatRight img {
+.floatRight .fluidImageContainer {
   border: none;
 }
 
@@ -94,7 +95,7 @@
   width: 50%;
 }
 
-.floatRight img {
+.floatRight .fluidImageContainer {
   order: 2;
 }
 
@@ -126,11 +127,11 @@
     order: 2;
   }
 
-  .card img {
+  .fluidImageContainer {
     width: 100%;
   }
 
-  .floatRight img {
+  .floatRight .fluidImageContainer {
     order: 1;
   }
 

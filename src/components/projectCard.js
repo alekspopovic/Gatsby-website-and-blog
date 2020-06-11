@@ -1,18 +1,19 @@
 import React from "react"
 import projectCardStyles from "../styles/projectCard.module.css"
+import Img from "gatsby-image"
 
 class ProjectCard extends React.Component {
   render() {
     const {
       name,
-      imageUrl,
       tags,
       description,
       url,
       itchIoUrl,
       playStoreUrl,
     } = this.props.project
-    const floatRight = this.props.floatRight
+
+    const { floatRight, imageFluid } = this.props
 
     let floatRightClass = ""
 
@@ -39,7 +40,9 @@ class ProjectCard extends React.Component {
         <div className={projectCardStyles.name}>{name}</div>
 
         <div className={projectCardStyles.content}>
-          <img src={imageUrl} alt={name} />
+          <div className={projectCardStyles.fluidImageContainer}>
+            <Img fluid={imageFluid} alt={name} />
+          </div>
           <div className={projectCardStyles.text}>
             <div className={projectCardStyles.description}>{description}</div>
             <div className={projectCardStyles.tags}>

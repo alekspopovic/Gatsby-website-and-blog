@@ -34,8 +34,6 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
     metaImage = `${site.siteMetadata.siteUrl}${image}`
   }
 
-  console.log(metaImage)
-
   let pageUrl
 
   if (pagePath) {
