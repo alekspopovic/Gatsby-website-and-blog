@@ -28,14 +28,19 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || defaultImage
+  let metaImage = defaultImage
+
+  if (image) {
+    metaImage = `${site.siteMetadata.siteUrl}${image}`
+  }
+
+  console.log(metaImage)
+
   let pageUrl
 
   if (pagePath) {
     pageUrl = `${site.siteMetadata.siteUrl}${pagePath}`
   }
-
-  console.log(pageUrl)
 
   return (
     <Helmet

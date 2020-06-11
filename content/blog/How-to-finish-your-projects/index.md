@@ -6,6 +6,7 @@ tags:
   - gatsby
   - web
   - tools
+featuredImage: header.jpg
 ---
 
 I started working on this website in January, but things didn't really work out the way I wanted to. It's tough to have everything go according to plan when you don't have a plan in the first place. I knew I wanted to redesign my old website which was was just one static page with a list of my projects. At that time I thought it was enough, and it was, but I wanted to extend it at some point. I wanted to make a place where I can do and show more things, not necessarily related to web development. I guess this is that point.

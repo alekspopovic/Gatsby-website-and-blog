@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
 
     let postNavigation
 
-    console.log(this.props.data)
+    let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
 
     if (previous || next) {
       postNavigation = (
@@ -38,12 +38,13 @@ class BlogPostTemplate extends React.Component {
         headerText={post.frontmatter.title}
         subHeaderText={post.frontmatter.date}
         background={true}
-        imageHeader={true}
+        headerImageFluid={featuredImgFluid}
       >
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
           pagePath={this.props.location.pathname}
+          image={featuredImgFluid.src}
         />
         <article className={blogPostStyles.blogPost}>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -82,6 +83,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

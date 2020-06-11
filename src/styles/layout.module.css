@@ -205,17 +205,15 @@ video {
 #headerBackgroundContainer {
   height: 500px;
   overflow: hidden;
-  /* background-color: var(--blogPostBackground); */
 }
 
 #imageHeader {
-  /* background: var(--menu-bg); */
   background: transparent;
 }
 
-#imageHeader img {
+.headerImage {
   max-width: 60%;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 #menu .active {
@@ -238,11 +236,7 @@ video {
 
 /* small monitor */
 @media only screen and (max-width: 1024px) {
-  #headerBackgroundContainer img {
-    max-width: 90%;
-  }
-
-  #imageHeader img {
+  .headerImage {
     max-width: 90%;
   }
 
@@ -292,7 +286,7 @@ video {
     height: 200px;
   }
 
-  #headerBackgroundContainer img {
+  .headerImage {
     max-width: 100%;
   }
 

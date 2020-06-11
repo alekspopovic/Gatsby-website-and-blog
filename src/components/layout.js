@@ -5,8 +5,7 @@ import Sticky from "react-stickynode"
 import videoClip from "../assets/blue.mp4"
 import icon from "../assets/icon.svg"
 import Footer from "./footer"
-
-import tempHeaderImage from "../assets/tempHeaderImage2.jpg"
+import Img from "gatsby-image"
 
 class Layout extends React.Component {
   switchTheme = e => {
@@ -31,9 +30,10 @@ class Layout extends React.Component {
       headerText,
       subHeaderText,
       background,
-      imageHeader,
       footerNoOffset,
+      headerImageFluid,
     } = this.props
+
     let mainClass, theme
 
     if (background) {
@@ -83,11 +83,9 @@ class Layout extends React.Component {
     let headerBackground
     let headerTextClass
 
-    if (imageHeader) {
+    if (headerImageFluid) {
       headerBackground = (
-        <div id={layoutStyles.imageHeader}>
-          <img src={tempHeaderImage} alt="tepHeaderImage" />
-        </div>
+        <Img fluid={headerImageFluid} className={layoutStyles.headerImage} />
       )
 
       headerTextClass = layoutStyles.headerTextForImage
