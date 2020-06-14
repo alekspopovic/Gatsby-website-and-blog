@@ -29,7 +29,7 @@ const HeroHeader = () => {
             <span>design</span>
             <span>program</span>
             <span>create</span>
-            <span>invent</span>
+            <span>construct</span>
             <span>develop</span>
           </div>
           <div>user experiences</div>

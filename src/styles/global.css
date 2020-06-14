@@ -11,11 +11,11 @@
   --header: #eeeeee;
   --rightCard: #061724;
   --blogPostBackground: var(--rightCard);
-}
 
-html {
-  position: relative;
-  min-height: 100%;
+  --portfolio-bg: var(--dark-bg);
+  --portfolio-highlight: var(--highlight-secondary);
+  --portfolio-tech-background: transparent;
+  --portfolio-font-weight: 400;
 }
 
 body {
@@ -33,11 +33,6 @@ body {
   background-blend-mode: luminosity;
 }
 
-main {
-  /* padding-bottom: 20px; */
-  margin-bottom: 60px;
-}
-
 body.light {
   --dark-bg: #ffffff;
   --text: #000000;
@@ -47,6 +42,20 @@ body.light {
   --lighImageBorder: var(--blogPostBackground);
   --highlight-secondary: var(--rightCard);
   --backgroundImageTexture: url("https://i.imgur.com/uWFkTSh.png");
+
+  --portfolio-bg: transparent;
+  --portfolio-highlight: var(--highlight);
+  --portfolio-tech-background: var(--dark-bg);
+  --portfolio-font-weight: 600;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 60px;
 }
 
 h1 {

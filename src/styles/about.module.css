@@ -1,10 +1,6 @@
 .about {
-  background-color: var(--dark-bg);
+  background-color: var(--portfolio-bg);
 }
 
 @media only screen and (max-width: 426px) {
-  /* .about {
-    width: 80%;
-    margin-top: 2em;
-  } */
 }

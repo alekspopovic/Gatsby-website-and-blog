@@ -14,8 +14,7 @@
   font-size: 3em;
   margin: 0;
   margin-bottom: 2em;
-  font-weight: 400;
-  letter-spacing: 4px;
+  font-weight: var(--portfolio-font-weight);
 }
 
 .heroContainer h2 {
@@ -25,6 +24,7 @@
   text-align: left;
   letter-spacing: 2px;
   width: 70%;
+  font-weight: var(--portfolio-font-weight);
 }
 
 #wordHighlight {
@@ -50,7 +50,7 @@
 
 .profileImageContainer img {
   border-radius: 50%;
-  border: 4px solid var(--highlight-secondary);
+  border: 4px solid var(--portfolio-highlight);
 }
 
 .tech {
@@ -62,12 +62,15 @@
 }
 
 .tech span {
-  padding: 0 2em;
+  padding: 4px 2em;
   margin: 8px;
-  border: 1px solid var(--highlight-secondary);
-  color: var(--highlight-secondary);
-  border-radius: 21px;
+  border: 2px solid var(--portfolio-highlight);
+  color: var(--portfolio-highlight);
+  background-color: var(--portfolio-tech-background);
+  border-radius: 25px;
   display: block;
+  font-weight: var(--portfolio-font-weight);
+  letter-spacing: 1px;
 }
 
 .words {
@@ -78,11 +81,9 @@
 .words span {
   position: absolute;
   opacity: 0;
-  /* left: 0; */
   overflow: hidden;
   color: var(--highlight-secondary);
   text-indent: 10px;
-  width: 100%;
 
   animation: rotateWords 15s linear infinite 0s;
 }
@@ -116,11 +117,9 @@
   19% {
     opacity: 1;
     color: var(--highlight);
-    /* height: 0px; */
   }
   25% {
     opacity: 0;
-    /* height: 0px; */
   }
   100% {
     opacity: 0;
