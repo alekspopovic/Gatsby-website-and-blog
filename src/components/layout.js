@@ -32,6 +32,7 @@ class Layout extends React.Component {
       background,
       footerNoOffset,
       headerImageFluid,
+      hideHeader,
     } = this.props
 
     let mainClass, theme
@@ -83,32 +84,38 @@ class Layout extends React.Component {
     let headerBackground
     let headerTextClass
 
-    if (headerImageFluid) {
-      headerBackground = (
-        <Img fluid={headerImageFluid} className={layoutStyles.headerImage} />
-      )
+    if (!hideHeader) {
+      if (headerImageFluid) {
+        headerBackground = (
+          <Img fluid={headerImageFluid} className={layoutStyles.headerImage} />
+        )
 
-      headerTextClass = layoutStyles.headerTextForImage
-    } else {
-      headerBackground = (
-        <div id={layoutStyles.headerBackgroundContainer}>
-          <video autoPlay muted loop src={videoClip}>
-            Your browser does not support HTML5 video.
-          </video>
-        </div>
-      )
+        headerTextClass = layoutStyles.headerTextForImage
+      } else {
+        headerBackground = (
+          <div id={layoutStyles.headerBackgroundContainer}>
+            <video autoPlay muted loop src={videoClip}>
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        )
 
-      headerTextClass = layoutStyles.headerTextForVideo
+        headerTextClass = layoutStyles.headerTextForVideo
+      }
     }
 
-    let header = (
-      <div className={headerTextClass}>
-        <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
-        <div>
-          <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
+    let header
+
+    if (!hideHeader) {
+      header = (
+        <div className={headerTextClass}>
+          <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
+          <div>
+            <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
+          </div>
         </div>
-      </div>
-    )
+      )
+    }
 
     return (
       <div>

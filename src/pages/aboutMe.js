@@ -5,12 +5,8 @@ import SEO from "../components/seo"
 
 class AboutMe extends React.Component {
   render() {
-    const headerText = "About me"
-
-    console.log(this.props)
-
     return (
-      <Layout headerText={headerText}>
+      <Layout hideHeader={true}>
         <SEO title="About me" pagePath={this.props.location.pathname} />
         <About />
       </Layout>

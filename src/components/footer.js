@@ -50,6 +50,10 @@ const Footer = props => {
       </div>
       © {new Date().getFullYear()}, Built with{" "}
       <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popovic
+      <p>
+        Illustrations by <a href="https://stories.freepik.com/">Stories</a> by
+        Freepik
+      </p>
     </footer>
   )
 }
