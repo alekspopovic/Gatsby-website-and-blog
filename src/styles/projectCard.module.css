@@ -68,6 +68,7 @@
   padding: 15px 50px;
   text-transform: uppercase;
   background: var(--dark-bg);
+  border-radius: 35px;
 }
 
 .cardButton a:hover {

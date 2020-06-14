@@ -49,6 +49,7 @@ section {
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
+  border-radius: 35px;
 }
 
 .readMore a:hover,
