@@ -13,6 +13,7 @@
   --header: #eeeeee;
 
   --float-right-header: var(--highlight);
+  --float-right-button-border: var(--highlight);
 
   --portfolio-bg: var(--dark-bg);
   --portfolio-tech-background: transparent;
