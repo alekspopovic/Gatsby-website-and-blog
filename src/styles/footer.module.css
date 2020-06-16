@@ -25,10 +25,12 @@
 .socialIcons a {
   padding: 0 15px;
   transition: scale 0.3s;
+  color: var(--header);
 }
 
 .socialIcons a:hover {
   border: none;
+  color: var(--highlight);
 }
 
 .socialIcons a:hover i {

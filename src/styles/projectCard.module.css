@@ -8,7 +8,7 @@
 }
 
 .card.floatRight {
-  background-color: transparent;
+  background-color: var(--dark-highlight);
 }
 
 .name {
@@ -16,6 +16,11 @@
   margin: 1em 0;
   text-align: center;
   font-family: "Oswald";
+  color: var(--highlight);
+}
+
+.floatRight .name {
+  color: var(--float-right-header);
 }
 
 .description {
@@ -45,14 +50,13 @@
   font-size: 0.8em;
   border-radius: 30px;
   text-align: center;
-  border: 2px solid var(--rightCard);
-  background: var(--rightCard);
+  border: 2px solid var(--dark-highlight);
+  background: var(--dark-highlight);
 }
 
 .floatRight .tags span {
   border: 1px solid var(--dark-bg);
   background: var(--dark-bg);
-  border: 2px solid var(--rightCard);
 }
 
 .cardButton {
@@ -73,6 +77,14 @@
 
 .cardButton a:hover {
   background-color: var(--highlight);
+}
+
+.floatRight .cardButton a {
+  border: 2px solid var(--float-right-button-border);
+}
+
+.floatRight .cardButton a:hover {
+  color: var(--float-right-button-border);
 }
 
 .content {

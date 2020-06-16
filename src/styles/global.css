@@ -3,17 +3,18 @@
 :root {
   --dark-bg: #0c2233;
   --menu-bg: var(--dark-bg);
-  --highlight: #fd7014;
-  --highlight-secondary: #c3e88d;
+  /* --highlight: #ff822e; */
+  --highlight: #fd9047;
+  --dark-highlight: #061724;
+  --body-bg: var(--dark-highlight);
   --text: #eeeeee;
   --text-menu: #eeeeee;
   --menu-shadow: #13171c;
   --header: #eeeeee;
-  --rightCard: #061724;
-  --blogPostBackground: var(--rightCard);
+
+  --float-right-header: var(--highlight);
 
   --portfolio-bg: var(--dark-bg);
-  --portfolio-highlight: var(--highlight-secondary);
   --portfolio-tech-background: transparent;
   --portfolio-font-weight: 400;
 }
@@ -26,25 +27,24 @@ body {
   color: var(--text);
   font-weight: 400;
 
-  transition: background 300ms ease-in-out, color 600ms ease-in-out;
+  background-color: var(--body-bg);
 
-  background-color: var(--blogPostBackground);
-  background-image: var(--backgroundImageTexture);
-  background-blend-mode: luminosity;
+  transition: background 300ms ease-in-out, color 600ms ease-in-out;
 }
 
 body.light {
-  --dark-bg: #ffffff;
+  --dark-bg: #f3f3f3;
+  /* --highlight: #ff9752;
+  --highlight: #ff8533; */
+  --dark-highlight: var(--highlight);
   --text: #000000;
-  --header: #eeeeee;
-  --rightCard: #b0efff;
-  --blogPostBackground: var(--rightCard);
-  --lighImageBorder: var(--blogPostBackground);
-  --highlight-secondary: var(--rightCard);
-  --backgroundImageTexture: url("https://i.imgur.com/uWFkTSh.png");
+  --header: #f6f6f6;
+  --body-bg: #ffece0;
+
+  --float-right-button-border: var(--header);
+  --float-right-header: var(--header);
 
   --portfolio-bg: transparent;
-  --portfolio-highlight: var(--highlight);
   --portfolio-tech-background: var(--dark-bg);
   --portfolio-font-weight: 600;
 }

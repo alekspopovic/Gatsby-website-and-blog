@@ -1,12 +1,4 @@
 .darkBackground {
-  /* background-color: var(--blogPostBackground); */
-  /* background-image: var(--backgroundImageTexture);
-  background-blend-mode: luminosity; */
-}
-
-.darkBackground article {
-  background-color: var(--dark-bg);
-  border: none;
 }
 
 header {
@@ -16,7 +8,7 @@ header {
 }
 
 header a {
-  color: var(--text);
+  color: var(--highlight);
   box-shadow: none;
 }
 
@@ -66,8 +58,8 @@ small {
   margin: 0;
   font-weight: 400;
 
-  background-color: var(--highlight-secondary);
-  color: var(--menu-bg);
+  background-color: var(--body-bg);
+  color: var(--text);
   display: inline;
   text-align: left;
   line-height: 1.3em;
@@ -83,7 +75,7 @@ small {
 .headerTextForImage .headerSubTitle {
   line-height: 1.6;
   font-weight: 400;
-  background-color: var(--highlight-secondary);
+  background-color: var(--highlight);
   color: var(--menu-bg);
   margin-top: 20px;
   font-size: 1.5em;
@@ -214,6 +206,8 @@ video {
 .headerImage {
   max-width: 60%;
   margin: 0 auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0 0 10px 10px;
 }
 
 #menu .active {
@@ -231,6 +225,10 @@ video {
 
   .headerTextForImage .headerSubTitle {
     font-size: 0.8em;
+  }
+
+  .headerImage {
+    max-width: 70%;
   }
 }
 
@@ -288,6 +286,7 @@ video {
 
   .headerImage {
     max-width: 100%;
+    border-radius: 0;
   }
 
   #menu {

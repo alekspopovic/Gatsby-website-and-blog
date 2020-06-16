@@ -83,12 +83,20 @@ article section h2 {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 1366px) {
+  .blogPost {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1em;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .blogPost {
     width: 90%;
     margin-left: 5%;
     margin-top: 1em;
-    padding: 0.5em 1em;
+    padding: 2em 4em;
   }
 
   article header h1 {
@@ -118,6 +126,12 @@ article section h2 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .blogPost {
+    padding: 1em 3em;
+  }
+}
+
 @media only screen and (max-width: 426px) {
   article {
     width: 100%;
@@ -129,6 +143,7 @@ article section h2 {
     margin-top: 0;
     padding: 0.5em 1em;
     border: none;
+    border-radius: 0;
   }
 
   article header h1 {

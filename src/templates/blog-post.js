@@ -33,10 +33,12 @@ class BlogPostTemplate extends React.Component {
       )
     }
 
+    let subHeaderText = `${post.frontmatter.date} | Aleks Popovic`
+
     return (
       <Layout
         headerText={post.frontmatter.title}
-        subHeaderText={post.frontmatter.date}
+        subHeaderText={subHeaderText}
         background={true}
         headerImageFluid={featuredImgFluid}
       >

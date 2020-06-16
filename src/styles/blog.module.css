@@ -10,21 +10,25 @@ article {
   width: 49%;
   display: inline-block;
   overflow: hidden;
-  margin-top: 1em;
-  padding: 2em;
-  border: 1px solid var(--text-dark);
+  margin: 1em auto;
+  padding: 2em 3em;
+  background-color: var(--dark-bg);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 article header {
   z-index: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
 }
 
 article:first-child {
-  flex: 0 0 100%;
+  /* flex: 0 0 100%; */
 }
 
 article header h1 {
-  margin: 0 0 1em 0;
+  margin: 0 0 10px 0;
 }
 
 header h1 a:hover {
@@ -40,6 +44,7 @@ section {
   text-align: center;
   font-family: "Oswald";
   letter-spacing: 2px;
+  margin-top: 4em;
 }
 
 .readMore a,
@@ -61,11 +66,11 @@ section {
 }
 
 .date {
-  color: var(--menu-bg);
-  background-color: var(--highlight-secondary);
   font-family: "Oswald";
   display: inline;
   padding: 0 10px;
+  font-size: 0.7em;
+  font-weight: 200;
 }
 
 blockquote {
@@ -103,25 +108,32 @@ blockquote {
   background: var(--dark-bg);
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1366px) {
   .blogContent {
-    width: 90%;
+    width: 65%;
+  }
+
+  article {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  article {
-    width: 100%;
+@media only screen and (max-width: 1024px) {
+  .blogContent {
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 426px) {
   .blogContent {
     margin-top: 0;
+    width: 100%;
   }
 
   article {
-    width: 100%;
+    width: 96%;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   article header h1 {
