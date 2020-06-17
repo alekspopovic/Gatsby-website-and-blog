@@ -84,7 +84,7 @@
 }
 
 .floatRight .cardButton a:hover {
-  color: var(--float-right-button-border);
+  color: var(--header);
 }
 
 .content {
@@ -186,19 +186,19 @@
 
   .description {
     font-size: 0.9em;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .floatRight .description {
     font-size: 0.9em;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .tags span {
     font-size: 0.6em;
   }
 
-  .cardButton a {
-    display: block;
+  .fluidImageContainer {
+    margin-bottom: 2em;
   }
 }
