@@ -77,6 +77,7 @@
 
 .cardButton a:hover {
   background-color: var(--highlight);
+  color: var(--header);
 }
 
 .floatRight .cardButton a {

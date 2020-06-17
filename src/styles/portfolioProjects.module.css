@@ -8,6 +8,7 @@
   padding: 1em 0;
   margin: 0;
   font-weight: var(--portfolio-font-weight);
+  color: var(--float-right-header);
 }
 
 .cardButton {
@@ -18,8 +19,8 @@
 }
 
 .cardButton a {
-  color: var(--text);
-  border: 2px solid var(--highlight);
+  color: var(--header);
+  border: 2px solid var(--float-right-button-border);
   padding: 15px 50px;
   text-transform: uppercase;
   background: var(--highlight);
@@ -28,6 +29,7 @@
 
 .cardButton a:hover {
   background: var(--dark-bg);
+  color: var(--text);
 }
 
 @media only screen and (max-width: 426px) {
