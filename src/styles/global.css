@@ -18,6 +18,13 @@
   --portfolio-bg: var(--dark-bg);
   --portfolio-tech-background: transparent;
   --portfolio-font-weight: 400;
+
+  --portfolio-call-to-action-bg: var(--highlight);
+  --portfolio-call-to-action-hover-bg: var(--dark-bg);
+  --portfolio-call-to-action-border: var(--highlight);
+  --portfolio-call-to-action-hover-border: var(--highlight);
+  --portfolio-call-to-action-color: var(--text);
+  --portfolio-call-to-action-hover-color: var(--text);
 }
 
 body {
@@ -48,6 +55,13 @@ body.light {
   --portfolio-bg: transparent;
   --portfolio-tech-background: var(--dark-bg);
   --portfolio-font-weight: 600;
+
+  --portfolio-call-to-action-bg: var(--menu-bg);
+  --portfolio-call-to-action-hover-bg: var(--highlight);
+  --portfolio-call-to-action-border: var(--menu-bg);
+  --portfolio-call-to-action-hover-border: var(--highlight);
+  --portfolio-call-to-action-color: var(header);
+  --portfolio-call-to-action-hover-color: var(--header);
 }
 
 html {

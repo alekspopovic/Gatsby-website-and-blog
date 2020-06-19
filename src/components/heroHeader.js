@@ -2,6 +2,7 @@ import React from "react"
 import heroStyles from "../styles/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 const HeroHeader = () => {
   const data = useStaticQuery(graphql`
@@ -40,6 +41,9 @@ const HeroHeader = () => {
           <span>React</span>
           <span>Angular</span>
           <span>Unity</span>
+        </div>
+        <div className={heroStyles.button}>
+          <Link to="/projects">View All Projects</Link>
         </div>
       </div>
     </div>

@@ -126,6 +126,27 @@
   }
 }
 
+.button {
+  text-align: center;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+}
+
+.button a {
+  color: var(--portfolio-call-to-action-color);
+  border: 2px solid var(--portfolio-call-to-action-border);
+  padding: 15px 50px;
+  text-transform: uppercase;
+  background: var(--portfolio-call-to-action-bg);
+  border-radius: 35px;
+}
+
+.button a:hover {
+  background: var(--portfolio-call-to-action-hover-bg);
+  color: var(--portfolio-call-to-action-hover-color);
+  border-color: var(--portfolio-call-to-action-hover-border);
+}
+
 @media only screen and (max-width: 1366px) {
   .section {
     padding: 2em 3em;
