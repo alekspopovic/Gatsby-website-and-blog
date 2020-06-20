@@ -25,6 +25,8 @@
   --portfolio-call-to-action-hover-border: var(--highlight);
   --portfolio-call-to-action-color: var(--text);
   --portfolio-call-to-action-hover-color: var(--text);
+
+  --tech-color: var(--header);
 }
 
 body {
@@ -46,6 +48,7 @@ body.light {
   --highlight: #ff8533; */
   --dark-highlight: var(--highlight);
   --text: #000000;
+  --text: #0c2233;
   --header: #f6f6f6;
   --body-bg: #ffece0;
 
@@ -54,7 +57,7 @@ body.light {
 
   --portfolio-bg: transparent;
   --portfolio-tech-background: var(--dark-bg);
-  --portfolio-font-weight: 600;
+  --portfolio-font-weight: 400;
 
   --portfolio-call-to-action-bg: var(--menu-bg);
   --portfolio-call-to-action-hover-bg: var(--highlight);
@@ -62,6 +65,8 @@ body.light {
   --portfolio-call-to-action-hover-border: var(--highlight);
   --portfolio-call-to-action-color: var(header);
   --portfolio-call-to-action-hover-color: var(--header);
+
+  --tech-color: var(--highlight);
 }
 
 html {

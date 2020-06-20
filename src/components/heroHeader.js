@@ -3,6 +3,8 @@ import heroStyles from "../styles/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faReact, faAngular, faUnity } from "@fortawesome/free-brands-svg-icons"
 
 const HeroHeader = () => {
   const data = useStaticQuery(graphql`
@@ -37,10 +39,25 @@ const HeroHeader = () => {
           <div>in</div>
         </h2>
         <div className={heroStyles.tech}>
-          <span>C#</span>
-          <span>React</span>
-          <span>Angular</span>
-          <span>Unity</span>
+          <i
+            className={`devicon-csharp-plain ${heroStyles.techIcon} ${heroStyles.csharp}`}
+            title="C#"
+          ></i>
+          <FontAwesomeIcon
+            className={`${heroStyles.techIcon} ${heroStyles.react}`}
+            icon={faReact}
+            title="React"
+          />
+          <FontAwesomeIcon
+            className={`${heroStyles.techIcon} ${heroStyles.angular}`}
+            icon={faAngular}
+            title="Angular"
+          />
+          <FontAwesomeIcon
+            className={`${heroStyles.techIcon} ${heroStyles.unity}`}
+            icon={faUnity}
+            title="Unity"
+          />
         </div>
         <div className={heroStyles.button}>
           <Link to="/projects">View All Projects</Link>

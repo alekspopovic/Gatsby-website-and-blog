@@ -11,18 +11,18 @@
 
 .heroContainer h1 {
   font-size: 3em;
-  margin: 0;
-  margin-bottom: 2em;
+  margin: 0 auto 1.5em auto;
   font-weight: var(--portfolio-font-weight);
+  text-align: left;
+  width: 50%;
 }
 
 .heroContainer h2 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin: 0 auto;
   font-weight: 400;
   text-align: left;
-  letter-spacing: 2px;
-  width: 70%;
+  width: 50%;
   font-weight: var(--portfolio-font-weight);
 }
 
@@ -37,14 +37,16 @@
 
 .section {
   width: 50%;
-  padding: 6em 3em;
+  padding: 4em 0 4em 0;
   margin-left: 50%;
   position: relative;
 }
 
 .profileImageContainer {
   width: 30%;
-  margin: 1em auto;
+  margin: 0 auto 2em;
+  position: relative;
+  left: -8%;
 }
 
 .profileImageContainer img {
@@ -53,29 +55,43 @@
 }
 
 .tech {
-  width: 100%;
+  width: 50%;
   display: flex;
-  margin: 2em auto;
-  justify-content: center;
+  margin: 1.5em auto 5em auto;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.tech span {
-  padding: 4px 2em;
-  margin: 8px;
-  color: var(--text);
-  border-radius: 25px;
-  display: block;
-  font-weight: var(--portfolio-font-weight);
-  letter-spacing: 1px;
+.techIcon {
+  font-size: 3em;
+  margin: 0 10px;
+  color: var(--tech-color);
+  transition: color 0.4s;
+}
 
-  border: 2px solid var(--dark-highlight);
-  background: var(--dark-highlight);
+.csharp {
+  margin-left: 0;
+}
+
+.csharp:hover {
+  color: #b63ad4;
+}
+
+.react:hover {
+  color: #00d2f8;
+}
+
+.angular:hover {
+  color: #de3035;
+}
+
+.unity:hover {
+  color: black;
 }
 
 .words {
   display: inline;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .words span {
@@ -112,7 +128,7 @@
   }
   8% {
     opacity: 1;
-    height: 60px;
+    height: 80px;
   }
   19% {
     opacity: 1;
@@ -127,9 +143,12 @@
 }
 
 .button {
-  text-align: center;
   font-family: "Oswald";
   letter-spacing: 2px;
+  width: 50%;
+  margin: 0 auto 3em auto;
+  text-align: left;
+  display: block;
 }
 
 .button a {
@@ -154,6 +173,26 @@
 
   .heroContainer h1 {
     margin-bottom: 1em;
+    width: 80%;
+  }
+
+  .heroContainer h2 {
+    width: 80%;
+  }
+
+  .tech {
+    width: 80%;
+    margin-bottom: 2em;
+  }
+
+  .button {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .button {
+    width: 90%;
   }
 }
 
@@ -161,15 +200,52 @@
   .section {
     padding: 2em 1em;
   }
+
+  .heroContainer h1 {
+    margin-bottom: 1em;
+    width: 90%;
+    font-size: 2.7em;
+  }
+
+  .heroContainer h2 {
+    width: 90%;
+    font-size: 1.3em;
+  }
+
+  .tech {
+    width: 90%;
+    margin-bottom: 3em;
+  }
+
+  .techIcon {
+    font-size: 1.7em;
+  }
+
+  .button {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .profileImageContainer {
+    width: 40%;
+    margin: 0 auto 2em;
+    left: 0;
+  }
+
   .heroContainer {
     background-image: none;
   }
 
+  .heroContainer h1 {
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+  }
+
   .heroContainer h2 {
-    width: 55%;
+    width: 50%;
+    font-size: 2em;
   }
 
   .section {
@@ -178,11 +254,26 @@
   }
 
   .tech {
-    width: 70%;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 4em;
+  }
+
+  .techIcon {
+    font-size: 3.2em;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 60%;
   }
 }
 
 @media only screen and (max-width: 426px) {
+  .profileImageContainer {
+    margin-bottom: 1em;
+  }
+
   .heroContainer {
     width: 100%;
   }
@@ -192,7 +283,7 @@
   }
 
   .heroContainer h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .section {
@@ -200,11 +291,23 @@
   }
 
   .tech {
-    width: 95%;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
   }
 
   .tech span {
     font-size: 0.8em;
     margin: 5px;
+  }
+
+  .techIcon {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
   }
 }
