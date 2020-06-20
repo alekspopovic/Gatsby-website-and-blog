@@ -1,6 +1,4 @@
 .portfolioProjectsContainer {
-  background: var(--dark-highlight);
-  padding-bottom: 3em;
 }
 
 .projectsHeader {
@@ -9,27 +7,44 @@
   margin: 0;
   font-weight: var(--portfolio-font-weight);
   color: var(--float-right-header);
+  background-color: var(--dark-highlight);
 }
 
 .cardButton {
   text-align: center;
   font-family: "Oswald";
   letter-spacing: 2px;
-  background-color: var(--dark-highlight);
+  margin: 0 1em;
 }
 
 .cardButton a {
-  color: var(--header);
-  border: 2px solid var(--float-right-button-border);
+  color: var(--call-to-action-color);
+  border: 2px solid var(--call-to-action-border);
   padding: 15px 50px;
   text-transform: uppercase;
-  background: var(--highlight);
+  background: var(--call-to-action-bg);
   border-radius: 35px;
+
+  border-color: var(--highlight);
+}
+
+.cardButton.secondary a {
+  background: var(--call-to-action-secondary-bg);
+}
+
+.cardButton.secondary a:hover {
+  background: var(--highlight);
 }
 
 .cardButton a:hover {
-  background: var(--dark-bg);
-  color: var(--text);
+  background: var(--call-to-action-hover-bg);
+}
+
+.buttonContainer {
+  display: flex;
+  padding: 4em 0;
+  justify-content: center;
+  background: var(--menu-bg);
 }
 
 @media only screen and (max-width: 426px) {

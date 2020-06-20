@@ -5,6 +5,7 @@
   background-image: url("../assets/heroSvg.svg");
   background-size: 50%;
   background-repeat: no-repeat;
+  position: relative;
 
   background-position: 0 20%;
 }
@@ -91,7 +92,6 @@
 
 .words {
   display: inline;
-  /* overflow: hidden; */
 }
 
 .words span {

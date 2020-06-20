@@ -41,8 +41,16 @@ const PortfolioProjects = () => {
         imageFluid={images.milosImage.childImageSharp.fluid}
       />
 
-      <div className={portfolioProjectsStyles.cardButton}>
-        <Link to="/projects">View All Projects</Link>
+      <div className={portfolioProjectsStyles.buttonContainer}>
+        <div className={portfolioProjectsStyles.cardButton}>
+          <Link to="/projects">View All Projects</Link>
+        </div>
+
+        <div
+          className={`${portfolioProjectsStyles.cardButton} ${portfolioProjectsStyles.secondary}`}
+        >
+          <Link to="/contact">Contact</Link>
+        </div>
       </div>
     </div>
   )
