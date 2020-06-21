@@ -83,7 +83,7 @@ const data = [
   {
     name: "Aleksandar Popovic",
     url: "https://aleksandarpopovic.com/",
-    imageUrl: "aleksOLD.png",
+    imageUrl: "landing.png",
     description:
       "It's very meta, I know. I needed a place where I could put all of my projects - so I made one. This is the second version of my personal website and it's built on top of Gatsby. I wanted to build something practical in React and I wanted to start writing a blog, so Gatsby seemed like a perfect fit.",
     tags: ["frontend", "personal", "Gatsby", "React", "GraphQL"],
