@@ -1,12 +1,9 @@
-.portfolioProjectsContainer {
-}
-
 .projectsHeader {
   font-size: 3em;
   padding: 1em 0;
   margin: 0;
   font-weight: var(--portfolio-font-weight);
-  color: var(--float-right-header);
+  color: var(--header);
   background-color: var(--dark-highlight);
 }
 
