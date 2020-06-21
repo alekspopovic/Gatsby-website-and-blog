@@ -43,7 +43,7 @@ const PortfolioProjects = () => {
 
       <div className={portfolioProjectsStyles.buttonContainer}>
         <div className={portfolioProjectsStyles.cardButton}>
-          <Link to="/projects">View All Projects</Link>
+          <Link to="/projects">Projects</Link>
         </div>
 
         <div

@@ -60,7 +60,7 @@ const HeroHeader = () => {
           />
         </div>
         <div className={heroStyles.button}>
-          <Link to="/projects">View All Projects</Link>
+          <Link to="/projects">Projects</Link>
         </div>
       </div>
     </div>

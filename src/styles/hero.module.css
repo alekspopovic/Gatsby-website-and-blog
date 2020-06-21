@@ -171,18 +171,28 @@
     padding: 2em 3em;
   }
 
+  .profileImageContainer {
+    margin: 0 auto 1em;
+  }
+
   .heroContainer h1 {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     width: 80%;
+    font-size: 2.5em;
   }
 
   .heroContainer h2 {
     width: 80%;
+    font-size: 1.5em;
   }
 
   .tech {
     width: 80%;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+  }
+
+  .techIcon {
+    font-size: 2em;
   }
 
   .button {
@@ -266,6 +276,7 @@
 
   .button {
     width: 60%;
+    text-align: center;
   }
 }
 

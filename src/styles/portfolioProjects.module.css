@@ -48,4 +48,13 @@
   .projectsHeader {
     font-size: 2em;
   }
+
+  .buttonContainer {
+    flex-direction: column;
+    padding: 3em 0 0 0;
+  }
+
+  .cardButton {
+    margin-bottom: 3em;
+  }
 }
