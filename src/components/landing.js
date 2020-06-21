@@ -1,11 +1,11 @@
 import React from "react"
-import aboutStyles from "../styles/about.module.css"
+import landingStyles from "../styles/landing.module.css"
 import HeroHeader from "./heroHeader"
 import PortfolioProjects from "./portfolioProjects"
 
-const About = () => {
+const Landing = () => {
   return (
-    <div className={aboutStyles.about}>
+    <div className={landingStyles.landingContainer}>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
@@ -16,4 +16,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Landing

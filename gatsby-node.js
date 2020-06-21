@@ -74,9 +74,9 @@ exports.createPages = async ({ graphql, actions }) => {
   createPaginatedPages({
     edges: posts,
     createPage: createPage,
-    pageTemplate: "src/templates/index.js",
-    pageLength: 5,
-    pathPrefix: "/",
+    pageTemplate: "src/templates/blog.js",
+    pageLength: 6,
+    pathPrefix: "/blog",
     context: { postHistory },
   })
 

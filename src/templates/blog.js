@@ -5,9 +5,9 @@ import PaginationUrl from "../components/paginationUrl"
 import blogStyles from "../styles/blog.module.css"
 import Link from "gatsby-link"
 
-class Index extends React.Component {
+class Blog extends React.Component {
   render() {
-    const headerText = "Aleks Popovic"
+    const headerText = "Aleks Popovic's Blog"
     const { group, index, first, last } = this.props.pageContext
     const previousUrl =
       index - 1 === 1 ? "/blog/" : "/blog/" + (index - 1).toString()
@@ -64,4 +64,4 @@ class Index extends React.Component {
   }
 }
 
-export default Index
+export default Blog

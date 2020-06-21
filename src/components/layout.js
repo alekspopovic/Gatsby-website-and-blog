@@ -61,13 +61,13 @@ class Layout extends React.Component {
             <img src={icon} alt="icon"></img>leks Popovic
           </Link>
           <Link activeClassName={layoutStyles.active} to="/">
+            <div>home</div>
+          </Link>
+          <Link activeClassName={layoutStyles.active} to="/blog">
             <div>blog</div>
           </Link>
           <Link activeClassName={layoutStyles.active} to="/projects">
             <div>projects</div>
-          </Link>
-          <Link activeClassName={layoutStyles.active} to="/aboutMe">
-            <div>about</div>
           </Link>
           <Link activeClassName={layoutStyles.active} to="/contact">
             <div>contact</div>
