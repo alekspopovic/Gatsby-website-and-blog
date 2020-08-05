@@ -7,8 +7,8 @@
 }
 
 article {
-  width: 49%;
-  display: inline-block;
+  /* width: 49%; */
+  /* display: inline-block; */
   overflow: hidden;
   margin: 1em auto;
   padding: 2em 3em;
