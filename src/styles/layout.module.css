@@ -73,13 +73,13 @@ small {
   line-height: 1.2;
 }
 
-.headerTextForImage .headerSubtitle {
+.headerSubtitle {
   font-size: 1.75em;
   position: relative;
   margin-top: 2rem;
 }
 
-.headerTextForImage .headerSubtitle::before {
+.headerSubtitle::before {
   content: "";
   background: var(--highlight);
   width: 200px;
@@ -90,20 +90,13 @@ small {
   position: absolute;
 }
 
-.headerTextForVideo .headerDate {
-  line-height: 1.6;
-  font-weight: 400;
-  margin-top: 1em;
-}
-
-.headerTextForImage .headerDate {
+.headerDate {
   line-height: 2;
   font-weight: 300;
   font-style: italic;
   margin-top: 1rem;
   font-size: 1.25rem;
   text-align: center;
-  max-width: 350px;
   padding: 0 10px;
   margin: 3rem auto 1rem auto;
 }
@@ -270,19 +263,13 @@ video {
 
   .headerDate {
     font-size: 0.8em;
-    max-width: 250px;
   }
 
   .headerImage {
     max-width: 70%;
   }
-
-  /* .headerTextForVideo .headerTitle {
-    font-size: 3.25em;
-  } */
 }
 
-/* small monitor */
 @media only screen and (max-width: 1024px) {
   .headerImage {
     max-width: 90%;
@@ -301,7 +288,6 @@ video {
   }
 }
 
-/* tablet */
 @media only screen and (max-width: 768px) {
   video {
     max-width: 140%;
@@ -322,12 +308,10 @@ video {
 
   .headerDate {
     font-size: 0.7em;
-    max-width: 200px;
     margin: 1.5rem auto 0 auto;
   }
 }
 
-/* mobile */
 @media only screen and (max-width: 500px) {
   article {
     font-size: 0.8em;
@@ -353,16 +337,7 @@ video {
   .headerDate {
     margin: 10px auto;
     font-size: 0.5em;
-    max-width: 175px;
   }
-
-  /* .headerTextForVideo .headerTitle {
-    font-size: 2.5em;
-  }
-
-  .headerTextForVideo .headerDate {
-    font-size: 0.6em;
-  } */
 
   #headerBackgroundContainer {
     height: 200px;
@@ -394,15 +369,4 @@ video {
 }
 
 @media only screen and (max-width: 320px) {
-  /* #headerBackgroundContainer {
-    height: 180px;
-  }
-
-  .headerTextForImage .headerTitle {
-    font-size: 1.25em;
-  }
-
-  .headerTextForImage .headerDate {
-    font-size: 0.6em;
-  } */
 }
