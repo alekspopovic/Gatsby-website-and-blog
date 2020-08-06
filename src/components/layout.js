@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
-import Sticky from "react-stickynode"
 import icon from "../assets/icon.svg"
 import Footer from "./footer"
 import Img from "gatsby-image"
@@ -55,30 +54,28 @@ class Layout extends React.Component {
     }
 
     let stickyMenu = (
-      <Sticky innerZ={100} enabled={true}>
-        <div id={layoutStyles.menu}>
-          <Link className={layoutStyles.logoText} to="/">
-            <img src={icon} alt="icon"></img>leks Popovic
-          </Link>
-          <Link activeClassName={layoutStyles.active} to="/">
-            <div>home</div>
-          </Link>
-          <Link activeClassName={layoutStyles.active} to="/blog">
-            <div>blog</div>
-          </Link>
-          <Link activeClassName={layoutStyles.active} to="/projects">
-            <div>projects</div>
-          </Link>
-          <Link activeClassName={layoutStyles.active} to="/contact">
-            <div>contact</div>
-          </Link>
-          <button
-            id={layoutStyles.lightMode}
-            onClick={e => this.switchTheme(e)}
-            className={clicked}
-          ></button>
-        </div>
-      </Sticky>
+      <div id={layoutStyles.menu}>
+        <Link className={layoutStyles.logoText} to="/">
+          <img src={icon} alt="icon"></img>leks Popovic
+        </Link>
+        <Link activeClassName={layoutStyles.active} to="/">
+          <div>home</div>
+        </Link>
+        <Link activeClassName={layoutStyles.active} to="/blog">
+          <div>blog</div>
+        </Link>
+        <Link activeClassName={layoutStyles.active} to="/projects">
+          <div>projects</div>
+        </Link>
+        <Link activeClassName={layoutStyles.active} to="/contact">
+          <div>contact</div>
+        </Link>
+        <button
+          id={layoutStyles.lightMode}
+          onClick={e => this.switchTheme(e)}
+          className={clicked}
+        ></button>
+      </div>
     )
 
     let headerBackground
@@ -102,10 +99,9 @@ class Layout extends React.Component {
       <h2 className={layoutStyles.headerDate}>{dateText}</h2>
     ) : null
 
-    let headerTitleClass =
-      !headerSubtitle && !headerDate
-        ? layoutStyles.headerTitleNoImage
-        : layoutStyles.headerTitle
+    let headerTitleClass = !headerDate
+      ? layoutStyles.headerTitleNoImage
+      : layoutStyles.headerTitle
 
     if (!hideHeader) {
       header = (

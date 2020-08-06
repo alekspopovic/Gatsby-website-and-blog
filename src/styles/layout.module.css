@@ -8,8 +8,9 @@ header {
 }
 
 header a {
-  color: var(--highlight);
-  color: var(--text);
+  /* color: var(--highlight);
+  color: var(--text); */
+  color: var(--header);
   box-shadow: none;
 }
 
@@ -48,12 +49,6 @@ small {
   font-family: var(--header-font);
 }
 
-/* .headerTextForVideo .headerTitle {
-  font-size: 4.2em;
-  margin: 0;
-  font-weight: 400;
-} */
-
 .headerTitle,
 .headerSubtitle {
   font-size: 2.75em;
@@ -65,7 +60,7 @@ small {
 }
 
 .headerTitleNoImage {
-  margin: 2em 0 1.5em 0;
+  margin: 2.5em 0 1em 0;
   font-size: 3em;
   font-weight: 400;
   color: var(--text);
@@ -77,6 +72,7 @@ small {
   font-size: 1.75em;
   position: relative;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .headerSubtitle::before {
@@ -128,6 +124,10 @@ small {
   align-items: center;
   background: var(--menu-bg);
   box-shadow: 0 0 5px var(--menu-shadow);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 #menu div {

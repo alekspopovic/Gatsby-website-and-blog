@@ -37,6 +37,9 @@
   --tech-color: var(--header);
 
   --header-font: "Kanit", sans-serif;
+
+  --blog-cover-one: #061724a6;
+  --blog-cover-two: #0c2233;
 }
 
 body {
@@ -76,6 +79,9 @@ body.light {
   --portfolio-call-to-action-hover-color: var(--header);
 
   --tech-color: var(--highlight);
+
+  /* --blog-cover-one: #fd90472c;
+  --blog-cover-two: #ffece0; */
 }
 
 html {
@@ -84,6 +90,7 @@ html {
 }
 
 main {
+  /* margin-top: 4rem; */
   margin-bottom: 60px;
 }
 
