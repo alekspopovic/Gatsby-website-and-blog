@@ -23,18 +23,21 @@ class Blog extends React.Component {
 
             let subtitleText =
               subtitle !== null ? (
-                <h1 className={blogStyles.postSubtitle}>
-                  <Link to={node.fields.slug}>{node.frontmatter.subtitle}</Link>
-                </h1>
+                <span className={blogStyles.postSubtitle}>
+                  {node.frontmatter.subtitle}
+                </span>
               ) : null
 
             return (
               <article key={node.fields.slug}>
                 <header>
                   <h1>
-                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                    <Link to={node.fields.slug}>
+                      {node.frontmatter.title}
+                      {subtitleText}
+                    </Link>
                   </h1>
-                  {subtitleText}
+
                   <div className={blogStyles.date}>{node.frontmatter.date}</div>
                 </header>
                 <section>
