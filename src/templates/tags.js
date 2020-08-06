@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BackgroundImage from "gatsby-background-image"
 
 import blogStyles from "../styles/blog.module.css"
 
@@ -25,26 +26,54 @@ const Tags = ({ pageContext, data, location }) => {
       <SEO title={tagHeader} pagePath={location.pathname} />
       <div className={blogStyles.blogContent}>
         {posts.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
+          let subtitle = node.frontmatter.subtitle
+
+          let subtitleText =
+            subtitle !== null ? (
+              <span className={blogStyles.postSubtitle}>
+                {node.frontmatter.subtitle}
+              </span>
+            ) : null
+
+          let postImage = node.frontmatter.featuredImage.childImageSharp.fluid
+
+          const backgroundFluidImageStack = [
+            `linear-gradient(
+                120deg,
+                var(--blog-cover-one),
+                var(--blog-cover-two)
+              )`,
+            postImage,
+          ]
+
           return (
-            <article key={slug}>
-              <header>
-                <h1>
-                  <Link to={slug}>{title}</Link>
-                </h1>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-                <div className={blogStyles.readMore}>
-                  <Link to={slug}>Read more</Link>
-                </div>
-              </section>
+            <article key={node.fields.slug}>
+              <BackgroundImage
+                className={blogStyles.postImageContainer}
+                fluid={backgroundFluidImageStack}
+                backgroundColor={`#040e18`}
+              >
+                <header>
+                  <h1>
+                    <Link to={node.fields.slug}>
+                      {node.frontmatter.title}
+                      {subtitleText}
+                    </Link>
+                  </h1>
+
+                  <div className={blogStyles.date}>{node.frontmatter.date}</div>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                  <div className={blogStyles.readMore}>
+                    <Link to={node.fields.slug}>Read more</Link>
+                  </div>
+                </section>
+              </BackgroundImage>
             </article>
           )
         })}
@@ -81,6 +110,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            featuredImage {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
         }
       }

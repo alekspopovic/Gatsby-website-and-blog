@@ -54,6 +54,10 @@ section {
   border-radius: 35px;
 }
 
+.allTags {
+  margin-bottom: 6em !important;
+}
+
 .readMore a:hover,
 .allTags a:hover,
 .paginationUrls a:hover {

@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import blogStyles from "../styles/blog.module.css"
 import Link from "gatsby-link"
-import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 
 class Blog extends React.Component {
@@ -67,39 +66,10 @@ class Blog extends React.Component {
                     </div>
                   </section>
                 </BackgroundImage>
-                {/* <header>
-                  <h1>
-                    <Link to={node.fields.slug}>
-                      {node.frontmatter.title}
-                      {subtitleText}
-                    </Link>
-                  </h1>
-
-                  <div className={blogStyles.date}>{node.frontmatter.date}</div>
-                </header> */}
               </article>
             )
           })}
         </div>
-
-        {/* <div className={blogStyles.paginationUrls}>
-          <PaginationUrl
-            className={blogStyles.newerPosts}
-            contentSection={blogStyles.blogContent}
-            test={first}
-            url={previousUrl}
-            text="Newer"
-          />
-          <PaginationUrl
-            className={blogStyles.olderPosts}
-            contentSection={blogStyles.blogContent}
-            test={last}
-            url={nextUrl}
-            text="Older"
-          />
-        </div> */}
-
-        {/* <PostArchive history={postHistory} /> */}
       </Layout>
     )
   }
