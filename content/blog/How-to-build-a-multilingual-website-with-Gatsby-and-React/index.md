@@ -68,8 +68,10 @@ plugins: [
     resolve: `gatsby-plugin-i18n`,
     options: {
       langKeyDefault: "en",
+      // highlight-start
       langKeyForNull: "en", // Sets language key to "en" if it's not provided
       prefixDefault: false, // Removes url prefix for your default language
+      // highlight-end
       useLangKeyLayout: false,
     },
   },

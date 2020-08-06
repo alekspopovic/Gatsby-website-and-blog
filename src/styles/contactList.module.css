@@ -1,7 +1,7 @@
 .contact {
   text-align: center;
   width: 50%;
-  margin: 1em auto 4em auto;
+  margin: 1em auto 6em auto;
   background: var(--dark-bg);
   padding: 2em 3em 1em 3em;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);

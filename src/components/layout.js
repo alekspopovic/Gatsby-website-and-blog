@@ -6,6 +6,7 @@ import videoClip from "../assets/blue.mp4"
 import icon from "../assets/icon.svg"
 import Footer from "./footer"
 import Img from "gatsby-image"
+import headerSvg from "../assets/operating-system-animate.svg"
 
 class Layout extends React.Component {
   switchTheme = e => {
@@ -85,24 +86,12 @@ class Layout extends React.Component {
     let headerBackground
     let headerTextClass
 
-    if (!hideHeader) {
-      if (headerImageFluid) {
-        headerBackground = (
-          <Img fluid={headerImageFluid} className={layoutStyles.headerImage} />
-        )
+    if (!hideHeader && headerImageFluid) {
+      headerBackground = (
+        <Img fluid={headerImageFluid} className={layoutStyles.headerImage} />
+      )
 
-        headerTextClass = layoutStyles.headerTextForImage
-      } else {
-        headerBackground = (
-          <div id={layoutStyles.headerBackgroundContainer}>
-            <video autoPlay muted loop src={videoClip}>
-              Your browser does not support HTML5 video.
-            </video>
-          </div>
-        )
-
-        headerTextClass = layoutStyles.headerTextForVideo
-      }
+      headerTextClass = layoutStyles.headerTextForImage
     }
 
     let header
@@ -111,14 +100,21 @@ class Layout extends React.Component {
       <h2 className={layoutStyles.headerSubtitle}>{subHeaderText}</h2>
     ) : null
 
-    console.log(subHeaderText)
+    let headerDate = dateText ? (
+      <h2 className={layoutStyles.headerDate}>{dateText}</h2>
+    ) : null
+
+    let headerTitleClass =
+      !headerSubtitle && !headerDate
+        ? layoutStyles.headerTitleNoImage
+        : layoutStyles.headerTitle
 
     if (!hideHeader) {
       header = (
         <div className={headerTextClass}>
-          <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
+          <h1 className={headerTitleClass}>{headerText}</h1>
           {headerSubtitle}
-          <h3 className={layoutStyles.headerDate}>{dateText}</h3>
+          {headerDate}
         </div>
       )
     }

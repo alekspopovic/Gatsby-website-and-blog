@@ -21,8 +21,6 @@ class Blog extends React.Component {
           {group.map(({ node }) => {
             let subtitle = node.frontmatter.subtitle
 
-            console.log(subtitle)
-
             let subtitleText =
               subtitle !== null ? (
                 <h1 className={blogStyles.postSubtitle}>

@@ -54,12 +54,12 @@ body {
 
 body.light {
   --dark-bg: #f3f3f3;
-  --dark-bg: #fff1e8;
+  /* --dark-bg: #fff1e8; */
   --dark-highlight: var(--highlight);
   --text: #000000;
   --text: #0c2233;
   --header: #f6f6f6;
-  /* --body-bg: #ffece0; */
+  --body-bg: #ffece0;
 
   --float-right-button-border: var(--header);
   --float-right-header: var(--header);

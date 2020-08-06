@@ -48,18 +48,27 @@ small {
   font-family: var(--header-font);
 }
 
-.headerTextForVideo .headerTitle {
+/* .headerTextForVideo .headerTitle {
   font-size: 4.2em;
   margin: 0;
   font-weight: 400;
-}
+} */
 
-.headerTextForImage .headerTitle,
+.headerTitle,
 .headerSubtitle {
   font-size: 2.75em;
   margin: 0;
   font-weight: 400;
   color: var(--header);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.headerTitleNoImage {
+  margin: 2em 0 1.5em 0;
+  font-size: 3em;
+  font-weight: 400;
+  color: var(--text);
   text-align: center;
   line-height: 1.2;
 }
@@ -251,15 +260,15 @@ video {
     height: 380px;
   }
 
-  .headerTextForImage .headerTitle {
+  .headerTitle {
     font-size: 2em;
   }
 
-  .headerTextForImage .headerSubtitle {
+  .headerSubtitle {
     font-size: 1.3em;
   }
 
-  .headerTextForImage .headerDate {
+  .headerDate {
     font-size: 0.8em;
     max-width: 250px;
   }
@@ -268,9 +277,9 @@ video {
     max-width: 70%;
   }
 
-  .headerTextForVideo .headerTitle {
+  /* .headerTextForVideo .headerTitle {
     font-size: 3.25em;
-  }
+  } */
 }
 
 /* small monitor */
@@ -298,20 +307,20 @@ video {
     max-width: 140%;
   }
 
-  .headerTextForImage .headerTitle {
+  .headerTitle {
     font-size: 1.5em;
   }
 
-  .headerTextForImage .headerSubtitle {
+  .headerSubtitle {
     font-size: 1em;
   }
 
-  .headerTextForImage .headerSubtitle::before {
+  .headerSubtitle::before {
     height: 2px;
     width: 120px;
   }
 
-  .headerTextForImage .headerDate {
+  .headerDate {
     font-size: 0.7em;
     max-width: 200px;
     margin: 1.5rem auto 0 auto;
@@ -328,32 +337,32 @@ video {
     margin-top: 5px;
   }
 
-  .headerTextForImage .headerTitle {
+  .headerTitle {
     font-size: 1em;
   }
 
-  .headerTextForImage .headerSubtitle {
+  .headerSubtitle {
     font-size: 0.75em;
     margin-top: 1rem;
   }
 
-  .headerTextForImage .headerSubtitle::before {
+  .headerSubtitle::before {
     top: -0.5rem;
   }
 
-  .headerTextForImage .headerDate {
+  .headerDate {
     margin: 10px auto;
     font-size: 0.5em;
     max-width: 175px;
   }
 
-  .headerTextForVideo .headerTitle {
+  /* .headerTextForVideo .headerTitle {
     font-size: 2.5em;
   }
 
   .headerTextForVideo .headerDate {
     font-size: 0.6em;
-  }
+  } */
 
   #headerBackgroundContainer {
     height: 200px;
