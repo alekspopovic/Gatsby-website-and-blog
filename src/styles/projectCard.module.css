@@ -15,7 +15,7 @@
   font-size: 2.5em;
   margin: 1em 0;
   text-align: center;
-  font-family: "Oswald";
+  font-family: var(--header-font);
   color: var(--highlight);
 }
 
@@ -62,7 +62,7 @@
 .cardButton {
   text-align: center;
   margin-top: 1em;
-  font-family: "Oswald";
+  font-family: var(--header-font);
   letter-spacing: 2px;
 }
 

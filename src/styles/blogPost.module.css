@@ -15,22 +15,22 @@ blockquote {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
+  padding-bottom: 1.5em;
 }
 
 .postNavigation a {
-  color: var(--text);
+  color: var(--header);
   border: 2px solid var(--highlight);
+  border-radius: 50px;
   padding: 15px 50px;
   text-transform: uppercase;
   display: inline-block;
-  font-family: "Oswald";
+  font-family: var(--header-font);
   letter-spacing: 2px;
-  background-color: var(--dark-bg);
+  background-color: var(--menu-bg);
 }
 
 .postNavigation a:hover {
-  color: var(--text);
   box-shadow: none;
   background: var(--highlight);
 }
@@ -75,7 +75,7 @@ article section ul {
 article section h1,
 article section h2,
 article section h3 {
-  margin: 1.75em 0 1em 0;
+  margin: 1.25em 0 0.851em 0;
 }
 
 article section h2 {

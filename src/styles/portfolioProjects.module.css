@@ -9,7 +9,7 @@
 
 .cardButton {
   text-align: center;
-  font-family: "Oswald";
+  font-family: var(--header-font);
   letter-spacing: 2px;
   margin: 0 1em;
 }

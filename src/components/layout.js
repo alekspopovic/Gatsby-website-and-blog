@@ -29,6 +29,7 @@ class Layout extends React.Component {
     const {
       headerText,
       subHeaderText,
+      dateText,
       background,
       footerNoOffset,
       headerImageFluid,
@@ -106,13 +107,18 @@ class Layout extends React.Component {
 
     let header
 
+    let headerSubtitle = subHeaderText ? (
+      <h2 className={layoutStyles.headerSubtitle}>{subHeaderText}</h2>
+    ) : null
+
+    console.log(subHeaderText)
+
     if (!hideHeader) {
       header = (
         <div className={headerTextClass}>
           <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
-          <div>
-            <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
-          </div>
+          {headerSubtitle}
+          <h3 className={layoutStyles.headerDate}>{dateText}</h3>
         </div>
       )
     }

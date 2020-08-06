@@ -18,29 +18,42 @@ class Blog extends React.Component {
       <Layout headerText={headerText} background={true}>
         <SEO title={seoTitle} pagePath={this.props.location.pathname} />
         <div id="content" className={blogStyles.blogContent}>
-          {group.map(({ node }) => (
-            <article key={node.fields.slug}>
-              <header>
-                <h1>
-                  <Link to={node.fields.slug}>
-                    {node.frontmatter.title || node.fields.slug}
-                  </Link>
+          {group.map(({ node }) => {
+            let subtitle = node.frontmatter.subtitle
+
+            console.log(subtitle)
+
+            let subtitleText =
+              subtitle !== null ? (
+                <h1 className={blogStyles.postSubtitle}>
+                  <Link to={node.fields.slug}>{node.frontmatter.subtitle}</Link>
                 </h1>
-                <div className={blogStyles.date}>{node.frontmatter.date}</div>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-                <div className={blogStyles.readMore}>
-                  <Link to={node.fields.slug}>Read more</Link>
-                </div>
-              </section>
-            </article>
-          ))}
+              ) : null
+
+            return (
+              <article key={node.fields.slug}>
+                <header>
+                  <h1>
+                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                  </h1>
+                  {subtitleText}
+                  <div className={blogStyles.date}>{node.frontmatter.date}</div>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                  <div className={blogStyles.readMore}>
+                    <Link to={node.fields.slug}>Read more</Link>
+                  </div>
+                </section>
+              </article>
+            )
+          })}
         </div>
+
         <div className={blogStyles.paginationUrls}>
           <PaginationUrl
             className={blogStyles.newerPosts}

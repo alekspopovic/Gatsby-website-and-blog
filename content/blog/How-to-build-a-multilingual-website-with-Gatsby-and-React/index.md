@@ -1,5 +1,6 @@
 ---
-title: "How to build a multilingual website with Gatsby and React - Part 1: Page Structure"
+title: "How to build a multilingual website with Gatsby and React"
+subtitle: "Part 1: Page Structure"
 date: "2020-08-05"
 description: "I started working on this website in January, but things didn't really work out the way I wanted to. It's tough to have everything go according to plan when you don't have a plan in the first place. I knew I wanted to redesign my old website which was was just one static page with a list of my projects. At the time I made it that was enough, but I wanted to extend it at some point to be a place where I can do and show more things, not necessarily related to web development. I guess this is that point."
 tags:

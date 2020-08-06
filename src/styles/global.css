@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500&display=swap");
 
 :root {
   --dark-bg: #0c2233;
@@ -7,10 +7,12 @@
   --highlight: #fd9047;
   --dark-highlight: #061724;
   --body-bg: var(--dark-highlight);
-  --text: #eeeeee;
+  --text: #d6d6d6;
   --text-menu: #eeeeee;
   --menu-shadow: #13171c;
   --header: #eeeeee;
+  --header-bg-green: #061724a6;
+  --header-bg-orange: #fd90472c;
 
   --float-right-header: var(--highlight);
   --float-right-button-border: var(--highlight);
@@ -33,12 +35,14 @@
   --call-to-action-color: var(--header);
 
   --tech-color: var(--header);
+
+  --header-font: "Kanit", sans-serif;
 }
 
 body {
   margin: 0 0 55px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   overflow-x: hidden;
   color: var(--text);
   font-weight: 400;
@@ -50,11 +54,12 @@ body {
 
 body.light {
   --dark-bg: #f3f3f3;
+  --dark-bg: #fff1e8;
   --dark-highlight: var(--highlight);
   --text: #000000;
   --text: #0c2233;
   --header: #f6f6f6;
-  --body-bg: #ffece0;
+  /* --body-bg: #ffece0; */
 
   --float-right-button-border: var(--header);
   --float-right-header: var(--header);

@@ -9,6 +9,7 @@ header {
 
 header a {
   color: var(--highlight);
+  color: var(--text);
   box-shadow: none;
 }
 
@@ -19,7 +20,7 @@ header a {
   position: absolute;
   top: 60%;
   left: 50%;
-  font-family: "Oswald";
+  font-family: var(--header-font);
   transform: translate(-50%, -50%);
   color: var(--header);
   font-weight: 300;
@@ -33,7 +34,7 @@ header a {
   position: absolute;
   top: 60%;
   left: 50%;
-  font-family: "Oswald";
+  font-family: var(--header-font);
   transform: translate(-50%, -50%);
   color: var(--header);
   font-weight: 300;
@@ -44,7 +45,7 @@ h1,
 h2,
 h3,
 small {
-  font-family: "Oswald";
+  font-family: var(--header-font);
 }
 
 .headerTextForVideo .headerTitle {
@@ -53,42 +54,56 @@ small {
   font-weight: 400;
 }
 
-.headerTextForImage .headerTitle {
-  font-size: 4.2em;
+.headerTextForImage .headerTitle,
+.headerSubtitle {
+  font-size: 2.75em;
   margin: 0;
   font-weight: 400;
-
-  background-color: var(--body-bg);
-  color: var(--text);
-  display: inline;
-  text-align: left;
-  line-height: 1.3em;
-  letter-spacing: 8px;
+  color: var(--header);
+  text-align: center;
+  line-height: 1.2;
 }
 
-.headerTextForVideo .headerSubTitle {
+.headerTextForImage .headerSubtitle {
+  font-size: 1.75em;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.headerTextForImage .headerSubtitle::before {
+  content: "";
+  background: var(--highlight);
+  width: 200px;
+  left: 50%;
+  top: -1rem;
+  transform: translateX(-50%);
+  height: 5px;
+  position: absolute;
+}
+
+.headerTextForVideo .headerDate {
   line-height: 1.6;
   font-weight: 400;
   margin-top: 1em;
 }
 
-.headerTextForImage .headerSubTitle {
-  line-height: 1.6;
-  font-weight: 400;
-  background-color: var(--highlight);
-  color: var(--menu-bg);
-  margin-top: 20px;
-  font-size: 1.5em;
+.headerTextForImage .headerDate {
+  line-height: 2;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 1.25rem;
   text-align: center;
-  display: inline-block;
+  max-width: 350px;
   padding: 0 10px;
+  margin: 3rem auto 1rem auto;
 }
 
 .logoText {
   position: absolute;
   left: 0px;
   top: 2px;
-  font-family: "Oswald";
+  font-family: var(--header-font);
   font-size: 1.3em;
   line-height: 2.7em;
   padding: 0 15px;
@@ -114,7 +129,7 @@ small {
 }
 
 #menu div {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--header-font);
   flex-basis: auto;
   font-weight: 400;
   font-size: 0.8em;
@@ -208,6 +223,23 @@ video {
   margin: 0 auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 0 0 10px 10px;
+  position: relative;
+  z-index: -1;
+}
+
+.headerImage::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--header-bg);
+  background: linear-gradient(
+    120deg,
+    var(--header-bg-green),
+    var(--header-bg-orange)
+  );
+  position: absolute;
+  z-index: 1;
+  left: 0;
 }
 
 #menu .active {
@@ -220,15 +252,24 @@ video {
   }
 
   .headerTextForImage .headerTitle {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
-  .headerTextForImage .headerSubTitle {
+  .headerTextForImage .headerSubtitle {
+    font-size: 1.3em;
+  }
+
+  .headerTextForImage .headerDate {
     font-size: 0.8em;
+    max-width: 250px;
   }
 
   .headerImage {
     max-width: 70%;
+  }
+
+  .headerTextForVideo .headerTitle {
+    font-size: 3.25em;
   }
 }
 
@@ -236,6 +277,10 @@ video {
 @media only screen and (max-width: 1024px) {
   .headerImage {
     max-width: 90%;
+  }
+
+  .headerTextForImage {
+    width: 75%;
   }
 
   video {
@@ -249,34 +294,64 @@ video {
 
 /* tablet */
 @media only screen and (max-width: 768px) {
-  .headerTextForImage {
-    width: 70%;
-  }
-
   video {
     max-width: 140%;
-  }
-}
-
-/* mobile */
-@media only screen and (max-width: 426px) {
-  article {
-    font-size: 0.8em;
   }
 
   .headerTextForImage .headerTitle {
     font-size: 1.5em;
   }
 
-  .headerTextForImage .headerSubTitle {
-    font-size: 0.6em;
+  .headerTextForImage .headerSubtitle {
+    font-size: 1em;
+  }
+
+  .headerTextForImage .headerSubtitle::before {
+    height: 2px;
+    width: 120px;
+  }
+
+  .headerTextForImage .headerDate {
+    font-size: 0.7em;
+    max-width: 200px;
+    margin: 1.5rem auto 0 auto;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+  article {
+    font-size: 0.8em;
+  }
+
+  .headerTextForImage {
+    margin-top: 5px;
+  }
+
+  .headerTextForImage .headerTitle {
+    font-size: 1em;
+  }
+
+  .headerTextForImage .headerSubtitle {
+    font-size: 0.75em;
+    margin-top: 1rem;
+  }
+
+  .headerTextForImage .headerSubtitle::before {
+    top: -0.5rem;
+  }
+
+  .headerTextForImage .headerDate {
+    margin: 10px auto;
+    font-size: 0.5em;
+    max-width: 175px;
   }
 
   .headerTextForVideo .headerTitle {
     font-size: 2.5em;
   }
 
-  .headerTextForVideo .headerSubTitle {
+  .headerTextForVideo .headerDate {
     font-size: 0.6em;
   }
 
@@ -310,7 +385,7 @@ video {
 }
 
 @media only screen and (max-width: 320px) {
-  #headerBackgroundContainer {
+  /* #headerBackgroundContainer {
     height: 180px;
   }
 
@@ -318,7 +393,7 @@ video {
     font-size: 1.25em;
   }
 
-  .headerTextForImage .headerSubTitle {
+  .headerTextForImage .headerDate {
     font-size: 0.6em;
-  }
+  } */
 }
