@@ -2,11 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import Sticky from "react-stickynode"
-import videoClip from "../assets/blue.mp4"
 import icon from "../assets/icon.svg"
 import Footer from "./footer"
 import Img from "gatsby-image"
-import headerSvg from "../assets/operating-system-animate.svg"
 
 class Layout extends React.Component {
   switchTheme = e => {
