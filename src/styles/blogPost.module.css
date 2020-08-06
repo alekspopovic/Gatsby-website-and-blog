@@ -107,14 +107,6 @@ article section h2 {
     width: 100%;
   }
 
-  ul {
-    margin: 0;
-  }
-
-  li {
-    margin-bottom: 2em;
-  }
-
   nav {
     width: 100%;
     margin: 0;
@@ -152,14 +144,6 @@ article section h2 {
 
   .paginationUrls {
     width: 100%;
-  }
-
-  ul {
-    margin: 0;
-  }
-
-  li {
-    margin-bottom: 0;
   }
 
   article section ol,
