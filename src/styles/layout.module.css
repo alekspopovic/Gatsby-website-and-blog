@@ -222,7 +222,7 @@ video {
 
 .headerImage {
   max-width: 60%;
-  margin: 0 auto;
+  margin: 3.7em auto 0 auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 0 0 10px 10px;
   position: relative;

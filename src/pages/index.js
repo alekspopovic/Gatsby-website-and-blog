@@ -7,7 +7,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout hideHeader={true}>
-        <SEO title="About me" pagePath={this.props.location.pathname} />
+        <SEO title="Home" pagePath={this.props.location.pathname} />
         <Landing />
       </Layout>
     )

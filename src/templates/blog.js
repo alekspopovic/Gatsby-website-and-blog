@@ -7,12 +7,11 @@ import BackgroundImage from "gatsby-background-image"
 
 class Blog extends React.Component {
   render() {
-    const headerText = "Aleks Popovic's Blog"
     const posts = this.props.data.allMarkdownRemark.edges
     const seoTitle = "Blog"
 
     return (
-      <Layout headerText={headerText} background={true}>
+      <Layout background={true}>
         <SEO title={seoTitle} pagePath={this.props.location.pathname} />
         <div id="content" className={blogStyles.blogContent}>
           {posts.map(({ node }) => {

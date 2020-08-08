@@ -5,10 +5,8 @@ import ProjectList from "../components/projectList"
 
 class Projects extends React.Component {
   render() {
-    const headerText = "Projects"
-
     return (
-      <Layout headerText={headerText} footerNoOffset={true}>
+      <Layout footerNoOffset={true}>
         <SEO title="Projects" pagePath={this.props.location.pathname} />
         <ProjectList />
       </Layout>

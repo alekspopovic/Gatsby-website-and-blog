@@ -99,14 +99,16 @@ class Layout extends React.Component {
       <h2 className={layoutStyles.headerDate}>{dateText}</h2>
     ) : null
 
-    let headerTitleClass = !headerDate
-      ? layoutStyles.headerTitleNoImage
-      : layoutStyles.headerTitle
+    if (!hideHeader && headerText) {
+      let headerTitleClass = !headerDate
+        ? layoutStyles.headerTitleNoImage
+        : layoutStyles.headerTitle
 
-    if (!hideHeader) {
+      let headerTitle = <h1 className={headerTitleClass}>{headerText}</h1>
+
       header = (
         <div className={headerTextClass}>
-          <h1 className={headerTitleClass}>{headerText}</h1>
+          {headerTitle}
           {headerSubtitle}
           {headerDate}
         </div>
