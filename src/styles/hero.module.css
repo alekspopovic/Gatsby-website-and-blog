@@ -280,7 +280,7 @@
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 550px) {
   .profileImageContainer {
     margin-bottom: 1em;
   }

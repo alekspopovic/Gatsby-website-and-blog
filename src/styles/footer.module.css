@@ -37,7 +37,7 @@
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 550px) {
   .footer {
     font-size: 0.7em;
   }

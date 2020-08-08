@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import icon from "../assets/icon.svg"
 import Footer from "./footer"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 
 class Layout extends React.Component {
   switchTheme = e => {
@@ -78,17 +78,6 @@ class Layout extends React.Component {
       </div>
     )
 
-    let headerBackground
-    let headerTextClass
-
-    if (!hideHeader && headerImageFluid) {
-      headerBackground = (
-        <Img fluid={headerImageFluid} className={layoutStyles.headerImage} />
-      )
-
-      headerTextClass = layoutStyles.headerTextForImage
-    }
-
     let header
 
     let headerSubtitle = subHeaderText ? (
@@ -106,12 +95,24 @@ class Layout extends React.Component {
 
       let headerTitle = <h1 className={headerTitleClass}>{headerText}</h1>
 
+      const backgroundFluidImageStack = [
+        `linear-gradient(
+          120deg,
+          var(--header-bg-green),
+          var(--header-bg-orange)
+        )`,
+        headerImageFluid,
+      ]
+
       header = (
-        <div className={headerTextClass}>
+        <BackgroundImage
+          className={layoutStyles.blogPostHeaderImage}
+          fluid={backgroundFluidImageStack}
+        >
           {headerTitle}
           {headerSubtitle}
           {headerDate}
-        </div>
+        </BackgroundImage>
       )
     }
 
@@ -119,7 +120,6 @@ class Layout extends React.Component {
       <div>
         <header>
           {stickyMenu}
-          {headerBackground}
           {header}
         </header>
         <main className={mainClass}>{children}</main>

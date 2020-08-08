@@ -44,7 +44,7 @@
   background: var(--menu-bg);
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 550px) {
   .projectsHeader {
     font-size: 2em;
   }
