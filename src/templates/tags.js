@@ -78,9 +78,9 @@ const Tags = ({ pageContext, data, location }) => {
           )
         })}
       </div>
-      <div className={blogStyles.allTags}>
+      {/* <div className={blogStyles.allTags}>
         <Link to="/tags">All tags</Link>
-      </div>
+      </div> */}
     </Layout>
   )
 }
