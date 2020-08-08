@@ -1,6 +1,6 @@
 import React from "react"
 import projectCardStyles from "../styles/projectCard.module.css"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 
 class ProjectCard extends React.Component {
   render() {
@@ -13,13 +13,7 @@ class ProjectCard extends React.Component {
       playStoreUrl,
     } = this.props.project
 
-    const { floatRight, imageFluid } = this.props
-
-    let floatRightClass = ""
-
-    if (floatRight === true) {
-      floatRightClass = projectCardStyles.floatRight
-    }
+    const { imageFluid } = this.props
 
     let buttonUrl = ""
     let buttonText = ""
@@ -35,22 +29,26 @@ class ProjectCard extends React.Component {
       buttonText = "View on Android Playstore"
     }
 
-    return (
-      <div className={`${projectCardStyles.card} ${floatRightClass}`}>
-        <div className={projectCardStyles.name}>{name}</div>
+    const backgroundFluidImageStack = [
+      `linear-gradient(
+        120deg,
+        var(--project-bg-one),
+        var(--project-bg-two)
+      )`,
+      imageFluid,
+    ]
 
-        <div className={projectCardStyles.content}>
-          <div className={projectCardStyles.fluidImageContainer}>
-            <Img fluid={imageFluid} alt={name} />
-          </div>
-          <div className={projectCardStyles.text}>
-            <div className={projectCardStyles.description}>{description}</div>
-            <div className={projectCardStyles.tags}>
-              {tags.map(tag => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-          </div>
+    return (
+      <BackgroundImage
+        className={projectCardStyles.card}
+        fluid={backgroundFluidImageStack}
+      >
+        <div className={projectCardStyles.name}>{name}</div>
+        <div className={projectCardStyles.description}>{description}</div>
+        <div className={projectCardStyles.tags}>
+          {tags.map(tag => (
+            <span key={tag}>{tag}</span>
+          ))}
         </div>
 
         <div className={projectCardStyles.cardButton}>
@@ -58,7 +56,7 @@ class ProjectCard extends React.Component {
             {buttonText}
           </a>
         </div>
-      </div>
+      </BackgroundImage>
     )
   }
 }

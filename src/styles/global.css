@@ -40,6 +40,9 @@
 
   --blog-cover-one: #061724a6;
   --blog-cover-two: #0c2233;
+
+  --project-bg-one: #061724cc;
+  --project-bg-two: #0c2233;
 }
 
 body {

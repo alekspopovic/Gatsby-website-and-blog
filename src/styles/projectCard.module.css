@@ -1,47 +1,34 @@
 .card {
-  display: block;
-  overflow: auto;
-  padding: 0 20%;
-  margin: auto;
-  padding-bottom: 3em;
-  background: var(--dark-bg);
-}
-
-.card.floatRight {
-  background-color: var(--dark-highlight);
+  border-radius: 15%;
+  margin: 1em auto;
+  width: 100%;
+  /* overflow: hidden; */
+  padding: 4em 0 3em 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-size: cover;
+  background-position: center;
 }
 
 .name {
   font-size: 2.5em;
-  margin: 1em 0;
+  margin-bottom: 1em;
   text-align: center;
   font-family: var(--header-font);
   color: var(--highlight);
 }
 
-.floatRight .name {
-  color: var(--float-right-header);
-}
-
 .description {
   font-size: 1.05em;
-  padding: 0 0 0 3em;
-}
-
-.floatRight .description {
-  padding: 0 3em 0 0;
+  padding: 0 20%;
+  width: 100%;
+  margin: 0 auto 3em auto;
 }
 
 .tags {
-  margin-top: 2em;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 0 0 3em;
-}
-
-.floatRight .tags {
-  padding: 0 3em 0 0;
+  margin-bottom: 4em;
 }
 
 .tags span {
@@ -52,11 +39,6 @@
   text-align: center;
   border: 2px solid var(--dark-highlight);
   background: var(--dark-highlight);
-}
-
-.floatRight .tags span {
-  border: 1px solid var(--dark-bg);
-  background: var(--dark-bg);
 }
 
 .cardButton {
@@ -80,14 +62,6 @@
   color: var(--header);
 }
 
-.floatRight .cardButton a {
-  border: 2px solid var(--float-right-button-border);
-}
-
-.floatRight .cardButton a:hover {
-  color: var(--header);
-}
-
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -101,21 +75,19 @@
   margin-bottom: 3em;
 }
 
-.floatRight .fluidImageContainer {
-  border: none;
-}
-
 .text {
   width: 50%;
 }
 
-.floatRight .fluidImageContainer {
-  order: 2;
+@media only screen and (max-width: 1366px) {
+  .card {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .card {
-    padding: 0 10%;
+    padding: 2em;
   }
 
   .description {
@@ -145,27 +117,13 @@
     width: 100%;
   }
 
-  .floatRight .fluidImageContainer {
-    order: 1;
-  }
-
   .description {
     padding: 0;
     text-align: center;
     margin-bottom: 1em;
   }
 
-  .floatRight .description {
-    padding: 0;
-    text-align: center;
-  }
-
   .tags {
-    padding: 0;
-    margin-bottom: 1em;
-  }
-
-  .floatRight .tags {
     padding: 0;
     margin-bottom: 1em;
   }
@@ -175,22 +133,18 @@
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 550px) {
   .card {
-    padding: 0;
+    width: 96%;
+    padding: 2em;
+    border-radius: 0;
   }
 
   .name {
     font-size: 1.5em;
-    padding: 0 5px;
   }
 
   .description {
-    font-size: 0.9em;
-    padding: 0 15px;
-  }
-
-  .floatRight .description {
     font-size: 0.9em;
     padding: 0 15px;
   }

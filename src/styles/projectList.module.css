@@ -1,16 +1,28 @@
-.sectionContent {
-  width: 100%;
-  margin-top: 3.75em;
+.projectCardList {
+  width: 75%;
+  margin: auto;
+  margin-top: 4.5em;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 768px) {
-  .sectionContent {
-    margin: 0 0 40px 0;
+@media only screen and (max-width: 1366px) {
+  .blogContent {
+    width: 65%;
   }
 }
 
-@media only screen and (max-width: 426px) {
-  .sectionContent {
-    margin: 0;
+@media only screen and (max-width: 1024px) {
+  .blogContent {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .blogContent {
+    margin-top: 0;
+    width: 100%;
   }
 }
