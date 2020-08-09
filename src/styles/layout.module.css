@@ -1,4 +1,5 @@
 .darkBackground {
+  background: var(--blog-bg);
 }
 
 header {
@@ -18,10 +19,9 @@ header a {
   margin: auto;
   margin-top: 3.75em;
 
-  border-radius: 0 0 15px 15px;
   overflow: hidden;
 
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.23);
 
   padding: 0 2em;
 
@@ -83,6 +83,7 @@ small {
   text-align: center;
   margin: 0;
   transform: translateY(2em);
+  color: var(--header);
 }
 
 .logoText {

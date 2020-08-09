@@ -7,6 +7,7 @@
   --highlight: #fd9047;
   --dark-highlight: #061724;
   --body-bg: var(--dark-highlight);
+  --body-bg: var(--portfolio-bg);
   --text: #d6d6d6;
   --text-menu: #eeeeee;
   --menu-shadow: #13171c;
@@ -43,6 +44,9 @@
 
   --project-bg-one: #061724cc;
   --project-bg-two: #0c2233;
+
+  --blog-bg: #061724;
+  --tag-bg: #061724;
 }
 
 body {
@@ -83,8 +87,7 @@ body.light {
 
   --tech-color: var(--highlight);
 
-  /* --blog-cover-one: #fd90472c;
-  --blog-cover-two: #ffece0; */
+  --blog-bg: transparent;
 }
 
 html {

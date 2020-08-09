@@ -3,8 +3,7 @@
   padding: 1em 0;
   margin: 0;
   font-weight: var(--portfolio-font-weight);
-  color: var(--header);
-  background-color: var(--dark-highlight);
+  color: var(--text);
 }
 
 .cardButton {
@@ -41,7 +40,17 @@
   display: flex;
   padding: 4em 0;
   justify-content: center;
-  background: var(--menu-bg);
+}
+
+.portfolioProjectsContainer {
+  width: 75%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolioProjectsContainer {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -56,5 +65,9 @@
 
   .cardButton {
     margin-bottom: 3em;
+  }
+
+  .portfolioProjectsContainer {
+    width: 100%;
   }
 }

@@ -18,11 +18,7 @@ const Tags = ({ pageContext, data, location }) => {
   const subHeaderText = `${totalCount} post${totalCount === 1 ? "" : "s"}`
 
   return (
-    <Layout
-      headerText={headerText}
-      subHeaderText={subHeaderText}
-      background={true}
-    >
+    <Layout headerText={headerText} subHeaderText={subHeaderText}>
       <SEO title={tagHeader} pagePath={location.pathname} />
       <div className={blogStyles.blogContent}>
         {posts.map(({ node }) => {

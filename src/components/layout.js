@@ -34,10 +34,10 @@ class Layout extends React.Component {
       hideHeader,
     } = this.props
 
-    let mainClass, theme
+    let darkBackgroundClass, theme
 
     if (background) {
-      mainClass = layoutStyles.darkBackground
+      darkBackgroundClass = layoutStyles.darkBackground
     }
 
     const windowGlobal = typeof window !== "undefined" && window
@@ -118,11 +118,11 @@ class Layout extends React.Component {
 
     return (
       <div>
-        <header>
+        <header className={darkBackgroundClass}>
           {stickyMenu}
           {header}
         </header>
-        <main className={mainClass}>{children}</main>
+        <main className={darkBackgroundClass}>{children}</main>
         <Footer footerNoOffset={footerNoOffset} />
       </div>
     )

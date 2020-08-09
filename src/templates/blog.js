@@ -11,7 +11,7 @@ class Blog extends React.Component {
     const seoTitle = "Blog"
 
     return (
-      <Layout background={true}>
+      <Layout>
         <SEO title={seoTitle} pagePath={this.props.location.pathname} />
         <div id="content" className={blogStyles.blogContent}>
           {posts.map(({ node }) => {

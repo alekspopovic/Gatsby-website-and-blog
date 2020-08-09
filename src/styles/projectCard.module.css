@@ -7,6 +7,8 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-size: cover;
   background-position: center;
+  border-radius: 25px;
+  color: var(--header);
 }
 
 .name {
@@ -37,8 +39,8 @@
   font-size: 0.8em;
   border-radius: 30px;
   text-align: center;
-  border: 2px solid var(--dark-highlight);
-  background: var(--dark-highlight);
+  border: 2px solid var(--tag-bg);
+  background: var(--tag-bg);
 }
 
 .cardButton {
@@ -49,11 +51,11 @@
 }
 
 .cardButton a {
-  color: var(--text);
+  color: var(--header);
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
-  background: var(--dark-bg);
+  background: var(--menu-bg);
   border-radius: 35px;
 }
 
@@ -135,9 +137,10 @@
 
 @media only screen and (max-width: 550px) {
   .card {
-    width: 96%;
-    padding: 2em;
+    width: 100%;
+    padding: 2em 1em;
     border-radius: 0;
+    margin: 1em 0;
   }
 
   .name {
@@ -155,5 +158,9 @@
 
   .fluidImageContainer {
     margin-bottom: 2em;
+  }
+
+  .cardButton a {
+    display: block;
   }
 }

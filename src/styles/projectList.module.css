@@ -9,20 +9,14 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  .blogContent {
-    width: 65%;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
-  .blogContent {
-    width: 80%;
-  }
 }
 
 @media only screen and (max-width: 550px) {
-  .blogContent {
-    margin-top: 0;
+  .projectCardList {
+    margin-top: 2em;
     width: 100%;
   }
 }
