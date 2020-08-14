@@ -105,6 +105,20 @@ blockquote {
   color: var(--header);
 }
 
+.tagSummary {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.tag {
+  margin: 0 2px;
+  padding: 5px 15px;
+  background: var(--dark-highlight);
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
 @media only screen and (max-width: 1366px) {
   .blogContent {
     width: 65%;
@@ -122,6 +136,18 @@ blockquote {
 
   article {
     padding: 2em;
+  }
+
+  .tagSummary {
+    display: flex;
+    flex-direction: column;
+    right: -20px;
+  }
+
+  .tag {
+    margin: 3px 0;
+    padding-right: 30px;
+    display: block;
   }
 }
 

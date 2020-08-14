@@ -35,6 +35,16 @@ class Blog extends React.Component {
               postImage,
             ]
 
+            // let tags = []
+
+            // node.frontmatter.tags.sort().forEach(tag => {
+            //   tags.push(
+            //     <span className={blogStyles.tag} key={tag}>
+            //       {tag}
+            //     </span>
+            //   )
+            // })
+
             return (
               <article key={node.fields.slug}>
                 <BackgroundImage
@@ -63,6 +73,7 @@ class Blog extends React.Component {
                     <div className={blogStyles.readMore}>
                       <Link to={node.fields.slug}>Read more</Link>
                     </div>
+                    {/* <div className={blogStyles.tagSummary}>{tags}</div> */}
                   </section>
                 </BackgroundImage>
               </article>

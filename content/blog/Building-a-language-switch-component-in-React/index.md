@@ -5,7 +5,6 @@ seriesLink: "multilingual"
 date: "2020-08-14"
 description: "You have all of your multilingual pages set up, but now you need to give your users a way to access those pages. There are multiple ways this can be done. The most common solution is adding a language selection tool in the form of multiple links or by using a drop-down list. In my case - I had to implement three different languages, so I went with the buttons approach."
 tags:
-  - gatsby
   - web
   - react
   - multilingual

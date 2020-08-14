@@ -1,13 +1,14 @@
 .container {
   display: flex;
   width: 100%;
-  margin: 5em auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .content {
   width: 30%;
   position: relative;
-  left: -5%;
 }
 
 .imageContainer {
@@ -25,37 +26,49 @@
 
 @media only screen and (max-width: 1024px) {
   .container {
-    margin: 3em auto 5em auto;
-  }
-
-  .pageList li {
-    margin-bottom: 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .imageContainer {
-    width: 80%;
-    margin: auto;
-  }
-
-  .content {
-    width: 80%;
-    margin: 0 auto;
-    position: static;
-  }
-
-  .container {
     flex-direction: column;
   }
 
+  .imageContainer {
+    width: 70%;
+  }
+
+  .content {
+    width: 60%;
+    margin: 0 auto;
+    /* margin-left: 12rem; */
+  }
+
   .pageList li {
     margin-bottom: 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .pageList li {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    /* margin-top: 1rem; */
+    /* padding-bottom: 3rem; */
+    height: initial;
+    margin-top: 4rem;
+  }
+
   .imageContainer {
-    display: none;
+    width: 90%;
+    /* display: none; */
+  }
+
+  .content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .pageList li {
+    margin-bottom: 0;
   }
 }
