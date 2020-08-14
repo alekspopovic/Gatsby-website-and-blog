@@ -47,7 +47,7 @@ blockquote {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .tags ul a {
