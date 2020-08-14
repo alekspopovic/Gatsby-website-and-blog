@@ -22,12 +22,12 @@ const Tags = ({ pageContext, data, location }) => {
       <SEO title={tagHeader} pagePath={location.pathname} />
       <div className={blogStyles.blogContent}>
         {posts.map(({ node }) => {
-          let subtitle = node.frontmatter.subtitle
+          let series = node.frontmatter.series
 
-          let subtitleText =
-            subtitle !== null ? (
+          let seriesText =
+            series !== null ? (
               <span className={blogStyles.postSubtitle}>
-                {node.frontmatter.subtitle}
+                {node.frontmatter.series}
               </span>
             ) : null
 
@@ -53,7 +53,7 @@ const Tags = ({ pageContext, data, location }) => {
                   <h1>
                     <Link to={node.fields.slug}>
                       {node.frontmatter.title}
-                      {subtitleText}
+                      {seriesText}
                     </Link>
                   </h1>
 
@@ -105,6 +105,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            series
             description
             featuredImage {
               childImageSharp {

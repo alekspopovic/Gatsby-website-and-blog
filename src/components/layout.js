@@ -32,6 +32,7 @@ class Layout extends React.Component {
       footerNoOffset,
       headerImageFluid,
       hideHeader,
+      seriesLink,
     } = this.props
 
     let darkBackgroundClass, theme
@@ -80,8 +81,12 @@ class Layout extends React.Component {
 
     let header
 
+    let seriesLinkSrc = seriesLink ? `/tags/${seriesLink}` : "/"
+
     let headerSubtitle = subHeaderText ? (
-      <h2 className={layoutStyles.headerSubtitle}>{subHeaderText}</h2>
+      <h2 className={layoutStyles.headerSubtitle}>
+        <Link to={seriesLinkSrc}>{subHeaderText}</Link>
+      </h2>
     ) : null
 
     let headerDate = dateText ? (

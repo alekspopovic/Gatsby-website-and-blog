@@ -21,13 +21,20 @@ blockquote {
 .postNavigation a {
   color: var(--header);
   border: 2px solid var(--highlight);
-  border-radius: 50px;
-  padding: 15px 50px;
+  border-radius: 15px;
+  padding: 0.75rem 1.5rem;
   text-transform: uppercase;
   display: inline-block;
   font-family: var(--header-font);
-  letter-spacing: 2px;
   background-color: var(--menu-bg);
+  font-size: 1.2rem;
+  text-align: center;
+
+  max-width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .postNavigation a:hover {
@@ -88,6 +95,10 @@ article section h2 {
     width: 70%;
     margin-left: 15%;
   }
+
+  .postNavigation {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -119,6 +130,10 @@ article section h2 {
 @media only screen and (max-width: 768px) {
   .blogPost {
     padding: 1em 3em;
+  }
+
+  .postNavigation a {
+    max-width: 49%;
   }
 }
 
@@ -154,5 +169,17 @@ article section h2 {
     width: 100%;
     margin: 0;
     margin-top: 2em;
+  }
+
+  .postNavigation {
+    width: 100%;
+  }
+
+  .postNavigation a {
+    max-width: 100%;
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
   }
 }

@@ -58,21 +58,26 @@ small {
 }
 
 .headerSubtitle {
-  font-size: 1.75em;
+  font-size: 1.5rem;
   position: relative;
-  margin-top: 2rem;
-  /* margin-bottom: 2rem; */
+  margin-top: 1rem;
+  background: var(--highlight);
+  color: var(--menu-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
 }
 
-.headerSubtitle::before {
-  content: "";
-  background: var(--highlight);
-  width: 200px;
-  left: 50%;
-  top: -1rem;
-  transform: translateX(-50%);
-  height: 5px;
-  position: absolute;
+.headerSubtitle a {
+  color: var(--menu-bg);
+}
+
+.headerSubtitle:hover {
+  background: var(--menu-bg);
+}
+
+.headerSubtitle:hover a {
+  border: none;
+  color: var(--header);
 }
 
 .headerDate {
@@ -251,11 +256,11 @@ video {
   }
 
   .headerSubtitle {
-    font-size: 1.3em;
+    font-size: 1.25rem;
   }
 
   .headerDate {
-    font-size: 0.8em;
+    font-size: 1.2rem;
   }
 
   .headerImage {
@@ -287,21 +292,16 @@ video {
   }
 
   .headerTitle {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
 
   .headerSubtitle {
-    font-size: 1em;
-  }
-
-  .headerSubtitle::before {
-    height: 2px;
-    width: 120px;
+    font-size: 1rem;
   }
 
   .headerDate {
-    font-size: 0.7em;
     margin-bottom: 3em;
+    font-size: 0.9rem;
   }
 }
 
@@ -317,21 +317,11 @@ video {
   }
 
   .headerTitle {
-    font-size: 1.25em;
-  }
-
-  .headerSubtitle {
-    font-size: 0.9em;
-    margin-top: 1rem;
-  }
-
-  .headerSubtitle::before {
-    top: -0.5rem;
+    font-size: 1.5em;
   }
 
   .headerDate {
     margin: 10px auto;
-    font-size: 0.5em;
   }
 
   #headerBackgroundContainer {

@@ -38,7 +38,8 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout
         headerText={post.frontmatter.title}
-        subHeaderText={post.frontmatter.subtitle}
+        subHeaderText={post.frontmatter.series}
+        seriesLink={post.frontmatter.seriesLink}
         dateText={dateText}
         background={true}
         headerImageFluid={featuredImgFluid}
@@ -83,7 +84,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        subtitle
+        series
+        seriesLink
         date(formatString: "MMMM DD, YYYY")
         description
         tags

@@ -74,10 +74,14 @@ section {
 }
 
 .postSubtitle {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   margin-top: 1rem;
-  display: block;
+  display: inline-block;
   margin-bottom: -2rem;
+  background: var(--highlight);
+  color: var(--menu-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
 }
 
 blockquote {
@@ -134,7 +138,7 @@ blockquote {
   }
 
   .postSubtitle {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .paginationUrls {

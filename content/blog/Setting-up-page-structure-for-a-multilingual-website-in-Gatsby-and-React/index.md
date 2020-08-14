@@ -1,12 +1,14 @@
 ---
-title: "How to build a multilingual website with Gatsby and React"
-subtitle: "Part 1: Page Structure"
+title: "Setting up page structure for a multilingual website"
+series: "How to Build a Multilingual Website with Gatsby and React"
+seriesLink: "multilingual"
 date: "2020-08-05"
 description: "Before going ahead and making a multilingual website I would advise you to think about a few things. Do you even need one? Are you prepared to make multilingual content on your own? What is the best way to handle various translations? The first two points really matter only if you are making a personal project. If you were contracted to make a multilingual site for someone else then they are the ones who need to think about it."
 tags:
   - gatsby
   - web
   - react
+  - multilingual
 featuredImage: keyboard.jpg
 ---
 
