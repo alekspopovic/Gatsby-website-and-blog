@@ -224,4 +224,4 @@ You will probably need to adjust the way your images are rendered with some addi
 
 ## What's next?
 
-So far so good. We have set up our page structure one way or another and we have a component that can handle switching our website's language. Our page and component translations are still not set up and this is something we will cover in the last part of this series. We will go over a couple of examples explaining what are some easy ways to set up our language data to be accessible throughout all of our pages. We will also cover how to translate regular components, such as a main navigation menu.
+So far so good. We have set up our page structure one way or another and we have a component that can handle switching our website's language. Our page and component translations are still not set up and this is something we will cover in the [last part of this series](/Translating-React-components/). We will go over a couple of examples explaining what are some easy ways to set up our language data to be accessible throughout all of our pages. We will also cover how to translate regular components, such as a main navigation menu.

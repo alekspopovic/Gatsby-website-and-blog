@@ -28,6 +28,10 @@ article header h1 {
   margin: 0 0 10px 0;
 }
 
+header h1 a {
+  display: block;
+}
+
 header h1 a:hover {
   color: var(--highlight);
   border: none;

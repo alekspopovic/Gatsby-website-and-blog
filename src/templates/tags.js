@@ -26,9 +26,9 @@ const Tags = ({ pageContext, data, location }) => {
 
           let seriesText =
             series !== null ? (
-              <span className={blogStyles.postSubtitle}>
+              <div className={blogStyles.postSubtitle}>
                 {node.frontmatter.series}
-              </span>
+              </div>
             ) : null
 
           let postImage = node.frontmatter.featuredImage.childImageSharp.fluid
@@ -52,7 +52,7 @@ const Tags = ({ pageContext, data, location }) => {
                 <header>
                   <h1>
                     <Link to={node.fields.slug}>
-                      {node.frontmatter.title}
+                      <div>{node.frontmatter.title}</div>
                       {seriesText}
                     </Link>
                   </h1>

@@ -88,6 +88,6 @@ If you aren't using Gatsby to build your website there are pure React or even pu
 
 ## What's next?
 
-Our pages our now configured, but we don't heave an easy way of moving between them. In the next article we will go over the process of making a simple React component for selecting your preferred language, so you don't have to manually enter your page address if you want to switch to a different language.
+Our pages our now configured, but we don't heave an easy way of moving between them. In the [next article](/Building-a-language-switch-component-in-React/) we will go over the process of making a simple React component for selecting your preferred language, so you don't have to manually enter your page address if you want to switch to a different language.
 
 We will cover a simpler solution for running a bilingual website and also a bit more complex one that supports more than two languages.
