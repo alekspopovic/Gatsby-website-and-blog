@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
         },
         {
           property: `og:image`,
-          content: { metaImageUrl },
+          content: metaImageUrl,
         },
         {
           property: `og:title`,
@@ -89,7 +89,7 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
         },
         {
           name: `twitter:image`,
-          content: { metaImageUrl },
+          content: metaImageUrl,
         },
       ].concat(meta)}
     />
