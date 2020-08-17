@@ -32,7 +32,6 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
   let metaImage = image ? image : defaultImage
 
   let metaImageUrl = `${site.siteMetadata.siteUrl}${metaImage}`
-  console.log(metaImageUrl)
 
   let pageUrl
 
@@ -54,7 +53,7 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
         },
         {
           property: `og:image`,
-          content: { metaImageUrl },
+          content: { metaImage },
         },
         {
           property: `og:title`,
@@ -74,7 +73,7 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
         },
         {
           name: `twitter:creator`,
@@ -89,7 +88,7 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
           content: metaDescription,
         },
         {
-          name: `twitter:image:src`,
+          name: `twitter:image`,
           content: { metaImageUrl },
         },
       ].concat(meta)}
