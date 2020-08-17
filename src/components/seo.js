@@ -28,11 +28,11 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  let metaImage = defaultImage
 
-  if (image) {
-    metaImage = `${site.siteMetadata.siteUrl}${image}`
-  }
+  let metaImage = image ? image : defaultImage
+
+  let metaImageUrl = `${site.siteMetadata.siteUrl}${metaImage}`
+  console.log(metaImageUrl)
 
   let pageUrl
 
@@ -54,7 +54,7 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
         },
         {
           property: `og:image`,
-          content: { metaImage },
+          content: { metaImageUrl },
         },
         {
           property: `og:title`,
@@ -90,7 +90,7 @@ function SEO({ description, lang, meta, title, image, pagePath }) {
         },
         {
           name: `twitter:image:src`,
-          content: { metaImage },
+          content: { metaImageUrl },
         },
       ].concat(meta)}
     />
