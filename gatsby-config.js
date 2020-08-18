@@ -102,6 +102,9 @@ module.exports = {
         theme_color: `#0c2233`,
         display: `minimal-ui`,
         icon: `src/assets/icon.svg`,
+        icon_options: {
+          purpose: `maskable`,
+        },
       },
     },
     `gatsby-plugin-react-helmet`,
