@@ -12,7 +12,7 @@
 
 .heroContainer h1 {
   font-size: 3em;
-  margin: 0 auto 1.5em auto;
+  margin: 0 auto 1rem auto;
   font-weight: var(--portfolio-font-weight);
   text-align: left;
   width: 50%;

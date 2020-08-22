@@ -101,7 +101,7 @@ module.exports = {
         background_color: `#0c2233`,
         theme_color: `#0c2233`,
         display: `minimal-ui`,
-        icon: `src/assets/icon.svg`,
+        icon: `src/assets/Logo_light.svg`,
         icon_options: {
           purpose: `maskable`,
         },

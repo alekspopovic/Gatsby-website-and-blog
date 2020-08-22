@@ -93,23 +93,24 @@ small {
 
 .logoText {
   position: absolute;
-  left: 0px;
-  top: 2px;
-  font-family: var(--header-font);
-  font-size: 1.3em;
-  line-height: 2.7em;
-  padding: 0 15px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  left: 2rem;
+  border-bottom: none !important;
+
+  transition: transform 0.3s ease-in;
+}
+
+.logoText:hover{
+  transform: scale(1.2);
+  border-bottom: none !important;
 }
 
 .logoText img {
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 55px;
   margin: 0;
-  margin-right: 2px;
   position: relative;
   top: 8px;
+  margin-bottom: 4px
 }
 
 #menu {
