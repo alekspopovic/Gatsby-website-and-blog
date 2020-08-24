@@ -99,18 +99,18 @@ small {
   transition: transform 0.3s ease-in;
 }
 
-.logoText:hover{
+.logoText:hover {
   transform: scale(1.2);
   border-bottom: none !important;
 }
 
 .logoText img {
-  width: 60px;
-  height: 55px;
+  width: 150px;
+  height: 70px;
   margin: 0;
   position: relative;
   top: 8px;
-  margin-bottom: 4px
+  margin-bottom: 4px;
 }
 
 #menu {
@@ -284,8 +284,9 @@ video {
 }
 
 @media only screen and (max-width: 768px) {
-  video {
-    max-width: 140%;
+  #menu {
+    justify-content: flex-end;
+    padding-right: 4rem;
   }
 
   .headerTitle {
@@ -299,6 +300,10 @@ video {
   .headerDate {
     margin-bottom: 3em;
     font-size: 0.9rem;
+  }
+
+  .logoText {
+    left: 20px;
   }
 }
 
@@ -331,6 +336,8 @@ video {
   }
 
   #menu {
+    justify-content: center;
+    padding-right: 0;
     font-size: 0.7em;
     font-weight: 400;
   }

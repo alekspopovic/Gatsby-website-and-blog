@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
-import logoLight from "../assets/Logo_light.svg"
+import logo from "../assets/logoText.svg"
 import Footer from "./footer"
 import BackgroundImage from "gatsby-background-image"
 
@@ -57,7 +57,7 @@ class Layout extends React.Component {
     let stickyMenu = (
       <div id={layoutStyles.menu}>
         <Link className={layoutStyles.logoText} to="/">
-          <img className={layoutStyles.logoLight} src={logoLight} alt="icon"></img>
+          <img className={layoutStyles.logoLight} src={logo} alt="icon"></img>
         </Link>
         <Link activeClassName={layoutStyles.active} to="/">
           <div>home</div>
