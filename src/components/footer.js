@@ -15,9 +15,9 @@ const Footer = props => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/alekspopovic/"
+          href="https://www.youtube.com/channel/UCu3RVedqyL5o776xyQlbyAw"
         >
-          <i className="fa fa-linkedin"></i>
+          <i className="fa fa-youtube"></i>
         </a>
         <a
           target="_blank"
@@ -32,6 +32,13 @@ const Footer = props => {
           href="https://www.instagram.com/aleks.popovic/"
         >
           <i className="fa fa-instagram"></i>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/alekspopovic/"
+        >
+          <i className="fa fa-linkedin"></i>
         </a>
         <a
           target="_blank"
