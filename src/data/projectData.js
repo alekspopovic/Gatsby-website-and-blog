@@ -1,5 +1,13 @@
 const data = [
   {
+    name: "15th International Conference on Greek Linguistics",
+    url: "http://icgl15.fil.bg.ac.rs/",
+    imageUrl: "icgl15.png",
+    description:
+      "Gatsby/React website for 15th International Conference on Greek Linguistics hosted by The Department of Modern Greek Studies, Faculty of Philology, University of Belgrade.",
+    tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
+  },
+  {
     name: "Cincinnati Playhouse in the Park",
     url: "http://cincyplay.com/",
     imageUrl: "cinci.jpg",
@@ -86,7 +94,7 @@ const data = [
     imageUrl: "landing.png",
     description:
       "It's very meta, I know. I needed a place where I could put all of my projects - so I made one. This is the second version of my personal website and it's built on top of Gatsby. I wanted to build something practical in React and I wanted to start writing a blog, so Gatsby seemed like a perfect fit.",
-    tags: ["frontend", "personal", "Gatsby", "React", "GraphQL"],
+    tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
   },
   {
     name: "Covid19 Historical Data",
