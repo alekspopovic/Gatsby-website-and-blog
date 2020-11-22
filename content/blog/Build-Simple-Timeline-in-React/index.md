@@ -12,7 +12,7 @@ A lot of portfolio websites today have some sort of a timeline which can be used
 
 If you prefer a video version you can watch me build this on Youtube:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rnkToU2_lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-rnkToU2_lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I started a new React app by running create-react-app command in my working folder.
 
