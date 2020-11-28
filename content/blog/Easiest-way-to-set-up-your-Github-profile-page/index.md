@@ -1,5 +1,5 @@
 ---
-title: "Easiest way to set up your Github profile page"
+title: "Easiest way to set up your GitHub profile page"
 date: "2020-11-27"
 description: "If you are a developer you probably have a GitHub account, and if you're like me your profile page is probably empty. I would even say barren. Utterly uninteresting? If that's true then you are at the right place, because in this tutorial I am going to show you some quick and easy tips to make your GitHub profile at least somewhat presentable."
 tags:
