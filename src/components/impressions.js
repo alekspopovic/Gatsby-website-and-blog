@@ -8,7 +8,10 @@ export default function Impressions(props) {
     <div className={impressionsStyles.impressions}>
       {likes > 0 && (
         <div className={impressionsStyles.impression}>
-          <i className={`fa fa-heart ${impressionsStyles.impressionIcon}`}></i>
+          <i
+            className={`fa fa-heart ${impressionsStyles.impressionIcon}`}
+            title="DEV.to impressions"
+          ></i>
           {likes}
         </div>
       )}
@@ -16,6 +19,7 @@ export default function Impressions(props) {
         <div className={impressionsStyles.impression}>
           <i
             className={`fa fa-comments ${impressionsStyles.impressionIcon}`}
+            title="DEV.to comments"
           ></i>
           {comments}
         </div>
