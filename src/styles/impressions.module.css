@@ -1,0 +1,30 @@
+.impressions {
+  display: flex;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 3rem;
+
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 0.15rem 0.15rem var(--menu-bg);
+}
+
+.impression {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.impressionIcon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: var(--highlight);
+}
+
+@media only screen and (max-width: 768px) {
+  .impressions {
+    position: relative;
+    top: 1.25rem;
+    left: 0;
+    justify-content: center;
+  }
+}

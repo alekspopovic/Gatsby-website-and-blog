@@ -9,6 +9,25 @@
   flex-wrap: wrap;
 }
 
+.impressions {
+  display: flex;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 3rem;
+}
+
+.impression {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.impressionIcon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: var(--highlight);
+}
+
 article {
   overflow: hidden;
   margin: -2px auto 1em auto;
@@ -27,6 +46,8 @@ article header {
 
 article header h1 {
   margin: 0 0 10px 0;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 0.15rem 0.15rem var(--menu-bg);
 }
 
 header h1 a {
@@ -74,8 +95,10 @@ section {
   font-family: var(--header-font);
   display: inline;
   padding: 0 10px;
-  font-size: 0.7em;
-  font-weight: 200;
+  font-size: 0.9em;
+  font-weight: 400;
+
+  text-shadow: 0.15rem 0.15rem var(--menu-bg);
 }
 
 .postSubtitle {
@@ -153,6 +176,15 @@ blockquote {
     margin: 3px 0;
     padding-right: 30px;
     display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .impressions {
+    position: relative;
+    top: 1.25rem;
+    left: 0;
+    justify-content: center;
   }
 }
 

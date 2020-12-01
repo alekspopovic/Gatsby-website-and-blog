@@ -4,6 +4,7 @@ import layoutStyles from "../styles/layout.module.css"
 import logo from "../assets/logoText.svg"
 import Footer from "./footer"
 import BackgroundImage from "gatsby-background-image"
+import Impressions from "../components/impressions"
 
 class Layout extends React.Component {
   switchTheme = e => {
@@ -33,6 +34,8 @@ class Layout extends React.Component {
       headerImageFluid,
       hideHeader,
       seriesLink,
+      likes,
+      comments,
     } = this.props
 
     let darkBackgroundClass, theme
@@ -117,6 +120,9 @@ class Layout extends React.Component {
           {headerTitle}
           {headerSubtitle}
           {headerDate}
+          {(likes || comments) && (
+            <Impressions likes={likes} comments={comments} />
+          )}
         </BackgroundImage>
       )
     }

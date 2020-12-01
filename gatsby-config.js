@@ -131,5 +131,11 @@ module.exports = {
         precachePages: [`/blog`, `/projects`, `/aboutMe`, `/contact`],
       },
     },
+    {
+      resolve: "gatsby-source-dev",
+      options: {
+        username: "alekswritescode",
+      },
+    },
   ],
 }

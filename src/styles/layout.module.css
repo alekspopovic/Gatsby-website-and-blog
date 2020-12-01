@@ -46,6 +46,10 @@ small {
   color: var(--header);
   text-align: center;
   line-height: 1.2;
+
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 0.25rem 0.25rem var(--menu-bg);
+  line-height: 1;
 }
 
 .headerTitleNoImage {
@@ -82,13 +86,14 @@ small {
 
 .headerDate {
   line-height: 2;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
   font-size: 1.25rem;
   text-align: center;
   margin: 0;
   transform: translateY(2em);
   color: var(--header);
+
+  text-shadow: 0.15rem 0.15rem var(--menu-bg);
 }
 
 .logoText {

@@ -4,85 +4,88 @@ import SEO from "../components/seo"
 import blogStyles from "../styles/blog.module.css"
 import Link from "gatsby-link"
 import BackgroundImage from "gatsby-background-image"
+import usePosts from "../hooks/usePosts"
+import Impressions from "../components/impressions"
 
-class Blog extends React.Component {
-  render() {
-    const posts = this.props.data.allMarkdownRemark.edges
-    const seoTitle = "Blog"
+function Blog(props) {
+  const posts = props.data.allMarkdownRemark.edges
+  const seoTitle = "Blog"
 
-    return (
-      <Layout>
-        <SEO title={seoTitle} pagePath={this.props.location.pathname} />
-        <div id="content" className={blogStyles.blogContent}>
-          {posts.map(({ node }) => {
-            let series = node.frontmatter.series
+  const devToPosts = usePosts()
 
-            let seriesText =
-              series !== null ? (
-                <div className={blogStyles.postSubtitle}>
-                  {node.frontmatter.series}
-                </div>
-              ) : null
+  return (
+    <Layout>
+      <SEO title={seoTitle} pagePath={props.location.pathname} />
+      <div id="content" className={blogStyles.blogContent}>
+        {posts.map(({ node }) => {
+          let series = node.frontmatter.series
 
-            let postImage = node.frontmatter.featuredImage.childImageSharp.fluid
+          let seriesText =
+            series !== null ? (
+              <div className={blogStyles.postSubtitle}>
+                {node.frontmatter.series}
+              </div>
+            ) : null
 
-            const backgroundFluidImageStack = [
-              `linear-gradient(
+          let postImage = node.frontmatter.featuredImage.childImageSharp.fluid
+
+          const backgroundFluidImageStack = [
+            `linear-gradient(
                 120deg,
                 var(--blog-cover-one),
                 var(--blog-cover-two)
               )`,
-              postImage,
-            ]
+            postImage,
+          ]
 
-            // let tags = []
+          let devToArticle = devToPosts.filter(
+            article =>
+              article.title.toLowerCase() ===
+              node.frontmatter.title.toLowerCase()
+          )[0]
 
-            // node.frontmatter.tags.sort().forEach(tag => {
-            //   tags.push(
-            //     <span className={blogStyles.tag} key={tag}>
-            //       {tag}
-            //     </span>
-            //   )
-            // })
+          let likes = 0
+          let comments = 0
 
-            return (
-              <article key={node.fields.slug}>
-                <BackgroundImage
-                  className={blogStyles.postImageContainer}
-                  fluid={backgroundFluidImageStack}
-                  backgroundColor={`#040e18`}
-                >
-                  <header>
-                    <h1>
-                      <Link to={node.fields.slug}>
-                        <div>{node.frontmatter.title}</div>
-                        {seriesText}
-                      </Link>
-                    </h1>
+          if (devToArticle) {
+            likes = devToArticle.likes
+            comments = devToArticle.comments
+          }
 
-                    <div className={blogStyles.date}>
-                      {node.frontmatter.date}
-                    </div>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
-                      }}
-                    />
-                    <div className={blogStyles.readMore}>
-                      <Link to={node.fields.slug}>Read more</Link>
-                    </div>
-                    {/* <div className={blogStyles.tagSummary}>{tags}</div> */}
-                  </section>
-                </BackgroundImage>
-              </article>
-            )
-          })}
-        </div>
-      </Layout>
-    )
-  }
+          return (
+            <article key={node.fields.slug}>
+              <BackgroundImage
+                className={blogStyles.postImageContainer}
+                fluid={backgroundFluidImageStack}
+                backgroundColor={`#040e18`}
+              >
+                <header>
+                  <h1>
+                    <Link to={node.fields.slug}>
+                      <div>{node.frontmatter.title}</div>
+                      {seriesText}
+                    </Link>
+                  </h1>
+                  <div className={blogStyles.date}>{node.frontmatter.date}</div>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                  <div className={blogStyles.readMore}>
+                    <Link to={node.fields.slug}>Read more</Link>
+                  </div>
+                </section>
+              </BackgroundImage>
+              <Impressions likes={likes} comments={comments} />
+            </article>
+          )
+        })}
+      </div>
+    </Layout>
+  )
 }
 
 export default Blog
