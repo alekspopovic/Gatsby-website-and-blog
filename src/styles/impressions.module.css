@@ -12,12 +12,16 @@
   display: flex;
   align-items: center;
   margin-right: 1rem;
+  font-size: 1.25rem;
 }
 
 .impressionIcon {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  color: var(--highlight);
+  margin-right: 0.4rem;
+  fill: var(--highlight);
+  position: relative;
+  top: -0.1rem;
+  -webkit-filter: drop-shadow(0.15rem 0.15rem var(--menu-bg));
+  filter: drop-shadow(0.15rem 0.15rem var(--menu-bg));
 }
 
 @media only screen and (max-width: 768px) {
