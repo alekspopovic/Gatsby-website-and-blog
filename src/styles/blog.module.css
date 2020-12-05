@@ -110,6 +110,7 @@ section {
   color: var(--menu-bg);
   padding: 0.25rem 0.5rem;
   border-radius: 2px;
+  text-shadow: none;
 }
 
 blockquote {
