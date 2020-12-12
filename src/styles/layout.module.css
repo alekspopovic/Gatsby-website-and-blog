@@ -67,8 +67,9 @@ small {
   margin-top: 1rem;
   background: var(--highlight);
   color: var(--menu-bg);
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
   border-radius: 2px;
+  text-shadow: none;
 }
 
 .headerSubtitle a {

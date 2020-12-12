@@ -17,8 +17,7 @@ function BlogPostTemplate(props) {
       article.title.toLowerCase() === post.frontmatter.title.toLowerCase()
   )[0]
 
-  let likes = 0
-  let comments = 0
+  let likes, comments
 
   if (devToArticle) {
     likes = devToArticle.likes
