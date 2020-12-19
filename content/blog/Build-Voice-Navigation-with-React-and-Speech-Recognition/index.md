@@ -113,16 +113,6 @@ export default App;
 Now we need to set up our navigation by using the BrowserRouter which we imported above. First we need to add our links, and React Router has a very neat component that is literally called Link. It's used for setting up internal urls for use-cases just like this. Instead of href we pass in a "to" prop.
 
 ```jsx
-import React, { useState } from "react";
-import HomePage from "./Home";
-import BlogPage from "./Blog";
-import NewBlogPostPage from "./NewBlogPost";
-import ContactPage from "./Contact";
-import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from "react-speech-recognition";
-
 function App() {
   return (
     <div className="App">
