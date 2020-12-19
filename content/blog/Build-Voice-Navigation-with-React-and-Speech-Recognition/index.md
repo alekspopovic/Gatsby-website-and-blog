@@ -82,7 +82,7 @@ export default function NewBlogPost() {
 }
 ```
 
-We just want something in there to give us a visual que when we switch between pages.
+We just want something in there to give us a visual cue when we switch between pages.
 
 All of our logic will go into the App.js component. To set it up I removed most of the create-react-app's stuff until I was left with a simple function component and I started importing my pages and plugins.
 
