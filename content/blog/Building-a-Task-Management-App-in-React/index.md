@@ -1,14 +1,14 @@
 ---
 title: "Building a Task Management App in React"
 date: "2020-12-12"
-description: "Can you become more productive by making a productivity app? Not sure about that, but you can definitely becoime more productive by building new projects and a task management app has been on my mind for a long time now. I decided to build it in React without using any additional plugins except node-sass which allows you to use .scss files in your project."
+description: "Can you become more productive by making a productivity app? Not sure about that, but you can definitely become more productive by building new projects and a task management app has been on my mind for a long time now. I decided to build it in React without using any additional plugins except node-sass which allows you to use .scss files in your project."
 tags:
   - web
   - react
 featuredImage: task.png
 ---
 
-Can you become more productive by making a productivity app? Not sure about that, but you can definitely becoime more productive by building new projects and a task management app has been on my mind for a long time now. I decided to build it in React without using any additional plugins except node-sass which allows you to use .scss files in your project.
+Can you become more productive by making a productivity app? Not sure about that, but you can definitely become more productive by building new projects and a task management app has been on my mind for a long time now. I decided to build it in React without using any additional plugins except node-sass which allows you to use .scss files in your project.
 
 If you prefer a video version of this tutorial you can watch me build a task management app on Youtube:
 
@@ -20,9 +20,9 @@ I started a new React app by running create-react-app command in my working fold
 create-react-app task-management
 ```
 
-For this project I will focuse more on the React part of the code, but there will be a SandBox link to a full code example that includes the CSS files as well. I mainly used flexbox to center elements, and that's pretty much 80% of the CSS used. The rest is adding custom colors and margins for separation between elements.
+For this project I will focus more on the React part of the code, but there will be a SandBox link to a full code example that includes the CSS files as well. I mainly used flexbox to center elements, and that's pretty much 80% of the CSS used. The rest is adding custom colors and margins for separation between elements.
 
-To start off - I removed all unnecessary code from App.js and I imported the StatusLine component, which we will use to sort out our tasks based on their status. I added it three times alongise an h1 heading, and I also added function skeletons that we will be implementing later.
+To start off - I removed all unnecessary code from App.js and I imported the StatusLine component, which we will use to sort out our tasks based on their status. I added it three times alongside an h1 heading, and I also added function skeletons that we will be implementing later.
 
 ```jsx
 import { useState, useEffect } from "react"
@@ -175,7 +175,7 @@ function moveTask(id, newStatus) {
 }
 ```
 
-Our moveTask function is going to be used to move a task from one status to the next, or previous one. We filter our tasks list to search for the task that needs to be moved and to remove it from the state so we can change its status. After changing the tasks status we once again merge it back into the state and save everyting to local storage.
+Our moveTask function is going to be used to move a task from one status to the next, or previous one. We filter our tasks list to search for the task that needs to be moved and to remove it from the state so we can change its status. After changing the tasks status we once again merge it back into the state and save everything to local storage.
 
 ```js
 function saveTasksToLocalStorage(tasks) {
@@ -183,7 +183,7 @@ function saveTasksToLocalStorage(tasks) {
 }
 ```
 
-Local storage supports only storing string values, but our tasks are stored as an array of objects. To get arround this restriction we need to use JSON.stringify to transform our data into a string. After that we call the setItem function which will store our tasks.
+Local storage supports only storing string values, but our tasks are stored as an array of objects. To get around this restriction we need to use JSON.stringify to transform our data into a string. After that we call the setItem function which will store our tasks.
 
 ```js
 function loadTasksFromLocalStorage() {
@@ -197,7 +197,7 @@ function loadTasksFromLocalStorage() {
 }
 ```
 
-To retreive our data from the local storage we need to revert our data from a string to an array of objects. For that we use JSON.parse function and then we are free to set our state. In order to call this function only once we need to implement the useEffect hook.
+To retrieve our data from the local storage we need to revert our data from a string to an array of objects. For that we use JSON.parse function and then we are free to set our state. In order to call this function only once we need to implement the useEffect hook.
 
 ```js
 useEffect(() => {
@@ -368,7 +368,7 @@ export default function Task(props) {
 
 We have a couple of interesting things happening here. We have two buttons which we will use to call the moveTask function and switch the task's status.
 
-We also have a form with input fields for task's title and description. There is also the urgencyLabels container which is a group of radio buttons for switching the task's status. Getting the checked radio button's value is a bit tricky in react, so we will handle the urgencty through state, but everything else we can submit as a form field.
+We also have a form with input fields for task's title and description. There is also the urgencyLabels container which is a group of radio buttons for switching the task's status. Getting the checked radio button's value is a bit tricky in react, so we will handle the urgency through state, but everything else we can submit as a form field.
 
 I have set up some helper classes - "collapsed", "collapsedTask" and "selected". I wanted to collapse tasks when they get saved and loaded from storage, so the screen doesn't get too cluttered. This is handled with the isCollapsed property that each new task will have, and everything else is done through CSS. If a task has isCollapsed = true, my CSS takes care of collapsing everything except for the title, urgency and control buttons. We also reveal a delete button which you can use to get rid of a task completely.
 

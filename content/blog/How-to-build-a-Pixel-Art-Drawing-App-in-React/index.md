@@ -20,7 +20,7 @@ I started a new React app by running create-react-app command in my working fold
 create-react-app pixels
 ```
 
-For this project I will focuse more on the React part of the code, but there will be a SandBox link to a full code example that includes the CSS files as well. I mainly used flexbox to center elements, and that's pretty much 80% of the CSS used. The rest is adding custom colors and margins for separation between elements.
+For this project I will focus more on the React part of the code, but there will be a SandBox link to a full code example that includes the CSS files as well. I mainly used flexbox to center elements, and that's pretty much 80% of the CSS used. The rest is adding custom colors and margins for separation between elements.
 
 To start off - I removed all unnecessary code from App.js and I imported the Editor component, which is going to be the heart of this app.
 

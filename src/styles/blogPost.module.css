@@ -90,6 +90,10 @@ article section h2 {
   font-weight: 400;
 }
 
+p {
+  margin: 1.75rem 0;
+}
+
 @media only screen and (max-width: 1366px) {
   .blogPost {
     width: 70%;
