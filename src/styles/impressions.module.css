@@ -1,18 +1,14 @@
 .impressions {
   display: flex;
-  position: absolute;
-  bottom: 1.5rem;
-  left: 3rem;
-
+  justify-content: center;
   font-family: "Bebas Neue", sans-serif;
-  text-shadow: 0.15rem 0.15rem var(--menu-bg);
 }
 
 .impression {
   display: flex;
   align-items: center;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .impressionIcon {
@@ -20,15 +16,10 @@
   fill: var(--highlight);
   position: relative;
   top: -0.1rem;
-  -webkit-filter: drop-shadow(0.15rem 0.15rem var(--menu-bg));
-  filter: drop-shadow(0.15rem 0.15rem var(--menu-bg));
 }
 
 @media only screen and (max-width: 768px) {
   .impressions {
-    position: relative;
-    top: 1.25rem;
-    left: 0;
     justify-content: center;
   }
 }

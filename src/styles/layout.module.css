@@ -3,28 +3,26 @@
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   position: relative;
   z-index: 1;
 }
 
 header a {
-  color: var(--header);
+  color: var(--text);
   box-shadow: none;
 }
 
 .blogPostHeaderImage {
   width: 60%;
-  height: 50vh !important;
   margin: auto;
   margin-top: 3.75em;
-
   overflow: hidden;
-
   box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.23);
-
   padding: 0 2em;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,17 +36,26 @@ small {
   font-family: var(--header-font);
 }
 
+.titleContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 1.5rem 0 0.5rem 0;
+  background: var(--dark-bg);
+  z-index: -1;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px -6px 6px, rgba(0, 0, 0, 0.23) 0px -6px 6px;
+}
+
 .headerTitle,
 .headerSubtitle {
-  font-size: 2.75em;
+  font-size: 2.75rem;
   margin: 0;
   font-weight: 400;
-  color: var(--header);
   text-align: center;
   line-height: 1.2;
-
   font-family: "Bebas Neue", sans-serif;
-  text-shadow: 0.25rem 0.25rem var(--menu-bg);
   line-height: 1;
 }
 
@@ -90,11 +97,7 @@ small {
   font-weight: 400;
   font-size: 1.25rem;
   text-align: center;
-  margin: 0;
-  transform: translateY(2em);
-  color: var(--header);
-
-  text-shadow: 0.15rem 0.15rem var(--menu-bg);
+  margin: 0 0 0.5rem 0;
 }
 
 .logoText {
@@ -250,6 +253,10 @@ video {
 }
 
 @media only screen and (max-width: 1366px) {
+  .titleContainer {
+    width: 70%;
+  }
+
   .blogPostHeaderImage {
     width: 70%;
   }
@@ -276,6 +283,10 @@ video {
 }
 
 @media only screen and (max-width: 1024px) {
+  .titleContainer {
+    width: 90%;
+  }
+
   .headerImage {
     max-width: 90%;
   }
@@ -303,25 +314,20 @@ video {
     font-size: 1rem;
   }
 
-  .headerDate {
-    margin-bottom: 3em;
-    font-size: 0.9rem;
-  }
-
   .logoText {
     left: 20px;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  article {
-    font-size: 0.8em;
+  .titleContainer {
+    width: 100%;
   }
 
   .blogPostHeaderImage {
     width: 100%;
     border-radius: 0;
-    margin-top: 2.45em;
+    margin-top: 3rem;
   }
 
   .headerTitle {

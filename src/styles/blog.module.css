@@ -9,23 +9,8 @@
   flex-wrap: wrap;
 }
 
-.impressions {
-  display: flex;
-  position: absolute;
-  bottom: 1.5rem;
-  left: 3rem;
-}
-
-.impression {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-}
-
-.impressionIcon {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  color: var(--highlight);
+.blogContent p {
+  margin-bottom: 3rem;
 }
 
 article {
@@ -33,21 +18,32 @@ article {
   margin: -2px auto 1em auto;
   padding: 4em 4em 3em 4em;
   background-color: var(--dark-bg);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: relative;
   z-index: 0;
 }
 
+.blogContent article {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 48%;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.blogContent article p {
+  margin: 1rem 0 3rem 0;
+  padding: 0 2rem;
+}
+
 article header {
   z-index: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5rem;
   font-size: 1.2em;
 }
 
 article header h1 {
-  margin: 0 0 10px 0;
+  margin: 0;
+  padding: 0 1rem;
   font-family: "Bebas Neue", sans-serif;
-  text-shadow: 0.15rem 0.15rem var(--menu-bg);
 }
 
 header h1 a {
@@ -67,7 +63,7 @@ section {
   text-align: center;
   font-family: var(--header-font);
   letter-spacing: 2px;
-  margin-top: 4em;
+  margin-bottom: 1rem;
 }
 
 .readMore a,
@@ -78,6 +74,10 @@ section {
   padding: 15px 50px;
   text-transform: uppercase;
   border-radius: 35px;
+}
+
+.readMore a {
+  color: var(--text);
 }
 
 .allTags {
@@ -97,8 +97,6 @@ section {
   padding: 0 10px;
   font-size: 0.9em;
   font-weight: 400;
-
-  text-shadow: 0.15rem 0.15rem var(--menu-bg);
 }
 
 .postSubtitle {
@@ -126,12 +124,7 @@ blockquote {
 }
 
 .postImageContainer {
-  width: 100%;
-  background-position: bottom center;
-  background-size: cover;
-  position: static !important;
-  opacity: 1 !important;
-  color: var(--header);
+  margin-bottom: 1.5rem;
 }
 
 .tagSummary {
@@ -151,6 +144,10 @@ blockquote {
 @media only screen and (max-width: 1366px) {
   .blogContent {
     width: 65%;
+  }
+
+  .blogContent article {
+    width: 100%;
   }
 
   article {
@@ -192,7 +189,7 @@ blockquote {
 @media only screen and (max-width: 550px) {
   .blogContent {
     width: 100%;
-    margin-top: 4em;
+    margin-top: 1rem;
   }
 
   article {

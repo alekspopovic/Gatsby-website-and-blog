@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import blogStyles from "../styles/blog.module.css"
 import Link from "gatsby-link"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 import usePosts from "../hooks/usePosts"
 import Impressions from "../components/impressions"
 
@@ -29,15 +29,6 @@ function Blog(props) {
 
           let postImage = node.frontmatter.featuredImage.childImageSharp.fluid
 
-          const backgroundFluidImageStack = [
-            `linear-gradient(
-                120deg,
-                var(--blog-cover-one),
-                var(--blog-cover-two)
-              )`,
-            postImage,
-          ]
-
           let devToArticle = devToPosts.filter(
             article =>
               article.title.toLowerCase() ===
@@ -54,32 +45,30 @@ function Blog(props) {
 
           return (
             <article key={node.fields.slug}>
-              <BackgroundImage
+              <Img
                 className={blogStyles.postImageContainer}
-                fluid={backgroundFluidImageStack}
-                backgroundColor={`#040e18`}
-              >
-                <header>
-                  <h1>
-                    <Link to={node.fields.slug}>
-                      <div>{node.frontmatter.title}</div>
-                      {seriesText}
-                    </Link>
-                  </h1>
-                  <div className={blogStyles.date}>{node.frontmatter.date}</div>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                  <div className={blogStyles.readMore}>
-                    <Link to={node.fields.slug}>Read more</Link>
-                  </div>
-                </section>
-              </BackgroundImage>
-              <Impressions likes={likes} comments={comments} />
+                fluid={postImage}
+              />
+              <header>
+                <h1>
+                  <Link to={node.fields.slug}>
+                    <div>{node.frontmatter.title}</div>
+                    {seriesText}
+                  </Link>
+                </h1>
+                <div className={blogStyles.date}>{node.frontmatter.date}</div>
+                <Impressions likes={likes} comments={comments} /> 
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.excerpt,
+                  }}
+                />
+                <div className={blogStyles.readMore}>
+                  <Link to={node.fields.slug}>Read more</Link>
+                </div>
+              </section>
             </article>
           )
         })}

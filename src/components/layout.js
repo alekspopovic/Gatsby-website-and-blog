@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import layoutStyles from "../styles/layout.module.css"
 import logo from "../assets/logoText.svg"
 import Footer from "./footer"
-import BackgroundImage from "gatsby-background-image"
 import Impressions from "../components/impressions"
 
 class Layout extends React.Component {
@@ -82,8 +82,6 @@ class Layout extends React.Component {
       </div>
     )
 
-    let header
-
     let seriesLinkSrc = seriesLink ? `/tags/${seriesLink}` : "/"
 
     let headerSubtitle = subHeaderText ? (
@@ -96,34 +94,25 @@ class Layout extends React.Component {
       <h2 className={layoutStyles.headerDate}>{dateText}</h2>
     ) : null
 
+    let headerTitle
+
     if (!hideHeader && headerText && headerImageFluid) {
       let headerTitleClass = !headerDate
         ? layoutStyles.headerTitleNoImage
         : layoutStyles.headerTitle
 
-      let headerTitle = <h1 className={headerTitleClass}>{headerText}</h1>
+      headerTitle = <h1 className={headerTitleClass}>{headerText}</h1>
+    }
 
-      const backgroundFluidImageStack = [
-        `linear-gradient(
-          120deg,
-          var(--header-bg-green),
-          var(--header-bg-orange)
-        )`,
-        headerImageFluid,
-      ]
+    let headerImage
 
-      header = (
-        <BackgroundImage
+    if (headerImageFluid) {
+      headerImage = (
+        <Img
+          fluid={headerImageFluid}
           className={layoutStyles.blogPostHeaderImage}
-          fluid={backgroundFluidImageStack}
-        >
-          {headerTitle}
-          {headerSubtitle}
-          {headerDate}
-          {(likes || comments) && (
-            <Impressions likes={likes} comments={comments} />
-          )}
-        </BackgroundImage>
+          objectFit="cover"
+        />
       )
     }
 
@@ -131,7 +120,15 @@ class Layout extends React.Component {
       <div>
         <header className={darkBackgroundClass}>
           {stickyMenu}
-          {header}
+          {headerImage}
+          <div className={layoutStyles.titleContainer}>
+            {headerTitle}
+            {headerSubtitle}
+            {headerDate}
+            {(likes || comments) && (
+              <Impressions likes={likes} comments={comments} />
+            )}
+          </div>
         </header>
         <main className={darkBackgroundClass}>{children}</main>
         <Footer footerNoOffset={footerNoOffset} />

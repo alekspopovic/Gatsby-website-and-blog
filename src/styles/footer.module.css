@@ -17,6 +17,10 @@
   bottom: 0;
 }
 
+.footer p {
+  margin: 0;
+}
+
 .socialIcons {
   margin-bottom: 10px;
   font-size: 1.8em;

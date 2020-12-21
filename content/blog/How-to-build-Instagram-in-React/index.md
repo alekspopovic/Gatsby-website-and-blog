@@ -5,7 +5,7 @@ description: "Instagram has such a simple, yet elegant design, and on top of tha
 tags:
   - web
   - react
-featuredImage: instagram.png
+featuredImage: newInsta.png
 ---
 
 Instagram has such a simple, yet elegant design, and on top of that it's very modular. It's almost like a puzzle because it has a lot of parts that can be reused throughout the app which makes it very interesting to build as a practice project. We are going to build Instagram in React and we are going to reuse as much of our code as we possibly can to make profile cards, story icons, posts and pretty much everything else that exists on Instagram's home page.

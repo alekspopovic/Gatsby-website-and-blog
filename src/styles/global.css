@@ -3,7 +3,6 @@
 :root {
   --dark-bg: #0c2233;
   --menu-bg: var(--dark-bg);
-  /* --highlight: #ff822e; */
   --highlight: #fd9047;
   --dark-highlight: #061724;
   --body-bg: var(--dark-highlight);
@@ -52,7 +51,7 @@
 body {
   margin: 0 0 55px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1rem;
   overflow-x: hidden;
   color: var(--text);
   font-weight: 400;
@@ -64,12 +63,13 @@ body {
 
 body.light {
   --dark-bg: #f3f3f3;
-  /* --dark-bg: #fff1e8; */
   --dark-highlight: var(--highlight);
   --text: #000000;
   --text: #0c2233;
   --header: #f6f6f6;
-  --body-bg: #ffece0;
+  /* --body-bg: #ffece0; */
+  --body-bg: var(--dark-bg);
+  /* --body-bg: #dfdfdf; */
 
   --float-right-button-border: var(--header);
   --float-right-header: var(--header);
