@@ -115,10 +115,6 @@ p {
     padding: 2em 4em;
   }
 
-  article header h1 {
-    font-size: 2em;
-  }
-
   .paginationUrls {
     width: 100%;
   }
@@ -156,10 +152,6 @@ p {
     padding: 0.5em 1em;
     border: none;
     border-radius: 0;
-  }
-
-  article header h1 {
-    font-size: 2em;
   }
 
   .paginationUrls {
