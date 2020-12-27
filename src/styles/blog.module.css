@@ -61,7 +61,7 @@ section {
 .readMore {
   text-align: center;
   font-family: var(--header-font);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 1rem;
 }
 
@@ -70,13 +70,14 @@ section {
 .paginationUrls a {
   color: var(--header);
   border: 2px solid var(--highlight);
-  padding: 15px 50px;
+  padding: 1rem 2rem;
   text-transform: uppercase;
   border-radius: 35px;
 }
 
 .readMore a {
   color: var(--text);
+  font-size: 1rem;
 }
 
 .allTags {
