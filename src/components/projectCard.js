@@ -1,6 +1,5 @@
 import React from "react"
-import projectCardStyles from "../styles/projectCard.module.css"
-import BackgroundImage from "gatsby-background-image"
+import ContentCard from "./contentCard"
 
 class ProjectCard extends React.Component {
   render() {
@@ -29,34 +28,15 @@ class ProjectCard extends React.Component {
       buttonText = "View on Android Playstore"
     }
 
-    const backgroundFluidImageStack = [
-      `linear-gradient(
-        120deg,
-        var(--project-bg-one),
-        var(--project-bg-two)
-      )`,
-      imageFluid,
-    ]
-
     return (
-      <BackgroundImage
-        className={projectCardStyles.card}
-        fluid={backgroundFluidImageStack}
-      >
-        <div className={projectCardStyles.name}>{name}</div>
-        <div className={projectCardStyles.description}>{description}</div>
-        <div className={projectCardStyles.tags}>
-          {tags.map(tag => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
-
-        <div className={projectCardStyles.cardButton}>
-          <a target="_blank" rel="noopener noreferrer" href={buttonUrl}>
-            {buttonText}
-          </a>
-        </div>
-      </BackgroundImage>
+      <ContentCard
+        title={name}
+        content={description}
+        image={imageFluid}
+        buttonText={buttonText}
+        buttonUrl={buttonUrl}
+        tags={tags}
+      />
     )
   }
 }

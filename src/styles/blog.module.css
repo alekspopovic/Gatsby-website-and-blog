@@ -22,18 +22,6 @@ article {
   z-index: 0;
 }
 
-.blogContent article {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  width: 48%;
-  margin: 0.5rem;
-  padding: 0;
-}
-
-.blogContent article p {
-  margin: 1rem 0 3rem 0;
-  padding: 0 2rem;
-}
-
 article header {
   z-index: 0;
   margin-bottom: 0.5rem;
@@ -58,14 +46,6 @@ section {
   margin-top: 1em;
 }
 
-.readMore {
-  text-align: center;
-  font-family: var(--header-font);
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-}
-
-.readMore a,
 .allTags a,
 .paginationUrls a {
   color: var(--header);
@@ -75,40 +55,14 @@ section {
   border-radius: 35px;
 }
 
-.readMore a {
-  color: var(--text);
-  font-size: 1rem;
-}
-
 .allTags {
   margin-bottom: 6em !important;
 }
 
-.readMore a:hover,
 .allTags a:hover,
 .paginationUrls a:hover {
   box-shadow: none;
   background: var(--highlight);
-}
-
-.date {
-  font-family: var(--header-font);
-  display: inline;
-  padding: 0 10px;
-  font-size: 0.9em;
-  font-weight: 400;
-}
-
-.postSubtitle {
-  font-size: 1.25rem;
-  margin-top: 1rem;
-  display: inline-block;
-  margin-bottom: -2rem;
-  background: var(--highlight);
-  color: var(--menu-bg);
-  padding: 0.25rem 0.5rem;
-  border-radius: 2px;
-  text-shadow: none;
 }
 
 blockquote {
@@ -121,10 +75,6 @@ blockquote {
   width: 90%;
   margin: auto;
   padding: 2em;
-}
-
-.postImageContainer {
-  margin-bottom: 1.5rem;
 }
 
 .tagSummary {
@@ -145,23 +95,11 @@ blockquote {
   .blogContent {
     width: 65%;
   }
-
-  .blogContent article {
-    width: 100%;
-  }
-
-  article {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
   .blogContent {
     width: 80%;
-  }
-
-  article {
-    padding: 2em;
   }
 
   .tagSummary {
@@ -194,12 +132,6 @@ blockquote {
   .blogContent {
     width: 100%;
     margin-top: 1rem;
-  }
-
-  article {
-    width: 96%;
-    padding: 2em;
-    border-radius: 0;
   }
 
   .postSubtitle {

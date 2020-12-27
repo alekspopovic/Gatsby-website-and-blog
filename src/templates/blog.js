@@ -2,10 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import blogStyles from "../styles/blog.module.css"
-import Link from "gatsby-link"
-import Img from "gatsby-image"
 import usePosts from "../hooks/usePosts"
-import Impressions from "../components/impressions"
+import ContentCard from "../components/contentCard"
 
 function Blog(props) {
   const posts = props.data.allMarkdownRemark.edges
@@ -18,17 +16,6 @@ function Blog(props) {
       <SEO title={seoTitle} pagePath={props.location.pathname} />
       <div id="content" className={blogStyles.blogContent}>
         {posts.map(({ node }) => {
-          let series = node.frontmatter.series
-
-          let seriesText =
-            series !== null ? (
-              <div className={blogStyles.postSubtitle}>
-                {node.frontmatter.series}
-              </div>
-            ) : null
-
-          let postImage = node.frontmatter.featuredImage.childImageSharp.fluid
-
           let devToArticle = devToPosts.filter(
             article =>
               article.title.toLowerCase() ===
@@ -44,32 +31,19 @@ function Blog(props) {
           }
 
           return (
-            <article key={node.fields.slug}>
-              <Img
-                className={blogStyles.postImageContainer}
-                fluid={postImage}
-              />
-              <header>
-                <h1>
-                  <Link to={node.fields.slug}>
-                    <div>{node.frontmatter.title}</div>
-                    {seriesText}
-                  </Link>
-                </h1>
-                <div className={blogStyles.date}>{node.frontmatter.date}</div>
-                <Impressions likes={likes} comments={comments} />
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.excerpt,
-                  }}
-                />
-                <div className={blogStyles.readMore}>
-                  <Link to={node.fields.slug}>Continue reading</Link>
-                </div>
-              </section>
-            </article>
+            <ContentCard
+              key={node.fields.slug}
+              slug={node.fields.slug}
+              title={node.frontmatter.title}
+              subTitle={node.frontmatter.series}
+              date={node.frontmatter.date}
+              content={node.excerpt}
+              image={node.frontmatter.featuredImage.childImageSharp.fluid}
+              buttonText="Continue reading"
+              buttonUrl={node.fields.slug}
+              likes={likes}
+              comments={comments}
+            />
           )
         })}
       </div>

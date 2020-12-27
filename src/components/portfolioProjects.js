@@ -16,7 +16,7 @@ const PortfolioProjects = () => {
           }
         }
       }
-      milosImage: file(relativePath: { eq: "milos.jpg" }) {
+      milosImage: file(relativePath: { eq: "milos.png" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -31,15 +31,16 @@ const PortfolioProjects = () => {
       <h1 className={portfolioProjectsStyles.projectsHeader}>
         Some of My Work
       </h1>
-      <ProjectCard
-        project={cinciData}
-        imageFluid={images.cinciImage.childImageSharp.fluid}
-      />
-      <ProjectCard
-        project={milosData}
-        floatRight={true}
-        imageFluid={images.milosImage.childImageSharp.fluid}
-      />
+      <div className={portfolioProjectsStyles.projects}>
+        <ProjectCard
+          project={cinciData}
+          imageFluid={images.cinciImage.childImageSharp.fluid}
+        />
+        <ProjectCard
+          project={milosData}
+          imageFluid={images.milosImage.childImageSharp.fluid}
+        />
+      </div>
 
       <div className={portfolioProjectsStyles.buttonContainer}>
         <div className={portfolioProjectsStyles.cardButton}>

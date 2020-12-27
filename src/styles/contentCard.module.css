@@ -1,0 +1,86 @@
+.contentCard {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 48%;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.contentCard p {
+  margin: 1rem 0 2rem 0;
+  padding: 0 2rem;
+}
+
+.imageContainer {
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  display: inline-block;
+  margin-bottom: -2rem;
+  background: var(--highlight);
+  color: var(--menu-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+  text-shadow: none;
+}
+
+.date {
+  font-family: var(--header-font);
+  display: inline;
+  padding: 0 10px;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.button {
+  text-align: center;
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.button a {
+  color: var(--header);
+  border: 2px solid var(--highlight);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 35px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.button a:hover {
+  box-shadow: none;
+  background: var(--highlight);
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.tags span {
+  padding: 5px 15px;
+  margin: 5px;
+  font-size: 0.8em;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid var(--tag-bg);
+  background: var(--tag-bg);
+}
+
+@media only screen and (max-width: 1366px) {
+  .contentCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .contentCard {
+    margin: 0.25rem 0;
+  }
+}

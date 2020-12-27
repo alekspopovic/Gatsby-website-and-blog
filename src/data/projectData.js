@@ -29,7 +29,7 @@ const data = [
   {
     name: "Omaha Performing Arts",
     url: "https://omahaperformingarts.org/",
-    imageUrl: "opa.jpg",
+    imageUrl: "opa.png",
     description:
       "Omaha Performing Arts is dedicated to creating a vibrant arts and entertainment experience in Omaha and the region. Since its inception, Omaha Performing Arts has grown to become the largest arts institution in Nebraska.",
     tags: [
@@ -45,7 +45,7 @@ const data = [
   {
     name: "Thanksgiving Point",
     url: "http://thanksgivingpoint.org/",
-    imageUrl: "tgp.jpg",
+    imageUrl: "tgp.png",
     description:
       "Thanksgiving Point Institute is a nonprofit farm, garden, and museum complex that draws upon the natural world to cultivate transformative family learning.",
     tags: [
@@ -83,7 +83,7 @@ const data = [
   {
     name: "Graceland",
     url: "https://www.graceland.com/",
-    imageUrl: "graceland.jpg",
+    imageUrl: "graceland.png",
     description:
       "In the spring of 1957, when Elvis Presley was 22, he purchased the home and grounds for just over $100,000. Although Elvis had various homes in the Los Angeles area and spent a great deal of time on the road with his concerts, Graceland was always home base - a constant in the life of Elvis Presley.",
     tags: ["frontend", "team", "HTML", "CSS", "JavaScript"],
@@ -107,7 +107,7 @@ const data = [
   {
     name: "Milos Popovic",
     url: "https://milosp.info/",
-    imageUrl: "milos.jpg",
+    imageUrl: "milos.png",
     description:
       "Milos Popovic works as a Marie Curie Post-Doctoral Fellow at the Institute of Security and Global Affairs (ISGA) at Leiden University on post-war pathways of foreign fighters. His research interests are at the intersection of civil war dynamics and postwar politics in the Balkans.",
     tags: ["frontend", "personal", "HTML", "CSS", "JavaScript", "GreenSock"],
@@ -122,7 +122,7 @@ const data = [
   },
   {
     name: "Terry's Breakout",
-    imageUrl: "terry.jpg",
+    imageUrl: "terry.png",
     description:
       "Terry's Breakout is a Breakout-style game in which you control Terry, a little red ball in the world filled with bricks. Your favorite mittens were stolen from you and you must embark on a quest to get them back. Break bricks, smash yellow laser-shooting thingies and collect pickups that help you achieve your goal. Game features 10 levels with increasing difficulty.",
     tags: ["personal", "C#", "Unity3D"],
