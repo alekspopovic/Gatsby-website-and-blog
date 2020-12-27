@@ -57,7 +57,7 @@ function Blog(props) {
                   </Link>
                 </h1>
                 <div className={blogStyles.date}>{node.frontmatter.date}</div>
-                <Impressions likes={likes} comments={comments} /> 
+                <Impressions likes={likes} comments={comments} />
               </header>
               <section>
                 <p
@@ -66,7 +66,7 @@ function Blog(props) {
                   }}
                 />
                 <div className={blogStyles.readMore}>
-                  <Link to={node.fields.slug}>Read more</Link>
+                  <Link to={node.fields.slug}>Continue reading</Link>
                 </div>
               </section>
             </article>
