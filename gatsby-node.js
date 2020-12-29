@@ -50,8 +50,9 @@ exports.createPages = async ({ graphql, actions }) => {
   let postHistory = {}
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+    const previous =
+      index === posts.length - 1 ? posts[0].node : posts[index + 1].node
+    const next = index === 0 ? posts[2].node : posts[index - 1].node
 
     createPage({
       path: post.node.fields.slug,
