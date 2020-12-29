@@ -9,7 +9,7 @@ tags:
   - web
   - react
   - multilingual
-featuredImage: keyboard.jpg
+featuredImage: structure.png
 ---
 
 Before going ahead and making a multilingual website I would advise you to think about a few things:

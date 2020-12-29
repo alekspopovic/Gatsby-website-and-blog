@@ -8,7 +8,7 @@ tags:
   - web
   - react
   - multilingual
-featuredImage: japan.jpg
+featuredImage: switch.png
 ---
 
 You have all of your multilingual pages set up, but now you need to give your users a way to access those pages. There are multiple ways this can be done. The most common solution is adding a language selection tool in the form of multiple links or by using a drop-down list.

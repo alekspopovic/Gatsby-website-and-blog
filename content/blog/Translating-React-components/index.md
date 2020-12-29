@@ -8,7 +8,7 @@ tags:
   - web
   - react
   - multilingual
-featuredImage: map.jpg
+featuredImage: translating.png
 ---
 
 Having different page files for different languages makes all of the page translations pretty contained and easy for access if something needs to be changed or added later on. Separating page components is good because of searching algorithms and SEO. There is also no code duplication, since page components are mostly plain text or markdown. Non-page components are a bit different.

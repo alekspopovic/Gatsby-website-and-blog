@@ -5,7 +5,7 @@ description: "Having a dark mode on your website or application has become very 
 tags:
   - web
   - react
-featuredImage: DarkMode.png
+featuredImage: darkNew.png
 ---
 
 Having a dark mode on your website or application has become very popular. Many big websites and applications are coming up with their own version of it and if you want to make one for your own react app you can easily do so with very little JavaScript code and a bit of custom CSS.
