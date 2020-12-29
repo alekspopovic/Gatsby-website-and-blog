@@ -14,6 +14,8 @@
   --header-bg-green: #061724a6;
   --header-bg-orange: #fd90472c;
 
+  --dark-shadow: var(--dark-highlight);
+
   --float-right-header: var(--highlight);
   --float-right-button-border: var(--highlight);
 
@@ -70,6 +72,7 @@ body.light {
   /* --body-bg: #ffece0; */
   --body-bg: var(--dark-bg);
   /* --body-bg: #dfdfdf; */
+  --dark-shadow: #626f7a;
 
   --float-right-button-border: var(--header);
   --float-right-header: var(--header);

@@ -21,12 +21,16 @@ header a {
   margin: auto;
   margin-top: 3.75em;
   overflow: hidden;
-  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.23);
+  /* box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.23); */
   padding: 0 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  box-shadow: 8px 0 0 var(--dark-shadow);
+  border-left: 1px solid var(--dark-shadow);
+  border-right: 1px solid var(--dark-shadow);
 }
 
 h1,
@@ -45,7 +49,10 @@ small {
   background: var(--dark-bg);
   z-index: -1;
 
-  box-shadow: rgba(0, 0, 0, 0.16) 0px -6px 6px, rgba(0, 0, 0, 0.23) 0px -6px 6px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px -6px 6px, rgba(0, 0, 0, 0.23) 0px -6px 6px; */
+  box-shadow: 8px 0 0 var(--dark-shadow);
+  border-left: 1px solid var(--dark-shadow);
+  border-right: 1px solid var(--dark-shadow);
 }
 
 .headerTitle,

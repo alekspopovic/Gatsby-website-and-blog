@@ -1,5 +1,7 @@
 .contentCard {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  box-shadow: 8px 8px 0 var(--dark-shadow);
+  border: 1px solid var(--dark-shadow);
   width: 48%;
   margin: 0.5rem;
   padding: 0;
