@@ -19,9 +19,8 @@ header a {
 .blogPostHeaderImage {
   width: 60%;
   margin: auto;
-  margin-top: 3.75em;
+  margin-top: 4.55rem;
   overflow: hidden;
-  /* box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.23); */
   padding: 0 2em;
   display: flex;
   flex-direction: column;
