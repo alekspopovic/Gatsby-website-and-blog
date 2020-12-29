@@ -374,6 +374,8 @@ If you followed along successfully you should now have a prototype of a simple, 
 
 You can find the full code on my <a href="https://github.com/alekspopovic/simple-react-timeline" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
-If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+<hr>
 
-I also regularly upload React and web dev tutorials to Youtube, so if that's your cup of tea feel free to support me by subscribing to <a href="https://www.youtube.com/channel/UCu3RVedqyL5o776xyQlbyAw" target="_blank" rel="noopener noreferrer">my channel</a>.
+<div class="sectionHighlight">If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+
+I also have a <a href="https://www.youtube.com/AleksPopovic" target="_blank" rel="noopener noreferrer">YouTube channel</a> where I regularly upload React and web dev tutorials, so if that's your cup of tea feel free to support me by subscribing.</div>

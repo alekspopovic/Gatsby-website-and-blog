@@ -150,3 +150,9 @@ If you have a custom button component which you use all over your application yo
 In case you are making a personal multilingual website you could even translate your whole CV or a portfolio page by combining techniques discussed in all three parts of this series. Possibilities are almost endless - depending on how many languages are you willing to support.
 
 If you've followed through the [whole series](/tags/multilingual) (or at least parts of it that you needed) - you should now have a working multilingual website with a customizable language switch, component and page translations. Regardless of what is your development stack you now have a lot of flexibility with how to further set up your pages and components.
+
+<hr>
+
+<div class="sectionHighlight">If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+
+I also have a <a href="https://www.youtube.com/AleksPopovic" target="_blank" rel="noopener noreferrer">YouTube channel</a> where I regularly upload React and web dev tutorials, so if that's your cup of tea feel free to support me by subscribing.</div>

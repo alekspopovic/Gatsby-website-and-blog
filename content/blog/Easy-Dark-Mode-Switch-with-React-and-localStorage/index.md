@@ -301,6 +301,8 @@ nav a {
 
 If you followed through everything you should now have your own functioning customizable dark mode switch built in React. If you want to take a closer look at the project code you can grab the source files on [GitHub](https://github.com/alekspopovic/DarkMode) along with all of the images I used for it.
 
-If you prefer a video version of this tutorial you can watch me create this Dark Mode component on Youtube:
+<hr>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IiUg-2dAd4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="sectionHighlight">If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+
+I also have a <a href="https://www.youtube.com/AleksPopovic" target="_blank" rel="noopener noreferrer">YouTube channel</a> where I regularly upload React and web dev tutorials, so if that's your cup of tea feel free to support me by subscribing.</div>

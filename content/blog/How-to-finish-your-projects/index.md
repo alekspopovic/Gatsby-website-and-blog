@@ -91,3 +91,9 @@ Three days later I was in a world of pain. My back were a sore hurting pile of i
 ---
 
 If you pick up any of these bullet points you definitely shouldn't skip on the last one because it will affect you on more levels than "just" your ability to work. Others are more of a "good to know that this guy made some mistakes so I don't have to" variety. Also, finish your projects.
+
+<hr>
+
+<div class="sectionHighlight">If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+
+I also have a <a href="https://www.youtube.com/AleksPopovic" target="_blank" rel="noopener noreferrer">YouTube channel</a> where I regularly upload React and web dev tutorials, so if that's your cup of tea feel free to support me by subscribing.</div>

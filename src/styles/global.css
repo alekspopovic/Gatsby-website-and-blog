@@ -99,8 +99,7 @@ html {
 }
 
 main {
-  /* margin-top: 4rem; */
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 h1 {
@@ -119,4 +118,10 @@ a {
 
 a:hover {
   border-bottom: 1px solid var(--highlight);
+}
+
+.sectionHighlight {
+  border: 1px solid var(--highlight);
+  padding: 2rem;
+  border-radius: 2rem;
 }

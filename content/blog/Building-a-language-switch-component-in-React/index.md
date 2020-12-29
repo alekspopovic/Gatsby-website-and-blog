@@ -225,3 +225,9 @@ You will probably need to adjust the way your images are rendered with some addi
 ## What's next?
 
 So far so good. We have set up our page structure one way or another and we have a component that can handle switching our website's language. Our page and component translations are still not set up and this is something we will cover in the [last part of this series](/Translating-React-components/). We will go over a couple of examples explaining what are some easy ways to set up our language data to be accessible throughout all of our pages. We will also cover how to translate regular components, such as a main navigation menu.
+
+<hr>
+
+<div class="sectionHighlight">If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+
+I also have a <a href="https://www.youtube.com/AleksPopovic" target="_blank" rel="noopener noreferrer">YouTube channel</a> where I regularly upload React and web dev tutorials, so if that's your cup of tea feel free to support me by subscribing.</div>

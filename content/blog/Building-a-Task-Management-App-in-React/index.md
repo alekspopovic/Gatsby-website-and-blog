@@ -440,6 +440,8 @@ Both functions look at the task's current status and set the new status based on
 
 And that is all of the code I've used for this project, except for the CSS. If you are interested into seeing the full working version you can check out <a href="https://codesandbox.io/s/task-management-app-o5hcn" target="_blank" rel="noopener noreferrer">the project on CodeSandbox</a>.
 
-If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+<hr>
 
-I also regularly upload React and web dev tutorials to Youtube, so if that's your cup of tea feel free to support me by subscribing to <a href="https://www.youtube.com/AleksPopovic" target="_blank" rel="noopener noreferrer">my channel</a>.
+<div class="sectionHighlight">If you have any questions or comments you can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
+
+I also have a <a href="https://www.youtube.com/AleksPopovic" target="_blank" rel="noopener noreferrer">YouTube channel</a> where I regularly upload React and web dev tutorials, so if that's your cup of tea feel free to support me by subscribing.</div>
