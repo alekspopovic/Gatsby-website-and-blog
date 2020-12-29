@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import kebabCase from "lodash.kebabcase"
 import blogPostStyles from "../styles/blogPost.module.css"
 import usePosts from "../hooks/usePosts"
+import SuggestedReading from "../components/suggestedReading"
 
 function BlogPostTemplate(props) {
   const post = props.data.markdownRemark
@@ -24,26 +25,7 @@ function BlogPostTemplate(props) {
     comments = devToArticle.comments
   }
 
-  let postNavigation
-
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
-
-  if (previous || next) {
-    postNavigation = (
-      <div className={blogPostStyles.postNavigation}>
-        {previous && (
-          <Link to={previous.fields.slug} rel="prev">
-            ← {previous.frontmatter.title}
-          </Link>
-        )}
-        {next && (
-          <Link to={next.fields.slug} rel="next">
-            {next.frontmatter.title} →
-          </Link>
-        )}
-      </div>
-    )
-  }
 
   let dateText = `${post.frontmatter.date} | Aleks Popovic`
 
@@ -77,7 +59,7 @@ function BlogPostTemplate(props) {
           </ul>
         </div>
       </article>
-      {postNavigation}
+      <SuggestedReading previous={previous} next={next} />
     </Layout>
   )
 }

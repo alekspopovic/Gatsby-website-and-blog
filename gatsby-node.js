@@ -26,6 +26,12 @@ exports.createPages = async ({ graphql, actions }) => {
                 series
                 description
                 tags
+                featuredImage {
+                  id
+                  publicURL
+                  relativeDirectory
+                  relativePath
+                }
               }
             }
           }

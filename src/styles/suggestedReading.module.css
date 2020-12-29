@@ -1,0 +1,42 @@
+.suggestedReadingContainer {
+  background-color: var(--dark-bg);
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.5rem 2rem 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.suggestedReading {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  margin: 2rem 0;
+  padding: 0 0.5rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media only screen and (max-width: 1366px) {
+  .suggestedReadingContainer {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .suggestedReadingContainer {
+    width: 90%;
+    padding: 0.5rem 1rem 1.5rem 1rem;
+  }
+
+  .suggestedReading {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .suggestedReadingContainer {
+    width: 100%;
+    padding: 0.5rem 0 1.5rem 0;
+  }
+}

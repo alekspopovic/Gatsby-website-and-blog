@@ -3,8 +3,9 @@ import Img from "gatsby-image"
 import Link from "gatsby-link"
 import Impressions from "./impressions"
 import cardStyles from "../styles/contentCard.module.css"
+import usePosts from "../hooks/usePosts"
 
-export default function contentCard(props) {
+function ContentCard(props) {
   const {
     slug,
     title,
@@ -14,16 +15,13 @@ export default function contentCard(props) {
     image,
     buttonText,
     buttonUrl,
-    likes,
-    comments,
     tags,
+    isInternal,
   } = props
 
   let subTitleText = subTitle ? (
     <div className={cardStyles.subtitle}>{subTitle}</div>
   ) : null
-
-  console.log(subTitle)
 
   let titleText
 
@@ -55,9 +53,42 @@ export default function contentCard(props) {
     )
   }
 
+  let imageHtml
+
+  if (image.srcSet) {
+    imageHtml = <Img className={cardStyles.imageContainer} fluid={image} />
+  } else {
+    imageHtml = (
+      <img
+        className={cardStyles.imageContainer}
+        src={image}
+        alt="post thumbnail"
+      />
+    )
+  }
+
+  let buttonLinkHtml = isInternal ? (
+    <Link to={buttonUrl}>{buttonText}</Link>
+  ) : (
+    <a href={buttonUrl}>{buttonText}</a>
+  )
+
+  const devToPosts = usePosts()
+
+  let devToArticle = devToPosts.filter(
+    article => article.title.toLowerCase() === title.toLowerCase()
+  )[0]
+
+  let likes, comments
+
+  if (devToArticle) {
+    likes = devToArticle.likes
+    comments = devToArticle.comments
+  }
+
   return (
     <article className={cardStyles.contentCard}>
-      <Img className={cardStyles.imageContainer} fluid={image} />
+      {imageHtml}
       <header>
         <h1>{titleText}</h1>
         <div className={cardStyles.date}>{date}</div>
@@ -70,10 +101,10 @@ export default function contentCard(props) {
           }}
         />
         {tagsHtml}
-        <div className={cardStyles.button}>
-          <Link to={buttonUrl}>{buttonText}</Link>
-        </div>
+        <div className={cardStyles.button}>{buttonLinkHtml}</div>
       </section>
     </article>
   )
 }
+
+export default ContentCard

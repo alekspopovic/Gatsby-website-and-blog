@@ -69,13 +69,13 @@
   font-size: 0.8em;
   border-radius: 30px;
   text-align: center;
-  border: 2px solid var(--tag-bg);
-  background: var(--tag-bg);
+  background: var(--dark-highlight);
 }
 
 @media only screen and (max-width: 1366px) {
   .contentCard {
     width: 100%;
+    margin: 0.25rem;
   }
 }
 

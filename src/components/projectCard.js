@@ -36,6 +36,7 @@ class ProjectCard extends React.Component {
         buttonText={buttonText}
         buttonUrl={buttonUrl}
         tags={tags}
+        isInternal={false}
       />
     )
   }
