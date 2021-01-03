@@ -13,6 +13,7 @@
   --header: #eeeeee;
   --header-bg-green: #061724a6;
   --header-bg-orange: #fd90472c;
+  --text-highlight: var(--dark-highlight);
 
   --dark-shadow: var(--dark-highlight);
 
@@ -77,6 +78,8 @@ body.light {
   --float-right-button-border: var(--header);
   --float-right-header: var(--header);
 
+  --text-highlight: #ffe4d2;
+
   --portfolio-bg: transparent;
   --portfolio-tech-background: var(--dark-bg);
   --portfolio-font-weight: 400;
@@ -121,7 +124,8 @@ a:hover {
 }
 
 .sectionHighlight {
-  border: 1px solid var(--highlight);
+  /* border: 1px solid var(--highlight); */
   padding: 2rem;
-  border-radius: 2rem;
+  border-radius: 0.25rem 1.5rem;
+  background-color: var(--text-highlight);
 }

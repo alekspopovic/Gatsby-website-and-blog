@@ -1,7 +1,7 @@
 ---
 title: "How to Integrate dev.to with Gatsby"
 date: "2020-12-27"
-description: My website is build on top of Gatsby, which is a React-based open source framework with performance, scalability and security built-in". It's a fast growing platform with a very active comunity and it has a plethora of plugins which you can use to customize your website. It's also a static website generator, which introduces certain limitations.
+description: My website is built on top of Gatsby, which is a React-based open source framework with performance, scalability and security built-in". It's a fast growing platform with a very active comunity and it has a plethora of plugins which you can use to customize your website. It's also a static website generator, which introduces certain limitations.
 tags:
   - web
   - react
@@ -9,7 +9,7 @@ tags:
 featuredImage: integration.png
 ---
 
-My website is build on top of Gatsby, which is a "React-based open source framework with performance, scalability and security built-in". It's a fast growing platform with a very active comunity and it has a plethora of plugins which you can use to customize your website. It's also a static website generator, which introduces certain limitations.
+My website is built on top of Gatsby, which is a "React-based open source framework with performance, scalability and security built-in". It's a fast growing platform with a very active comunity and it has a plethora of plugins which you can use to customize your website. It's also a static website generator, which introduces certain limitations.
 
 Static site means no dynamic content. No dynamic content means no comments, likes, bookmarks or similar blog post functionalities that would require a back-end with a database. Not by default at least.
 

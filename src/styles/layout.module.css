@@ -32,11 +32,14 @@ header a {
   border-right: 1px solid var(--dark-shadow);
 }
 
-h1,
 h2,
 h3,
 small {
   font-family: var(--header-font);
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .titleContainer {

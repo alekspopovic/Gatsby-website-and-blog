@@ -16,7 +16,7 @@ Somewhere along the way I had to switch to a different project which had a short
 
 I had to make one, and here are a few things I learned while doing it.
 
-## 1. Write down everything
+# 1. Write down everything
 
 Having your goals for the project written down somewhere sounds like an obvious first step, right? Except when you just want to start working on the damn thing already so you tell yourself: "I'll just do it later". But later never comes.
 
@@ -33,7 +33,7 @@ Here is my initial list of features I wanted to have, in no particular order:
 6. Contact form
 7. Dark / light mode switch
 
-## 2. Stick to it
+# 2. Stick to it
 
 Having a plan is all nice and dandy until you start deviating from it, or worse - ignoring it completely. Work on a feature or on a part of a feature every day for at least a few minutes. Don't add new features to the list and don't endlessly extend your existing features (unless you blatantly forgot to write down something essential when planning stuff out).
 
@@ -52,19 +52,19 @@ Except for the custom 404 page all of these gave me quite a bit of headache, and
 
 My blog absolutely does not need an archive, yet. But, all blogs have one so I should add it, too, right? Wrong. An archive / history section is a cool feature if you already have a bunch of posts and your site could benefit from having an easy access to their chronological list. I ended up scrapping it in the end, even though I did learn a couple of useful things while making it.
 
-## 3. Show it early, show it often
+# 3. Show it early, show it often
 
 Get feedback as soon as possible, before finishing the project. It sucks to work on something only to realize your finalized functionalities aren't as functional as you think they are. Your light mode is burning through people's corneas, your social links are broken and your contact form redirects to a missing page. All of it would have been easily avoided if you had let other people look at your work. Also, you could have done more testing altogether, but nobody's perfect.
 
 Showing your progress to others also makes you somewhat accountable. You commit to making progress because somebody else expects you are making some progress. Don't even get me started with all of the "When is it gonna be finished?" questions.
 
-## 4. Use Source Control
+# 4. Use Source Control
 
 Having my project set up on GitHub and regularly pushing my changes made it super easy to get back into it after a period of procrastination and a computer swap. I just had to fire up [Visual Studio Code](https://code.visualstudio.com/), pull down my branch, and start working on it.
 
 You don't need a super fancy app to do it, but you do need something. I used to use [GitKraken](https://www.gitkraken.com/) before switching to [GitHub Desktop](https://desktop.github.com/), but for this project I mostly used VSCode's integrated source control. Use whatever works for you.
 
-## 5. Don't reinvent the wheel
+# 5. Don't reinvent the wheel
 
 Chances are somebody already made something similar to what you are trying to do way before you even started thinking about your project. They also probably documented it in one way or another and made a blog post or YouTube video about it. Some people make really nice wheels and are really good at showing the wheel making process, and that's a fact.
 
@@ -76,11 +76,11 @@ Don't make everything from scratch if you don't have to. There are plenty of fre
 - If you are in prototype phase or simply don't want to spend too much time on design feel free to use a free (or paid) page template from [TEMPLATED](https://templated.co/) or a similar source.
 - If you aren't sure which colors go well together and you aren't too keen on learning color theory just yet - there is a bunch of color palette generators and collection tools, such as [Color Hunt](https://colorhunt.co/), [Coolors](https://coolors.co/), [Flat UI Colors](https://flatuicolors.com/) and [Color Wheel](https://color.adobe.com/create/color-wheel). I regularly use all of them, because I too suck at choosing the right colors.
 
-## 6. Finish it
+# 6. Finish it
 
 No, really, just do it. Completing stuff is an excellent feeling which will carry over to other things you do. But...
 
-## 7. Take care of yourself
+# 7. Take care of yourself
 
 Don't let your physical or mental health suffer because you simply have to work on the damn project. It really isn't worth it for both you and your family members. Being unproductive sometimes and giving yourself time to let go and relax is a good thing. Don't feel ashamed for it, but also don't overdo it.
 
