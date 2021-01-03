@@ -35,7 +35,7 @@ Don't copy-paste anything you get your hands on, but do use existing work others
 
 # Improve yourself
 
-You don't need to consume tech-related content to get a tech project idea, but it does help. Read books about a programming language or a tech stack you are learning. Books cover a variety of language functionalities and you will naturaly start to think about interesting ways to implement them.
+You don't need to consume tech-related content to get a tech project idea, but it does help. Read books about a programming language or a tech stack you are learning. Books cover a variety of language functionalities and you will naturally start to think about interesting ways to implement them.
 
 It's the same thing with blogs and articles. Follow news that are related to what you are trying to learn and the progress that's been made in your tech stack might inspire you to build something that uses those new functionalities.
 
@@ -47,9 +47,9 @@ Talk to them, ask them what they are working on and you might get an idea for yo
 
 # Write down literally everything
 
-I mean it. Get yourself a pen and a notebook or a notes app for your phone and computer and write down every single idea that you get, no matter how big, small or inovative it is. Even if it's just a glimpse of an idea - write it down.
+I mean it. Get yourself a pen and a notebook or a notes app for your phone and computer and write down every single idea that you get, no matter how big, small or innovative it is. Even if it's just a glimpse of an idea - write it down.
 
-I have one of these lists that I open up from time to time and rearange my ideas based on priority and level of interest I have in them. When I finish one side project I just open it up and pick up the first item from it.
+I have one of these lists that I open up from time to time and rearrange my ideas based on priority and level of interest I have in them. When I finish one side project I just open it up and pick up the first item from it.
 
 Sometimes these ideas overlap or can be combined into a single project. That's why I write down all of them.
 
@@ -73,9 +73,9 @@ Maybe you already have ideas, but you are struggling to finish your side project
 
 Hug it, pet it and call it George.
 
-In all seriousnes - after you've built it, let other people see it. Having your side projects in a structured portfolio will help you a lot when looking for a new job. That means either on Github or your portfolio website.
+In all seriousness - after you've built it, let other people see it. Having your side projects in a structured portfolio will help you a lot when looking for a new job. That means either on GitHub or your portfolio website.
 
-If you need some advice on how to structure your Github profile and make it presentable - I have an <a href="https://aleksandarpopovic.com/Easiest-way-to-set-up-your-Github-profile-page/" target="_blank" rel="noopener noreferrer">article</a> on that topic, too.
+If you need some advice on how to structure your GitHub profile and make it presentable - I have an <a href="https://aleksandarpopovic.com/Easiest-way-to-set-up-your-Github-profile-page/" target="_blank" rel="noopener noreferrer">article</a> on that topic, too.
 
 <hr>
 
