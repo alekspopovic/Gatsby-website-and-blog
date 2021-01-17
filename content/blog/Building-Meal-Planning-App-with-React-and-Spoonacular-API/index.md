@@ -296,6 +296,8 @@ a:hover {
 
 There's a lot more things that can be done with this API, but this is it for this tutorial. If you end up building this do send me your creations. Especially if you add more stuff to it, like recipe details, ingredient list, meal preparation instructions or something similar.
 
+You can check out a demo version of this app on <a href="https://codesandbox.io/s/meal-planner-in-react-yd3vo" target="_blank" rel="noopener noreferrer">CodeSandbox</a>.
+
 <hr>
  
 <div class="sectionHighlight">You can reach out to me on <a href="https://twitter.com/alekswritescode" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://www.instagram.com/aleks.popovic/" target="_blank" rel="noopener noreferrer">Instagram</a>, where I also post interesting code tidbits and designs.
