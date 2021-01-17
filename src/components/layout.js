@@ -111,7 +111,6 @@ class Layout extends React.Component {
         <Img
           fluid={headerImageFluid}
           className={layoutStyles.blogPostHeaderImage}
-          objectFit="cover"
         />
       )
     }
