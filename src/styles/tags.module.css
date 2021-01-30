@@ -3,11 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 30%; */
-  /* margin: auto;
-  margin-top: 5em;
-  margin-bottom: 2em;
-  padding: 1em 0 2em 0; */
   margin-top: 10em;
 }
 
@@ -26,7 +21,6 @@
 
 .tags a:hover {
   box-sizing: none;
-  box-shadow: none;
   border: none;
   color: var(--highlight);
 }

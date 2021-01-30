@@ -17,17 +17,14 @@ header a {
 }
 
 .blogPostHeaderImage {
-  width: 60%;
-  margin: auto;
-  margin-top: 4.55rem;
+  width: 100%;
+  margin: 3rem 0 2rem 0;
   overflow: hidden;
   padding: 0 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 8px 0 0 var(--dark-shadow);
   border-left: 1px solid var(--dark-shadow);
   border-right: 1px solid var(--dark-shadow);
 }
@@ -50,9 +47,6 @@ h1 {
   padding: 1.5rem 0 0.5rem 0;
   background: var(--dark-bg);
   z-index: -1;
-
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px -6px 6px, rgba(0, 0, 0, 0.23) 0px -6px 6px; */
-  box-shadow: 8px 0 0 var(--dark-shadow);
   border-left: 1px solid var(--dark-shadow);
   border-right: 1px solid var(--dark-shadow);
 }
@@ -237,7 +231,6 @@ video {
 .headerImage {
   max-width: 60%;
   margin: 3.7em auto 0 auto;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 0 0 10px 10px;
   position: relative;
   z-index: -1;
@@ -267,10 +260,6 @@ video {
     width: 70%;
   }
 
-  .blogPostHeaderImage {
-    width: 70%;
-  }
-
   #headerBackgroundContainer {
     height: 380px;
   }
@@ -291,10 +280,6 @@ video {
 
   .headerImage {
     max-width: 90%;
-  }
-
-  .blogPostHeaderImage {
-    width: 90%;
   }
 
   video {
@@ -327,7 +312,6 @@ video {
   }
 
   .blogPostHeaderImage {
-    width: 100%;
     border-radius: 0;
     margin-top: 3rem;
     height: 10rem;

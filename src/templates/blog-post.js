@@ -32,8 +32,6 @@ function BlogPostTemplate(props) {
   return (
     <Layout
       headerText={post.frontmatter.title}
-      subHeaderText={post.frontmatter.series}
-      seriesLink={post.frontmatter.seriesLink}
       dateText={dateText}
       background={true}
       headerImageFluid={featuredImgFluid}
@@ -79,8 +77,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        series
-        seriesLink
         date(formatString: "MMMM DD, YYYY")
         description
         tags
