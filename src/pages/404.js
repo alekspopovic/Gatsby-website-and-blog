@@ -8,9 +8,14 @@ import image from "../assets/404.svg"
 class NotFoundPage extends React.Component {
   render() {
     const headerText = "404"
+    const subHeaderText = "Page Not Found"
 
     return (
-      <Layout headerText={headerText} hideHeader={true}>
+      <Layout
+        headerText={headerText}
+        subHeaderText={subHeaderText}
+        hideHeader={true}
+      >
         <SEO title="404: Not Found" />
         <div className={fourOhFourStyles.container}>
           <div className={fourOhFourStyles.imageContainer}>

@@ -3,8 +3,8 @@ const ghpages = require("gh-pages")
 ghpages.publish(
   "public",
   {
-    branch: "main",
-    repo: "https://github.com/alekspopovic/super-secret-live",
+    branch: "master",
+    repo: "https://github.com/alekspopovic/alekspopovic.github.io",
   },
   () => {
     console.log("Deploy Complete!")

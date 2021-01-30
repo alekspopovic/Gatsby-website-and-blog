@@ -55,15 +55,12 @@ const Footer = props => {
           <i className="fa fa-github"></i>
         </a>
       </div>
-      © {new Date().getFullYear()}, Built with <i className="fa fa-coffee"></i>{" "}
-      and <i className="fa fa-code"></i>, by{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://aleksandarpopovic.com"
-      >
-        Aleks Popovic
-      </a>
+      © {new Date().getFullYear()}, Built with{" "}
+      <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popovic
+      <p>
+        Illustrations by <a href="https://stories.freepik.com/">Stories</a> by
+        Freepik
+      </p>
     </footer>
   )
 }

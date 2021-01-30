@@ -1,11 +1,29 @@
 .projectCardList {
+  width: 75%;
+  max-width: 90em;
+  margin: auto;
+  margin-top: 6em;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1366px) {
+  .projectCardList {
+    width: 65%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
+  .projectCardList {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 550px) {
+  .projectCardList {
+    margin-top: 1rem;
+    width: 100%;
+  }
 }

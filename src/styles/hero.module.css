@@ -1,0 +1,324 @@
+.heroContainer {
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  background-image: url("../assets/heroSvg.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+
+  background-position: 0 20%;
+}
+
+.heroContainer h1 {
+  font-size: 3em;
+  margin: 0 auto 1rem auto;
+  font-weight: var(--portfolio-font-weight);
+  text-align: left;
+  width: 50%;
+}
+
+.heroContainer h2 {
+  font-size: 1.75em;
+  margin: 0 auto;
+  font-weight: 400;
+  text-align: left;
+  width: 50%;
+  font-weight: var(--portfolio-font-weight);
+}
+
+#wordHighlight {
+  color: var(--highlight);
+  display: inline-block;
+}
+
+#heroSvg {
+  width: 50%;
+}
+
+.section {
+  width: 50%;
+  padding: 2em 0;
+  margin-left: 50%;
+  position: relative;
+}
+
+.profileImageContainer {
+  width: 30%;
+  margin: 0 auto 2em;
+  position: relative;
+  left: -8%;
+}
+
+.profileImageContainer img {
+  border-radius: 50%;
+  border: 4px solid var(--highlight);
+}
+
+.tech {
+  width: 50%;
+  display: flex;
+  margin: 1.5em auto 4em auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.techIcon {
+  font-size: 3em;
+  margin: 0 10px;
+  color: var(--tech-color);
+  transition: color 0.4s;
+}
+
+.csharp {
+  margin-left: 0;
+}
+
+.csharp:hover {
+  color: #b63ad4;
+}
+
+.react:hover {
+  color: #00d2f8;
+}
+
+.angular:hover {
+  color: #de3035;
+}
+
+.unity:hover {
+  color: black;
+}
+
+.words {
+  display: inline;
+}
+
+.words span {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  color: var(--text);
+  text-indent: 10px;
+
+  animation: rotateWords 15s linear infinite 0s;
+}
+
+.words span:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 9s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 12s;
+}
+
+@keyframes rotateWords {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    height: 0px;
+  }
+  8% {
+    opacity: 1;
+    height: 80px;
+  }
+  19% {
+    opacity: 1;
+    color: var(--highlight);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.button {
+  font-family: var(--header-font);
+  letter-spacing: 2px;
+  width: 50%;
+  margin: 0 auto 3em auto;
+  text-align: left;
+  display: block;
+}
+
+.button a {
+  color: var(--portfolio-call-to-action-color);
+  border: 2px solid var(--portfolio-call-to-action-border);
+  padding: 15px 50px;
+  text-transform: uppercase;
+  background: var(--portfolio-call-to-action-bg);
+  border-radius: 35px;
+}
+
+.button a:hover {
+  background: var(--portfolio-call-to-action-hover-bg);
+  color: var(--portfolio-call-to-action-hover-color);
+  border-color: var(--portfolio-call-to-action-hover-border);
+}
+
+@media only screen and (max-width: 1366px) {
+  .section {
+    padding: 2em 3em;
+  }
+
+  .profileImageContainer {
+    margin: 0 auto 1em;
+  }
+
+  .heroContainer h1 {
+    margin-bottom: 1.5em;
+    width: 80%;
+    font-size: 2.5em;
+  }
+
+  .heroContainer h2 {
+    width: 80%;
+    font-size: 1.5em;
+  }
+
+  .tech {
+    width: 80%;
+    margin-bottom: 4em;
+  }
+
+  .techIcon {
+    font-size: 2em;
+  }
+
+  .button {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .button {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    padding: 2em 1em;
+  }
+
+  .heroContainer h1 {
+    margin-bottom: 1em;
+    width: 90%;
+    font-size: 2.7em;
+  }
+
+  .heroContainer h2 {
+    width: 90%;
+    font-size: 1.3em;
+  }
+
+  .tech {
+    width: 90%;
+    margin-bottom: 3em;
+  }
+
+  .techIcon {
+    font-size: 1.7em;
+  }
+
+  .button {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profileImageContainer {
+    width: 40%;
+    margin: 0 auto 2em;
+    left: 0;
+  }
+
+  .heroContainer {
+    background-image: none;
+  }
+
+  .heroContainer h1 {
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .heroContainer h2 {
+    width: 50%;
+    font-size: 2em;
+  }
+
+  .section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .tech {
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 4em;
+  }
+
+  .techIcon {
+    font-size: 3.2em;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .profileImageContainer {
+    margin-bottom: 1em;
+  }
+
+  .heroContainer {
+    width: 100%;
+  }
+
+  .heroContainer h1 {
+    font-size: 2em;
+  }
+
+  .heroContainer h2 {
+    font-size: 1.25em;
+  }
+
+  .section {
+    padding: 1em 0;
+  }
+
+  .tech {
+    width: 80%;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+  }
+
+  .tech span {
+    font-size: 0.8em;
+    margin: 5px;
+  }
+
+  .techIcon {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}

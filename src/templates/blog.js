@@ -18,6 +18,7 @@ function Blog(props) {
               key={node.fields.slug}
               slug={node.fields.slug}
               title={node.frontmatter.title}
+              subTitle={node.frontmatter.series}
               date={node.frontmatter.date}
               content={node.excerpt}
               image={node.frontmatter.featuredImage.childImageSharp.fluid}
@@ -49,6 +50,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            series
             description
             tags
             featuredImage {

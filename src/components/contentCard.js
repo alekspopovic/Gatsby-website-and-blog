@@ -1,7 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
 import Link from "gatsby-link"
+import Impressions from "./impressions"
 import cardStyles from "../styles/contentCard.module.css"
+import usePosts from "../hooks/usePosts"
 
 function ContentCard(props) {
   const {
@@ -71,12 +73,26 @@ function ContentCard(props) {
     <a href={buttonUrl}>{buttonText}</a>
   )
 
+  const devToPosts = usePosts()
+
+  let devToArticle = devToPosts.filter(
+    article => article.title.toLowerCase() === title.toLowerCase()
+  )[0]
+
+  let likes, comments
+
+  if (devToArticle) {
+    likes = devToArticle.likes
+    comments = devToArticle.comments
+  }
+
   return (
     <article className={cardStyles.contentCard}>
       {imageHtml}
       <header>
         <h1>{titleText}</h1>
         <div className={cardStyles.date}>{date}</div>
+        <Impressions likes={likes} comments={comments} />
       </header>
       <section>
         <p
