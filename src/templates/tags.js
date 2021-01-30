@@ -1,8 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundImage from "gatsby-background-image"
+import ContentCard from "../components/contentCard"
 
 import blogStyles from "../styles/blog.module.css"
 
@@ -14,11 +14,8 @@ const Tags = ({ pageContext, data, location }) => {
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
 
-  const headerText = `tags/${tag}`
-  const subHeaderText = `${totalCount} post${totalCount === 1 ? "" : "s"}`
-
   return (
-    <Layout headerText={headerText} subHeaderText={subHeaderText}>
+    <Layout>
       <SEO title={tagHeader} pagePath={location.pathname} />
       <div className={blogStyles.blogContent}>
         {posts.map(({ node }) => {
@@ -33,44 +30,19 @@ const Tags = ({ pageContext, data, location }) => {
 
           let postImage = node.frontmatter.featuredImage.childImageSharp.fluid
 
-          const backgroundFluidImageStack = [
-            `linear-gradient(
-                120deg,
-                var(--blog-cover-one),
-                var(--blog-cover-two)
-              )`,
-            postImage,
-          ]
-
           return (
-            <article key={node.fields.slug}>
-              <BackgroundImage
-                className={blogStyles.postImageContainer}
-                fluid={backgroundFluidImageStack}
-                backgroundColor={`#040e18`}
-              >
-                <header>
-                  <h1>
-                    <Link to={node.fields.slug}>
-                      <div>{node.frontmatter.title}</div>
-                      {seriesText}
-                    </Link>
-                  </h1>
-
-                  <div className={blogStyles.date}>{node.frontmatter.date}</div>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                  <div className={blogStyles.readMore}>
-                    <Link to={node.fields.slug}>Read more</Link>
-                  </div>
-                </section>
-              </BackgroundImage>
-            </article>
+            <ContentCard
+              key={node.fields.slug}
+              slug={node.fields.slug}
+              title={node.frontmatter.title}
+              subTitle={seriesText}
+              date={node.frontmatter.date}
+              content={node.excerpt}
+              image={postImage}
+              buttonText="Continue reading"
+              buttonUrl={node.fields.slug}
+              isInternal={true}
+            />
           )
         })}
       </div>
