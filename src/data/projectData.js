@@ -4,7 +4,7 @@ const data = [
     url: "http://icgl15.fil.bg.ac.rs/",
     imageUrl: "icgl15.png",
     description:
-      "Gatsby/React website for 15th International Conference on Greek Linguistics hosted by The Department of Modern Greek Studies, Faculty of Philology, University of Belgrade.",
+      "Multilingual (English/Greek) website built with Gatsby and React for the 15th International Conference on Greek Linguistics hosted by The Department of Modern Greek Studies, Faculty of Philology, University of Belgrade.",
     tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
   },
   {
@@ -26,6 +26,23 @@ const data = [
       "JavaScript",
     ],
   },
+  {
+    name: "Milos Popovic",
+    url: "https://milosp.info/",
+    imageUrl: "milos.png",
+    description:
+      "Milos Popovic works as a Marie Curie Post-Doctoral Fellow at the Institute of Security and Global Affairs (ISGA) at Leiden University on post-war pathways of foreign fighters. His research interests are at the intersection of civil war dynamics and postwar politics in the Balkans.",
+    tags: ["frontend", "personal", "HTML", "CSS", "JavaScript", "GreenSock"],
+  },
+  {
+    name: "Aleksandar Popovic",
+    url: "https://aleksandarpopovic.com/",
+    imageUrl: "landing.png",
+    description:
+      "It's very meta, I know. I needed a place where I could put all of my projects - so I made one. This is the second version of my personal website and it's built on top of Gatsby. I wanted to build something practical in React and I wanted to start writing a blog, so Gatsby seemed like a perfect fit.",
+    tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
+  },
+
   {
     name: "Omaha Performing Arts",
     url: "https://omahaperformingarts.org/",
@@ -66,7 +83,7 @@ const data = [
     url: "https://www.lagunaplayhouse.com/",
     imageUrl: "laguna.png",
     description:
-      "Laguna Playhouse is an historic Equity theatre located in the charming arts colony of Laguna Beach, California. Steps away from the Pacific Ocean, Laguna Playhouse is known for its year-round season of captivating comedies, dramas, musicals, stand-up comedy and family fare.",
+      "Laguna Playhouse is a historic Equity theatre located in the charming arts colony of Laguna Beach, California. Steps away from the Pacific Ocean, Laguna Playhouse is known for its year-round season of captivating comedies, dramas, musicals, stand-up comedy and family fare.",
     tags: [
       "backend",
       "frontend",
@@ -81,44 +98,12 @@ const data = [
     ],
   },
   {
-    name: "Graceland",
-    url: "https://www.graceland.com/",
-    imageUrl: "graceland.png",
-    description:
-      "In the spring of 1957, when Elvis Presley was 22, he purchased the home and grounds for just over $100,000. Although Elvis had various homes in the Los Angeles area and spent a great deal of time on the road with his concerts, Graceland was always home base - a constant in the life of Elvis Presley.",
-    tags: ["frontend", "team", "HTML", "CSS", "JavaScript"],
-  },
-  {
-    name: "Aleksandar Popovic",
-    url: "https://aleksandarpopovic.com/",
-    imageUrl: "landing.png",
-    description:
-      "It's very meta, I know. I needed a place where I could put all of my projects - so I made one. This is the second version of my personal website and it's built on top of Gatsby. I wanted to build something practical in React and I wanted to start writing a blog, so Gatsby seemed like a perfect fit.",
-    tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
-  },
-  {
     name: "Covid19 Historical Data",
     url: "https://aleksandarpopovic.com/covid19",
     imageUrl: "dashboard.png",
     description:
       "Covid-19 Historical Data is a simple dashboard for tracking and comparing historical data for Covid-19 virus. All country data is being fetched via NovelCOVID API. All news, emergencies and outbreaks data is being fetched via World Health Organization's official website and WHO's rss feed.",
     tags: ["frontend", "personal", "HTML", "CSS", "JavaScript", "Chartist"],
-  },
-  {
-    name: "Milos Popovic",
-    url: "https://milosp.info/",
-    imageUrl: "milos.png",
-    description:
-      "Milos Popovic works as a Marie Curie Post-Doctoral Fellow at the Institute of Security and Global Affairs (ISGA) at Leiden University on post-war pathways of foreign fighters. His research interests are at the intersection of civil war dynamics and postwar politics in the Balkans.",
-    tags: ["frontend", "personal", "HTML", "CSS", "JavaScript", "GreenSock"],
-  },
-  {
-    name: "Milunka Popovic",
-    url: "https://milunkapopovic.com/",
-    imageUrl: "milunka.png",
-    description:
-      "She dedicated her whole life to working in a construction company. In her fifties, she came back to one of her greatest loves - writing. 'Life is a River' is her first book which she dedicated to her sons. Her second book - 'The Old Oak's Secret' - is currently in the works.",
-    tags: ["frontend", "personal", "HTML", "CSS", "JavaScript"],
   },
   {
     name: "Terry's Breakout",

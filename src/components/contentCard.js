@@ -70,7 +70,9 @@ function ContentCard(props) {
   let buttonLinkHtml = isInternal ? (
     <Link to={buttonUrl}>{buttonText}</Link>
   ) : (
-    <a href={buttonUrl}>{buttonText}</a>
+    <a href={buttonUrl} target="_blank" rel="noopener noreferrer">
+      {buttonText}
+    </a>
   )
 
   const devToPosts = usePosts()
