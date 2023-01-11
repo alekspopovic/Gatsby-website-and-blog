@@ -33,7 +33,7 @@
     "gatsby-remark-smartypants": "^2.3.1",
     "gatsby-source-dev": "^0.1.4",
     "gatsby-source-filesystem": "^2.3.1",
-    "gatsby-transformer-remark": "^2.8.7",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.2",
     "lodash.kebabcase": "^4.1.1",
     "prism-material-themes": "^1.0.4",
