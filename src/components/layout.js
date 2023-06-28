@@ -65,13 +65,13 @@ class Layout extends React.Component {
         <Link activeClassName={layoutStyles.active} to="/">
           <div>home</div>
         </Link>
-        <Link activeClassName={layoutStyles.active} to="/blog">
+        <Link activeClassName={layoutStyles.active} to="/blog/">
           <div>blog</div>
         </Link>
-        <Link activeClassName={layoutStyles.active} to="/projects">
+        <Link activeClassName={layoutStyles.active} to="/projects/">
           <div>projects</div>
         </Link>
-        <Link activeClassName={layoutStyles.active} to="/contact">
+        <Link activeClassName={layoutStyles.active} to="/contact/">
           <div>contact</div>
         </Link>
         <button
