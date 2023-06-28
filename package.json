@@ -21,6 +21,7 @@
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-feed": "^2.5.1",
     "gatsby-plugin-google-analytics": "^2.3.1",
+    "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-manifest": "^2.4.2",
     "gatsby-plugin-offline": "^3.2.1",
     "gatsby-plugin-react-helmet": "^3.3.1",

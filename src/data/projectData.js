@@ -28,21 +28,12 @@ const data = [
   },
   {
     name: "Milos Popovic",
-    url: "https://milosp.info/",
+    url: "https://milospopovic.net/",
     imageUrl: "milos.png",
     description:
       "Milos Popovic is a Data Analyst at Booking.com in Amsterdam. His research explores how countries intervene in civil wars abroad. He uses R to create maps that make sense of big data. According to NodeXL, he is a Top 10 dataviz and R contributor on Twitter",
     tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
   },
-  {
-    name: "Aleksandar Popovic",
-    url: "https://aleksandarpopovic.com/",
-    imageUrl: "landing.png",
-    description:
-      "It's very meta, I know. I needed a place where I could put all of my projects - so I made one. This is the second version of my personal website and it's built on top of Gatsby. I wanted to build something practical in React and I wanted to start writing a blog, so Gatsby seemed like a perfect fit.",
-    tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
-  },
-
   {
     name: "Omaha Performing Arts",
     url: "https://omahaperformingarts.org/",
@@ -98,29 +89,20 @@ const data = [
     ],
   },
   {
+    name: "Aleksandar Popovic",
+    url: "https://aleksandarpopovic.com/",
+    imageUrl: "landing.png",
+    description:
+      "It's very meta, I know. I needed a place where I could put all of my projects - so I made one. This is the second version of my personal website and it's built on top of Gatsby. I wanted to build something practical in React and I wanted to start writing a blog, so Gatsby seemed like a perfect fit.",
+    tags: ["frontend", "personal", "React", "Gatsby", "JavaScript", "GraphQL"],
+  },
+  {
     name: "Covid19 Historical Data",
     url: "https://aleksandarpopovic.com/covid19",
     imageUrl: "dashboard.png",
     description:
       "Covid-19 Historical Data is a simple dashboard for tracking and comparing historical data for Covid-19 virus. All country data is being fetched via NovelCOVID API. All news, emergencies and outbreaks data is being fetched via World Health Organization's official website and WHO's rss feed.",
     tags: ["frontend", "personal", "HTML", "CSS", "JavaScript", "Chartist"],
-  },
-  {
-    name: "Terry's Breakout",
-    imageUrl: "terry.png",
-    description:
-      "Terry's Breakout is a Breakout-style game in which you control Terry, a little red ball in the world filled with bricks. Your favorite mittens were stolen from you and you must embark on a quest to get them back. Break bricks, smash yellow laser-shooting thingies and collect pickups that help you achieve your goal. Game features 10 levels with increasing difficulty.",
-    tags: ["personal", "C#", "Unity3D"],
-    itchIoUrl: "https://aleksandar.itch.io/terrys-breakout",
-  },
-  {
-    name: "Fructose Intolerant",
-    imageUrl: "fructose.png",
-    description:
-      "Fructose Intolerant is a clicker-style mobile game that features frantic fruity clicking action. Put a stop to the pesky produce invasion in six levels with dynamically scaled difficulty.",
-    tags: ["personal", "C#", "Unity3D", "Aseprite", "Hexels 3"],
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.AleksPopovic.FructoseIntolerant",
   },
 ]
 

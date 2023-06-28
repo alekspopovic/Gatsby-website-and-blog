@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -3em;
+}
+
+.button {
+  text-align: center;
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+
+  color: var(--header);
+  border: 2px solid var(--highlight);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 35px;
+  color: var(--text);
+  font-size: 1rem;
+
+  margin: 0 1em;
+}
+
+.button:hover {
+  box-shadow: none;
+  background: var(--highlight);
+}

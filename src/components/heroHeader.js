@@ -7,6 +7,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faReact, faAngular, faUnity } from "@fortawesome/free-brands-svg-icons"
 
 const HeroHeader = () => {
+  // const videoLinks = [
+  //   "dNTpGEULK_I",
+  //   "9z1qBcFwdXg",
+  //   "N5or5jBstg8",
+  //   "r3tiBJagbic",
+  //   "BdCCpAICXVc",
+  //   "IAD68la3An8",
+  //   "OIFN1pe72B4",
+  //   "-rnkToU2_lw",
+  //   "6sFTbTAVn5M",
+  //   "lEXc1UTTLzc",
+  //   "IiUg-2dAd4A",
+  // ]
+
+  // const previewVideoUrl =
+  //   videoLinks[Math.floor(Math.random() * videoLinks.length)]
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "aleks.jpg" }) {
@@ -59,6 +76,13 @@ const HeroHeader = () => {
             title="Unity"
           />
         </div>
+
+        {/* <div className={heroStyles.video}>
+        <iframe
+          src={`https://www.youtube.com/embed/${previewVideoUrl}`}
+          title="YouTube tutorial preview"
+        ></iframe>
+      </div> */}
         <div className={heroStyles.button}>
           <Link to="/projects">Projects</Link>
         </div>
