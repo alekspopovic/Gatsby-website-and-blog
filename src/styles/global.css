@@ -130,3 +130,8 @@ a:hover {
   border-radius: 0.25rem 1.5rem;
   background-color: var(--text-highlight);
 }
+
+code[class*="language-text"] {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}
