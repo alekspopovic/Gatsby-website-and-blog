@@ -1,7 +1,7 @@
 ---
 title: "Easy Customizable Star Rating Component in React"
 date: "2023-11-14"
-description: "If you need a quick and simple solution for address search with autocomplete and geocoding this one is for you."
+description: "In this tutorial you will learn how to set up a simple, yet pretty customizable star rating component in React. You know those little stars that you use to rate stuff all over the internet? We will build those as a default use-case, but we will also add support for other text-based and emoji-based icons that you can use instead of little yellow stars."
 tags:
   - web
   - react
@@ -9,7 +9,7 @@ tags:
 featuredImage: rating.png
 ---
 
-In this tutorial you will learn how to set up a simple, yet pretty customizable star rating component in React. You know those little stars thay you use to rate stuff all over the internet? We will build those as a default use-case, but we will also add support for other text-based and emoji-based icons that you can use instead of little yellow stars.
+In this tutorial you will learn how to set up a simple, yet pretty customizable star rating component in React. You know those little stars that you use to rate stuff all over the internet? We will build those as a default use-case, but we will also add support for other text-based and emoji-based icons that you can use instead of little yellow stars.
 
 If you would prefer a video version of this tutorial you can watch me build this component in React on Youtube:
 
